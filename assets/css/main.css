@@ -333,7 +333,8 @@ ul li {
 .site-header {
   width: 100%;
   height: 100%;
-  min-height: 100vh;
+  max-width: 100%;
+  min-height: 70vh; /* changed in attempt to fix mobile look */
   position: relative;
   text-align: center;
   background: url(../images/backgrounds/header.jpg) no-repeat center center/cover;
@@ -375,7 +376,7 @@ ul li {
   font-weight: 300;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {  /* changed in attempt to fix mobile look */
   .navbar-custom {
     background-color: transparent;
     padding-top: 30px;
@@ -397,6 +398,10 @@ ul li {
 }
 .about figure {
   margin-bottom: 25px;
+}
+
+.about .top-buffer {
+  margin-top: 4em;
 }
 
 /*
