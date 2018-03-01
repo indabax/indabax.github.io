@@ -105,9 +105,9 @@ ul li {
           transition-property: transform;
 }
 .btn:hover {
-  -webkit-transform: scale(0.9);
-      -ms-transform: scale(0.9);
-          transform: scale(0.9);
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .form-control {
@@ -207,6 +207,12 @@ ul li {
   color: #fff;
   background-color: #000;
 }
+#apply {
+  font-weight: bold;
+  font-size: 2em;
+  background-color: #62d65e;
+}
+
 
 /*
  * 3.5 Helper Class: background
@@ -268,7 +274,7 @@ ul li {
 .navbar-custom .navbar-nav > li > a {
   color: #fff;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 1.35em;
   font-weight: 400;
   border-bottom: 1px solid transparent;
 }
@@ -303,14 +309,14 @@ ul li {
 }
 .site-branding .logo {
   color: #fff;
-  font-size: 14px;
+  font-size: 1.35em;
   font-weight: 700;
   margin-right: 5px;
   letter-spacing: 3px;
   text-transform: uppercase;
 }
 .site-branding .logo img {
-  width: 4em;
+  width: 2em;
 }
 .site-branding .logo:focus, .site-branding .logo:hover {
   text-decoration: none;
