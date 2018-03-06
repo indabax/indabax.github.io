@@ -1,5 +1,4 @@
 var fs = require("fs");
-var path = require("fs");
 
 function getSpeakerInfo() {
 	const speakersPath = "./assets/speaker_data/";
@@ -10,32 +9,29 @@ function getSpeakerInfo() {
 	for(var i in speakers) {
 		var speaker = speakers[i];
 
+		var speakerName = speaker.split("_").map(function(word) {
+			return word.charAt(0).toUpperCase() + word.slice(1);
+		}).join(" ");
+
 		if (fs.lstatSync(speakersPath).isDirectory(speaker)) {
-			info[speaker] = {}
+			info[speakerName] = {}
 
 			var dataDir = speakersPath + speaker;
 
 			// get image
 			var imagePath = dataDir + "/image.jpg";
 			if (fs.existsSync(imagePath)) {
-				info[speaker].imagePath = imagePath;
+				info[speakerName].imagePath = imagePath;
 			}
 
 			// get lecture information
 			var lectureInfoPath = dataDir + "/lecture_info.txt";
 			if (fs.existsSync(lectureInfoPath)) {
-				info[speaker].lectureInfoPath = lectureInfoPath;
-				// file = fs.readFile(lectureInfoPath, "utf8", function(err, contents) {
-				// 	newContent = contents.split("\n").filter(item => item);
-				// 	info[speaker].lectureHeading = newContent[0];
-				// 	info[speaker].lectureAbstract = newContent.slice(0);
-				// });
-				var file = new File(lectureInfoPath);
-				file.open("r");
-
-				while(!file.eof) {
-					console.log(file.readln());
-				}
+				info[speakerName].lectureInfoPath = lectureInfoPath;
+				contents = fs.readFileSync(lectureInfoPath).toString();
+				contents = contents.split("\n").filter(item => item);
+				info[speakerName].lectureHeading = contents[0];
+				info[speakerName].lectureAbstract = contents.slice(1);
 			}
 		}
 	}
@@ -45,6 +41,9 @@ function getSpeakerInfo() {
 
 function populateSpeakerInfo() {
 	info = getSpeakerInfo();
+	for(speaker in info) {
+
+	}
 }
 
 console.log(getSpeakerInfo());
