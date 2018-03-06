@@ -1,3 +1,6 @@
+var fs = require("fs");
+var path = require("fs");
+
 /*
  * Change Navbar color while scrolling
 */
@@ -23,6 +26,17 @@ function handleTopNavAnimation() {
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
+
+function getSpeakerInfo() {
+    console.log(fs.lstatSync("."));
+
+    fs.readFile()
+}
+
+function populateSpeakerInfo() {
+    info = getSpeakerInfo();
+}
+
 
 /*
  * Registration Form
