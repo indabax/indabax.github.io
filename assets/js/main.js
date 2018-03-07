@@ -1,25 +1,27 @@
-var fs = require("fs");
+// var fs = require("fs");
+var fs = require("browserify-fs");
+// var path = require("path");
 
 /*
  * Change Navbar color while scrolling
-*/
+ */
 
 $(window).scroll(function(){
-	handleTopNavAnimation();
+    handleTopNavAnimation();
 });
 
 $(window).load(function(){
-	handleTopNavAnimation();
+    handleTopNavAnimation();
 });
 
 function handleTopNavAnimation() {
 	var top=$(window).scrollTop();
 
-	if(top>10){
-		$('#site-nav').addClass('navbar-solid');
-	} else {
-		$('#site-nav').removeClass('navbar-solid');
-	}
+    if(top>10){
+        $('#site-nav').addClass('navbar-solid');
+    } else {
+        $('#site-nav').removeClass('navbar-solid');
+    }
 }
 
 $(function () {
@@ -28,7 +30,7 @@ $(function () {
 
 /*
  * SmoothScroll
-*/
+ */
 
 smoothScroll.init();
 
@@ -36,11 +38,62 @@ smoothScroll.init();
  * Add Speakers to html
  */
 
-function getSpeakerInfo() {
-    const speakersPath = "./assets/speaker_data/";
-    var speakers = fs.readdirSync(speakersPath).filter(item => item != ".DS_Store");
+function readSpeakerFile(err, contents) {
+    var speakerName = this.speakerName;
 
-    var info = {}
+    contents = contents.split("\n").filter(item => item);
+    this.info[speakerName].lectureHeading = contents[0];
+    this.info[speakerName].lectureAbstract = contents.slice(1);
+}
+
+function processSpeakerLectureInfo(err, stat) {
+    if(stat.isFile()) {
+        this.info[speakerName].lectureInfoPath = this.lectureInfoPath;
+        fs.readFile(this.lectureInfoPath, readSpeakerFile.bind({
+            speakerName: this.speakerName,
+            info: info
+        }));
+    }
+}
+
+function processSpeakerImage(err, stat) {
+    if(stat.isFile()) {
+        this.info[this.speakerName].imagePath = this.imagePath;
+    }
+}
+
+function processSpeakerDirectory(err, stat) {
+    var speaker = this.speaker;
+    var speakerName = this.speakerName;
+
+    if(stat.isDirectory(speaker)) {
+        this.info[speakerName] = {};
+
+        var dataDir = speakersPath + speaker;
+
+        // get image
+        var imagePath = dataDir + "/image.jpg";
+        fs.stat(imagePath, processSpeakerImage.bind({
+            speakerName: speakerName,
+            imagePath: imagePath,
+            info: info
+        }));
+
+        // get lecture information
+        var lectureInfoPath = dataDir + "/lecture_info.txt";
+        fs.stat(lectureInfoPath, processSpeakerLectureInfo.bind({
+            speakerName: speakerName,
+            lectureInfoPath: lectureInfoPath,
+            info: info
+        }));
+    }
+}
+
+function processSpeakerData(err, data) {
+    console.log("This is in process data");
+    console.log("err: " + err);
+    console.log("data: " + data);
+    var speakers = data.filter(item => item != ".DS_Store");
 
     for(var i in speakers) {
         var speaker = speakers[i];
@@ -49,34 +102,43 @@ function getSpeakerInfo() {
             return word.charAt(0).toUpperCase() + word.slice(1);
         }).join(" ");
 
-        if (fs.lstatSync(speakersPath).isDirectory(speaker)) {
-            info[speakerName] = {}
+        fs.lstatSync(speakersPath, processSpeakerDirectory.bind({
+            speaker: speaker,
+            speakerName: speakerName,
+            info: this.info
+        }));
+    }
+}
 
-            var dataDir = speakersPath + speaker;
+const speakersPath = "./assets/speaker_data/";
+function getSpeakerInfo() {
+    var info = {};
 
-            // get image
-            var imagePath = dataDir + "/image.jpg";
-            if (fs.existsSync(imagePath)) {
-                info[speakerName].imagePath = imagePath;
-            }
+    // commented stuff = test things
 
-            // get lecture information
-            var lectureInfoPath = dataDir + "/lecture_info.txt";
-            if (fs.existsSync(lectureInfoPath)) {
-                info[speakerName].lectureInfoPath = lectureInfoPath;
-                contents = fs.readFileSync(lectureInfoPath).toString();
-                contents = contents.split("\n").filter(item => item);
-                info[speakerName].lectureHeading = contents[0];
-                info[speakerName].lectureAbstract = contents.slice(1);
-            }
-        }
+    // fs.realpath(".", function(err, path) {
+    //     console.log("working dir");
+    //     console.log(path);
+    // });
+
+    // fs.readdir(".", function(err, list) {
+    //     console.log("dir contents");
+    //     console.log(list);
+    // });
+
+    fs.readdir(speakersPath, processSpeakerData.bind({
+        info: info
+    }));
+
+    while(Object.keys(info).length < speakers.length) {
+        console.log(info);
     }
 
     return info;
 }
 
 function populateSpeakerInfo() {
-    info = getSpeakerInfo();
+    var info = getSpeakerInfo();
     var count = 0;
     var $row_div;
 
