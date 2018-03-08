@@ -1,6 +1,23 @@
 INFO = {
-
-}
+    'Alex Conway':
+   { imagePath: './assets/speaker_data/alex_conway/image.jpg',
+     lectureInfoPath: './assets/speaker_data/alex_conway/lecture_info.txt',
+     lectureHeading: 'Deep Learning for Computer Vision',
+     lectureAbstract:
+      [ 'The state-of-the-art in image classification has skyrocketed thanks to the development of deep convolutional neural networks and increases in the amount of data and computing power available to train them. The top-5 error rate in the ImageNet competition to predict which of 1000 classes an image belongs to has plummeted from 28% error in 2010 to just 2.25% in 2017 (human level error is around 5%).',
+        'In addition to being able to classify objects in images (including not hotdogs), deep learning can be used to automatically generate captions for images, convert photos into paintings, detect cancer in pathology slide images, and help self-driving cars \'see\'.',
+        'The talk will give an overview of the cutting edge and some of the core mathematical concepts and will also include a short code-first tutorial to show how easy it is to get started using deep learning for computer vision in python.' ] },
+  'Herman Kamper':
+   { imagePath: './assets/speaker_data/herman_kamper/image.jpg',
+     lectureInfoPath: './assets/speaker_data/herman_kamper/lecture_info.txt',
+     lectureHeading: 'Deep Learning for Speech Recognition',
+     lectureAbstract: [] },
+  'Willie Brink':
+   { imagePath: './assets/speaker_data/willie_brink/image.jpg',
+     lectureInfoPath: './assets/speaker_data/willie_brink/lecture_info.txt',
+     lectureHeading: 'Machine learning fundamentals, a probabilistic view',
+     lectureAbstract: [] }
+ }
 
 /*
  * Change Navbar color while scrolling
@@ -62,26 +79,34 @@ function populateSpeakerInfo(info) {
                         .append(
                             $("<img />").attr({
                                 "src": info[speaker].imagePath,
+                                "data-toggle": "tooltip",
                                 "title": "Click for more info"
                             })
                         ) // append to a
                     ) // append to figure
                     .append(
-                        $("<h4 />").text(speaker)
-                    ) // append to figure
-                    .append(
-                        $("<p />").text(info[speaker].lectureHeading)
-                    ) // append to figure
-                    .append(
-                        $("<ul />").addClass("social-block")
+                        $("<div />").addClass("col-xs-9")
                         .append(
-                            $("<li />")
+                            $("<h4 />").text(speaker)
+                        ) // heading div
+                    ) // append to figure
+                    .append(
+                        $("<div />").addClass("col-xs-1")
+                        .append(
+                            $("<a />")
                             .append(
                                 $("<i />").addClass("ion-eye").attr({
+                                    "data-toggle": "tooltip",
                                     "title": "Vision"
                                 })
-                            ) // append to list item
-                        ) // append to social-block
+                            ) // append to a
+                        ) // append to list
+                    ) // append to figure
+                    .append(
+                        $("<div />").addClass("col-xs-12")
+                        .append(
+                            $("<p />").text(info[speaker].lectureHeading)
+                        ) // paragraph div
                     ) // append to figure
                     .append(
                         $("<div />").addClass("modal fade").attr({

@@ -60,24 +60,32 @@ ul li {
   font-family: "Ionicons";
 }
 
-.social-block {
+.intro .social-block {
   list-style-type: none;
   padding: 0;
   padding-top: 3em;
 }
-.social-block li {
+.intro .social-block li {
   display: inline-block;
 }
-.social-block li a {
+.intro .social-block li a {
   display: inline-block;
   height: 5em;
   width: 5em;
   color: #4e4e4e;
 }
-.social-block li a i {
+.intro .social-block li a i {
   font-size: 3.5em;
 }
-.social-block li a:hover, .social-block li a:focus {
+.intro .social-block li a:hover, .social-block li a:focus {
+  color: #4c90ff;
+}
+
+.speaker a i {
+  font-size: 2em;
+}
+
+.speaker a i:hover {
   color: #4c90ff;
 }
 
@@ -436,6 +444,9 @@ ul li {
 }
 .speaker p {
   margin-bottom: 5px;
+}
+.speaker img {
+  width: 85%;
 }
 .speaker img:hover {
   opacity: .7;
