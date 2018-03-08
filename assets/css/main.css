@@ -589,14 +589,17 @@ ul li {
 /*
  * 6.7 Section: Schedule
  */
+ .col-sm-3 {
+  min-height: 1px;
+ }
 .sponsors {
   background-color: #f8f8f8;
 }
 .sponsors .sponsors-box {
   display: block;
   opacity: 0.3;
-  height: 150px;
-  width: 150px;
+  height: 12em;
+  width: 12em;
   margin: 25px auto;
   -webkit-transition: 0.5s all linear;
           transition: 0.5s all linear;
