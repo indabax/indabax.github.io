@@ -39,11 +39,4 @@ function getSpeakerInfo() {
 	return info;
 }
 
-function populateSpeakerInfo() {
-	info = getSpeakerInfo();
-	for(speaker in info) {
-
-	}
-}
-
 console.log(getSpeakerInfo());
