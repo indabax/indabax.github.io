@@ -33,6 +33,13 @@ function getSpeakerInfo() {
 				info[speakerName].lectureHeading = contents[0];
 				info[speakerName].lectureAbstract = contents.slice(1);
 			}
+
+			// get category
+			var categoryInfoPath = dataDir + "/category.txt";
+			if (fs.existsSync(categoryInfoPath)) {
+				info[speakerName].categoryInfoPath = categoryInfoPath;
+				info[speakerName].category = fs.readFileSync(categoryInfoPath).toString();
+			}
 		}
 	}
 
