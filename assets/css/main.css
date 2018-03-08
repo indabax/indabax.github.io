@@ -607,30 +607,6 @@ ul li {
 .sponsors .sponsors-box:hover {
   opacity: 1;
 }
-.sponsors .sponsors-box-1 {
-  background: url(../images/sponsors/sponsors-1.png) no-repeat center center/contain;
-}
-.sponsors .sponsors-box-2 {
-  background: url(../images/sponsors/sponsors-2.png) no-repeat center center/contain;
-}
-.sponsors .sponsors-box-3 {
-  background: url(../images/sponsors/sponsors-3.png) no-repeat center center/contain;
-}
-.sponsors .sponsors-box-4 {
-  background: url(../images/sponsors/sponsors-4.png) no-repeat center center/contain;
-}
-.sponsors .sponsors-box-5 {
-  background: url(../images/sponsors/sponsors-5.png) no-repeat center center/contain;
-}
-.sponsors .sponsors-box-6 {
-  background: url(../images/sponsors/sponsors-6.png) no-repeat center center/contain;
-}
-.sponsors .sponsors-box-7 {
-  background: url(../images/sponsors/sponsors-7.png) no-repeat center center/contain;
-}
-.sponsors .sponsors-box-8 {
-  background: url(../images/sponsors/sponsors-8.png) no-repeat center center/contain;
-}
 
 /*
  * 6.8 Section: FAQ

@@ -4,7 +4,7 @@ CATEGORY_TO_ICON = {
     "Lightning talk": "ion-flash",
     "Vision": "ion-eye",
     "Speech": "ion-mic-a"
-}
+};
 
 INFO = { 'Alex Conway':
    { imagePath: './assets/speaker_data/alex_conway/image.jpg',
@@ -29,7 +29,12 @@ INFO = { 'Alex Conway':
      lectureHeading: 'Machine learning fundamentals, a probabilistic view',
      lectureAbstract: [],
      categoryInfoPath: './assets/speaker_data/willie_brink/category.txt',
-     category: 'Theory' } }
+     category: 'Theory' } };
+
+SPONSORS = [ './assets/images/sponsors/aerobotics.png',
+  './assets/images/sponsors/dli.PNG',
+  './assets/images/sponsors/numberboost.png',
+  './assets/images/sponsors/stone-three-mining-logo.jpg' ];
 
 /*
  * Change Navbar color while scrolling
@@ -174,9 +179,26 @@ function populateSpeakerInfo(info) {
 
         if(count % 3 == 2) {
             $("#speakers div.container").append($row_div);
-            // $("div#speakers.section.speakers div.container").append($row_div);
         }
     }
 }
 
+function populateSponsors(sponsors) {
+    $logosDiv = $("#sponsors div.container div.row.logos");
+
+    for(i in sponsors) {
+        var sponsor = sponsors[i];
+
+        $logosDiv.append(
+            $("<div />").addClass("col-sm-3")
+            .append(
+                $("<a />").addClass("sponsors-box").attr({
+                    "style": "background: url(" + sponsor + ") no-repeat center center/contain;"
+                })
+            )
+        );
+    }
+}
+
+populateSponsors(SPONSORS);
 populateSpeakerInfo(INFO);

@@ -1,4 +1,5 @@
 var fs = require("fs");
+var path = require("path");
 
 function getSpeakerInfo() {
 	const speakersPath = "./assets/speaker_data/";
@@ -46,4 +47,25 @@ function getSpeakerInfo() {
 	return info;
 }
 
-console.log(getSpeakerInfo());
+function getSponsorInfo() {
+	const sponsorsPath = "./assets/images/sponsors/";
+	const cssPath = "./assets/css/";
+	var sponsors = fs.readdirSync(sponsorsPath).filter(item => item != ".DS_Store");
+
+	var info = []
+
+	for(var i in sponsors) {
+		var sponsor = sponsors[i];
+
+		var filePath = sponsorsPath + sponsor;
+		if (fs.lstatSync(filePath).isFile()) {
+			// info.push(path.relative(cssPath, filePath));
+			info.push(filePath);
+		}
+	}
+
+	return info;
+}
+
+// console.log(getSpeakerInfo());
+console.log(getSponsorInfo());
