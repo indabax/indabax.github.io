@@ -3,10 +3,34 @@ CATEGORY_TO_ICON = {
     "Natural language processing": "ion-android-chat",
     "Lightning talk": "ion-flash",
     "Vision": "ion-eye",
-    "Speech": "ion-mic-a"
+    "Speech": "ion-mic-a",
+    "Application": "ion-settings"
 };
 
-INFO = { 'Alex Conway':
+INFO = { 'Thuso Simon':
+   { imagePath: './assets/speaker_data/thuso_simon/image.jpg',
+     lectureInfoPath: './assets/speaker_data/thuso_simon/lecture_info.txt',
+     lectureHeading: 'Extracting ID numbers from African Identity cards using Deep Learning',
+     lectureAbstract:
+      [ 'Know Your Consumer Legislation (KYC) is a big part of the legal framework of transactions in fintech. At Zoona we are required to verify the identity number and name of each consumer who use our products. To maximize efficiency in the digital era we want to have self-service KYC as we expand across Africa. Specifications for identity documents vary from country to country and can be anything from a letter from the chief to hand written identification cards. As a data scientist at Zoona, I am working on a KYC optical character recognition algorithm that must be robust enough to be used throughout Africa.' ],
+     categoryInfoPath: './assets/speaker_data/thuso_simon/category.txt',
+     category: 'Vision' },
+  'Herman Kamper':
+   { imagePath: './assets/speaker_data/herman_kamper/image.jpg',
+     lectureInfoPath: './assets/speaker_data/herman_kamper/lecture_info.txt',
+     lectureHeading: 'Deep Learning for Speech Recognition',
+     lectureAbstract: [],
+     categoryInfoPath: './assets/speaker_data/herman_kamper/category.txt',
+     category: 'Speech' },
+  'Obins Choudhary':
+   { imagePath: './assets/speaker_data/obins_choudhary/image.jpg',
+     lectureInfoPath: './assets/speaker_data/obins_choudhary/lecture_info.txt',
+     lectureHeading: 'Artificial Intelligence at Scale',
+     lectureAbstract:
+      [ 'How Barclays uses Artificial Intelligence at scale to solve real-world problems in finance.' ],
+     categoryInfoPath: './assets/speaker_data/obins_choudhary/category.txt',
+     category: 'Theory' },
+  'Alex Conway':
    { imagePath: './assets/speaker_data/alex_conway/image.jpg',
      lectureInfoPath: './assets/speaker_data/alex_conway/lecture_info.txt',
      lectureHeading: 'Deep Learning for Computer Vision',
@@ -16,13 +40,13 @@ INFO = { 'Alex Conway':
         'The talk will give an overview of the cutting edge and some of the core mathematical concepts and will also include a short code-first tutorial to show how easy it is to get started using deep learning for computer vision in python.' ],
      categoryInfoPath: './assets/speaker_data/alex_conway/category.txt',
      category: 'Vision' },
-  'Herman Kamper':
-   { imagePath: './assets/speaker_data/herman_kamper/image.jpg',
-     lectureInfoPath: './assets/speaker_data/herman_kamper/lecture_info.txt',
-     lectureHeading: 'Deep Learning for Speech Recognition',
+  'Bruce Bassett':
+   { imagePath: './assets/speaker_data/bruce_bassett/image.jpg',
+     lectureInfoPath: './assets/speaker_data/bruce_bassett/lecture_info.txt',
+     lectureHeading: 'AI challenges arising from the SKA',
      lectureAbstract: [],
-     categoryInfoPath: './assets/speaker_data/herman_kamper/category.txt',
-     category: 'Speech' },
+     categoryInfoPath: './assets/speaker_data/bruce_bassett/category.txt',
+     category: 'Application' },
   'Jacques Ludik':
    { imagePath: './assets/speaker_data/jacques_ludik/image.jpg',
      lectureInfoPath: './assets/speaker_data/jacques_ludik/lecture_info.txt',
@@ -30,14 +54,6 @@ INFO = { 'Alex Conway':
      lectureAbstract:
       [ 'An introduction to the mathematics of neural networks and specialist architectures for solving a range of applied problems in a variety of domains.' ],
      categoryInfoPath: './assets/speaker_data/jacques_ludik/category.txt',
-     category: 'Theory' },
-  'Obins Choudhary':
-   { imagePath: './assets/speaker_data/obins_choudhary/image.jpg',
-     lectureInfoPath: './assets/speaker_data/obins_choudhary/lecture_info.txt',
-     lectureHeading: 'Artificial Intelligence at Scale',
-     lectureAbstract:
-      [ 'How Barclays uses Artificial Intelligence at scale to solve real-world problems in finance.' ],
-     categoryInfoPath: './assets/speaker_data/obins_choudhary/category.txt',
      category: 'Theory' },
   'Ritesh Ajoodha':
    { imagePath: './assets/speaker_data/ritesh_ajoodha/image.jpg',
@@ -50,21 +66,15 @@ INFO = { 'Alex Conway':
         '4. Software that a student can use to implement these problems.' ],
      categoryInfoPath: './assets/speaker_data/ritesh_ajoodha/category.txt',
      category: 'Theory' },
-  'Thuso Simon':
-   { imagePath: './assets/speaker_data/thuso_simon/image.jpg',
-     lectureInfoPath: './assets/speaker_data/thuso_simon/lecture_info.txt',
-     lectureHeading: 'Extracting ID numbers from African Identity cards using Deep Learning',
-     lectureAbstract:
-      [ 'Know Your Consumer Legislation (KYC) is a big part of the legal framework of transactions in fintech. At Zoona we are required to verify the identity number and name of each consumer who use our products. To maximize efficiency in the digital era we want to have self-service KYC as we expand across Africa. Specifications for identity documents vary from country to country and can be anything from a letter from the chief to hand written identification cards. As a data scientist at Zoona, I am working on a KYC optical character recognition algorithm that must be robust enough to be used throughout Africa.' ],
-     categoryInfoPath: './assets/speaker_data/thuso_simon/category.txt',
-     category: 'Vision' },
   'Willie Brink':
    { imagePath: './assets/speaker_data/willie_brink/image.jpg',
      lectureInfoPath: './assets/speaker_data/willie_brink/lecture_info.txt',
      lectureHeading: 'Machine learning fundamentals, a probabilistic view',
      lectureAbstract: [],
      categoryInfoPath: './assets/speaker_data/willie_brink/category.txt',
-     category: 'Theory' } };
+     category: 'Theory' },
+  'More Speakers TBC':
+   { imagePath: './assets/speaker_data/more_speakers_TBC/image.jpg' } };
 
 SPONSORS = [ './assets/images/sponsors/aerobotics.png',
   './assets/images/sponsors/dli.PNG',
@@ -195,10 +205,10 @@ function populateSpeakerInfo(info) {
                                     $("<div />").addClass("modal-body")
                                     .append(
                                         $("<h4 />")
-                                        .text(info[speaker].lectureHeading)
+                                        .text(info[speaker].lectureHeading || "")
                                     ) // append to modal body
                                     .append(
-                                        (info[speaker].lectureAbstract.join("<br><br>") || "To Be Announced")
+                                        ((info[speaker].lectureAbstract || []).join("<br><br>") || "To Be Announced")
                                     )
                                 ) // append to modal content
                                 .append(
