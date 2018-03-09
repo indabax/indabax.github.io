@@ -23,6 +23,17 @@ INFO = { 'Alex Conway':
      lectureAbstract: [],
      categoryInfoPath: './assets/speaker_data/herman_kamper/category.txt',
      category: 'Speech' },
+  'Ritesh Ajoodha':
+   { imagePath: './assets/speaker_data/ritesh_ajoodha/image.jpg',
+     lectureInfoPath: './assets/speaker_data/ritesh_ajoodha/lecture_info.txt',
+     lectureHeading: 'Bayesian Networks',
+     lectureAbstract:
+      [ '1. Representation: modelling real-world problems using observable and latent variables.',
+        '2. Inference: CPDs, MAP etc.',
+        '3. Learning: Maximum likelihood estimation and Bayesian estimation (with a prior)',
+        '4. Software that a student can use to implement these problems.' ],
+     categoryInfoPath: './assets/speaker_data/ritesh_ajoodha/category.txt',
+     category: 'Theory' },
   'Willie Brink':
    { imagePath: './assets/speaker_data/willie_brink/image.jpg',
      lectureInfoPath: './assets/speaker_data/willie_brink/lecture_info.txt',
@@ -181,6 +192,8 @@ function populateSpeakerInfo(info) {
             $("#speakers div.container").append($row_div);
         }
     }
+
+    $("#speakers div.container").append($row_div);
 }
 
 function populateSponsors(sponsors) {
