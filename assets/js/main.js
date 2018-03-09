@@ -34,6 +34,14 @@ INFO = { 'Alex Conway':
         '4. Software that a student can use to implement these problems.' ],
      categoryInfoPath: './assets/speaker_data/ritesh_ajoodha/category.txt',
      category: 'Theory' },
+  'Thuso Simon':
+   { imagePath: './assets/speaker_data/thuso_simon/image.jpg',
+     lectureInfoPath: './assets/speaker_data/thuso_simon/lecture_info.txt',
+     lectureHeading: 'Extracting ID numbers from African Identity cards using Deep Learning',
+     lectureAbstract:
+      [ 'Know Your Consumer Legislation (KYC) is a big part of the legal framework of transactions in fintech. At Zoona we are required to verify the identity number and name of each consumer who use our products. To maximize efficiency in the digital era we want to have self-service KYC as we expand across Africa. Specifications for identity documents vary from country to country and can be anything from a letter from the chief to hand written identification cards. As a data scientist at Zoona, I am working on a KYC optical character recognition algorithm that must be robust enough to be used throughout Africa.' ],
+     categoryInfoPath: './assets/speaker_data/thuso_simon/category.txt',
+     category: 'Vision' },
   'Willie Brink':
    { imagePath: './assets/speaker_data/willie_brink/image.jpg',
      lectureInfoPath: './assets/speaker_data/willie_brink/lecture_info.txt',
