@@ -1,0 +1,6 @@
+Bayesian Networks
+
+1. Representation: modelling real-world problems using observable and latent variables.
+2. Inference: CPDs, MAP etc.
+3. Learning: Maximum likelihood estimation and Bayesian estimation (with a prior)
+4. Software that a student can use to implement these problems.
