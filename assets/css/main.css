@@ -331,7 +331,8 @@ ul li {
   text-transform: uppercase;
 }
 .site-branding .logo img {
-  width: 2em;
+  width: 7em;
+  padding-bottom: 0.5em;
 }
 .site-branding .logo:focus, .site-branding .logo:hover {
   text-decoration: none;
@@ -466,6 +467,7 @@ ul li {
 /*
  * 6.6 Section: Schedule
  */
+
 .schedule-tab, .schedule-content .container{
 	 max-width: 960px;
 	 margin: 0 auto;
