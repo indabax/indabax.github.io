@@ -23,6 +23,22 @@ INFO = { 'Alex Conway':
      lectureAbstract: [],
      categoryInfoPath: './assets/speaker_data/herman_kamper/category.txt',
      category: 'Speech' },
+  'Jacques Ludik':
+   { imagePath: './assets/speaker_data/jacques_ludik/image.jpg',
+     lectureInfoPath: './assets/speaker_data/jacques_ludik/lecture_info.txt',
+     lectureHeading: 'Mathematical Foundations of Deep Learning',
+     lectureAbstract:
+      [ 'An introduction to the mathematics of neural networks and specialist architectures for solving a range of applied problems in a variety of domains.' ],
+     categoryInfoPath: './assets/speaker_data/jacques_ludik/category.txt',
+     category: 'Theory' },
+  'Obins Choudhary':
+   { imagePath: './assets/speaker_data/obins_choudhary/image.jpg',
+     lectureInfoPath: './assets/speaker_data/obins_choudhary/lecture_info.txt',
+     lectureHeading: 'Artificial Intelligence at Scale',
+     lectureAbstract:
+      [ 'How Barclays uses Artificial Intelligence at scale to solve real-world problems in finance.' ],
+     categoryInfoPath: './assets/speaker_data/obins_choudhary/category.txt',
+     category: 'Theory' },
   'Ritesh Ajoodha':
    { imagePath: './assets/speaker_data/ritesh_ajoodha/image.jpg',
      lectureInfoPath: './assets/speaker_data/ritesh_ajoodha/lecture_info.txt',
