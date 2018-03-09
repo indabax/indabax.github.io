@@ -508,6 +508,12 @@ ul li {
 	 bottom: -20px;
 }
 
+.schedule-tab #nav-tabs li:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 
 /* Schedule listing */
 
@@ -535,6 +541,14 @@ ul li {
 	 padding-bottom: 20px;
 	 border-bottom: 1px solid #dadada;
 	 position: relative;
+}
+
+#tab_zero .schedule-listing .schedule-slot-info-content {
+  margin-left: 0;
+}
+
+#tab_zero .schedule-listing .col-md-3 {
+  border-left: 1px solid #dadada;
 }
 
 .schedule-slot-time{
