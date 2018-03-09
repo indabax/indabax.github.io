@@ -169,7 +169,13 @@ function populateSpeakerInfo(info) {
                                 ) // append to modal content
                                 .append(
                                     $("<div />").addClass("modal-body")
-                                    .text(info[speaker].lectureHeading)
+                                    .append(
+                                        $("<h4 />")
+                                        .text(info[speaker].lectureHeading)
+                                    ) // append to modal body
+                                    .append(
+                                        (info[speaker].lectureAbstract.join("<br><br>") || "To Be Announced")
+                                    )
                                 ) // append to modal content
                                 .append(
                                     $("<div />").addClass("modal-footer")
