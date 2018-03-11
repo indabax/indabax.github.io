@@ -121,6 +121,7 @@ function populateSpeakerInfo(info) {
     var count = 0;
     var $row_div;
 
+    // add info to speakers section
     for(speaker in info) {
         if(count % 3 == 0) {
             $row_div = $("<div />").addClass("row");
@@ -231,6 +232,55 @@ function populateSpeakerInfo(info) {
         if(count % 3 == 2) {
             $("#speakers div.container").append($row_div);
         }
+
+        // add info to schedule
+        $scheduleSection = $(".schedule .tab-content");
+        // find title of this speaker and insert information (if not in tab zero)
+        $scheduleSlot = $scheduleSection.find("h3.schedule-slot-title:containsi('" + info[speaker].lectureHeading + "')").closest(".schedule-slot-info");
+
+        $scheduleSlot = $scheduleSlot.filter(function(index, $element) {
+            return ($element.closest("#tab_zero") == null);
+        });
+
+        $scheduleSlot.prepend(
+            $("<a />")
+            .append(
+                $("<img />").addClass("schedule-slot-speakers").attr({
+                    "src": info[speaker].imagePath
+                })
+            )
+        );
+
+        $scheduleSlot.find("h4.schedule-slot-speaker-name").text(speaker);
+
+        $scheduleSlot.attr({
+            "data-target": ("#myModal" + count),
+            "data-toggle": "modal"
+        });
+
+        $scheduleSlot.mouseenter(function() {
+            $(this).css({
+                "cursor": "pointer",
+                "-webkit-transform": "scale(1.1)",
+                    "-ms-transform": "scale(1.1)",
+                        "transform": "scale(1.1)",
+                "-webkit-transition": "all 0.3s",
+                "-moz-transition": "all 0.3s",
+                "-o-transition": "all 0.3s",
+                "transition": "all 0.3s"
+            })
+        }).mouseleave(function() {
+            $(this).css({
+                "cursor": "default",
+                "-webkit-transform": "scale(0.90909090909)",
+                    "-ms-transform": "scale(0.90909090909)",
+                        "transform": "scale(0.90909090909)",
+                "-webkit-transition": "all 0.3s",
+                "-moz-transition": "all 0.3s",
+                "-o-transition": "all 0.3s",
+                "transition": "all 0.3s"
+            })
+        });
     }
 
     $("#speakers div.container").append($row_div);
@@ -252,6 +302,15 @@ function populateSponsors(sponsors) {
         );
     }
 }
+
+// add case insensitive contains
+$.extend($.expr[':'], {
+  'containsi': function(elem, i, match, array)
+  {
+    return (elem.textContent || elem.innerText || '').toLowerCase()
+    .indexOf((match[3] || "").toLowerCase()) >= 0;
+  }
+});
 
 populateSponsors(SPONSORS);
 populateSpeakerInfo(INFO);
