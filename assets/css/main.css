@@ -440,6 +440,8 @@ ul li {
   margin: 25px 0;
 }
 .speaker h4 {
+  text-align: left;
+  margin-left: 0.7em;
   margin-top: 15px;
   margin-bottom: 5px;
 }
@@ -451,6 +453,10 @@ ul li {
 }
 .speaker img:hover {
   opacity: .7;
+}
+
+.speaker .modal {
+  text-transform: none;
 }
 
 /*
@@ -484,7 +490,7 @@ ul li {
 	 zoom: 1;
 }
 
-.schedule-tab .nav-tabs > li > a{
+.schedule-tab .nav-tabs > li > a {
 	 color: #fff;
 	 background: #303030;
 	 border-radius: 0;
@@ -494,12 +500,12 @@ ul li {
 	 position: relative;
 }
 
-.schedule-tab .nav-tabs > li.active > a{
+.schedule-tab .nav-tabs > li.active > a {
 	 background: #ea531c;
 	 color: #fff;
 }
 
-.schedule-tab .nav-tabs > li.active > a:after{
+.schedule-tab .nav-tabs > li.active > a:after {
 	 content: '';
 	 position: absolute;
 	 left: 0;
@@ -514,8 +520,11 @@ ul li {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
+   -webkit-transition: all 0.3s;
+   -moz-transition: all 0.3s;
+   -o-transition: all 0.3s;
+   transition: all 0.3s;
 }
-
 
 /* Schedule listing */
 
@@ -565,9 +574,9 @@ ul li {
 }
 
 .schedule-slot-speakers{
-	 width: 58px;
-	 height: 58px;
-	 border: 2px solid #ea531c;
+	 width: 5em;
+	 height: 5em;
+	 border: 2px solid #dadada;
 	 border-radius: 100%;
 	 position: absolute;
 	 top: 15;
@@ -579,7 +588,7 @@ ul li {
 }
 
 .schedule-slot-info:hover .schedule-slot-speakers{
-	 border: 2px solid #dadada;
+	 border: 2px solid #ea531c;
 }
 
 .schedule-slot-info-content{
