@@ -449,7 +449,8 @@ ul li {
   margin-bottom: 5px;
 }
 .speaker img {
-  width: 85%;
+  width: 60%;
+  border-radius: 50%;
 }
 .speaker img:hover {
   opacity: .7;
