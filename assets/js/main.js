@@ -21,7 +21,7 @@ INFO = { 'Adriaan Rowan':
         'Design principles from a technology and human perspective will be disseminated with examples of current production systems and their impact. Furthermore, the audience will have the opportunity to advance these best practices.',
         'Resources will be made available, so the technology is relevant, practical, and accessible.' ],
      categoryInfoPath: './assets/speaker_data/chris_currin/category.txt',
-     category: 'NLP' },
+     category: 'Natural language processing' },
   'Dr. Herman Kamper':
    { imagePath: './assets/speaker_data/dr._herman_kamper/image.jpg',
      lectureInfoPath: './assets/speaker_data/dr._herman_kamper/lecture_info.txt',
@@ -195,7 +195,7 @@ function populateSpeakerInfo(info) {
                         ) // append to a
                     ) // append to figure
                     .append(
-                        $("<div />").addClass("col-xs-9")
+                        $("<div />").addClass("col-xs-9 col-xs-push-1")
                         .append(
                             $("<h4 />").text(speaker)
                         ) // heading div
