@@ -75,6 +75,14 @@ INFO = { 'Adriaan Rowan':
       [ 'How Barclays uses Artificial Intelligence at scale to solve real-world problems in finance.' ],
      categoryInfoPath: './assets/speaker_data/obins_choudhary/category.txt',
      category: 'Theory' },
+  'Prof. Amit Mishra':
+   { imagePath: './assets/speaker_data/prof._amit_mishra/image.jpg',
+     lectureInfoPath: './assets/speaker_data/prof._amit_mishra/lecture_info.txt',
+     lectureHeading: 'From Neuron to Brain',
+     lectureAbstract:
+      [ 'Past few years have seen unprecedented growth in terms of success of machine learning algorithms. People are talking about singularity more often now a days! How akin are the current developments to actual human brain? This talk will discuss machine learning from a neuromorphic point of view and try to answer \'How has brain inspired the development of deep NN and how can it keep inspiring more breakthrough innovations in the domain of AI\'' ],
+     categoryInfoPath: './assets/speaker_data/prof._amit_mishra/category.txt',
+     category: 'Theory' },
   'Prof. Bruce Bassett':
    { imagePath: './assets/speaker_data/prof._bruce_bassett/image.jpg',
      lectureInfoPath: './assets/speaker_data/prof._bruce_bassett/lecture_info.txt',
@@ -88,10 +96,8 @@ INFO = { 'Adriaan Rowan':
      lectureInfoPath: './assets/speaker_data/ritesh_ajoodha/lecture_info.txt',
      lectureHeading: 'Bayesian Networks',
      lectureAbstract:
-      [ '1. Representation: modelling real-world problems using observable and latent variables.',
-        '2. Inference: CPDs, MAP etc.',
-        '3. Learning: Maximum likelihood estimation and Bayesian estimation (with a prior)',
-        '4. Software that a student can use to implement these problems.' ],
+      [ 'Deep learning methods has enjoyed a tremendous amount of growth over recent years due to architectural and algorithmic innovations; larger datasets; growth in performance of processors; software innovations; and increased investment from industry. Although deep learning systems provide outstanding performance on many benchmark tasks, they are often data hungry; require a significant amount of computer resources; are poor at representing uncertainty; non-trivial to incorporate prior knowledge; easily fooled by adversarial examples; finicky to optimise; and are seen as uninterpretable black-boxes.',
+        'Probabilistic graphical models is the current method-of-choice to address these issues. In this talk we will explore the Bayesian network which is a celebrated model for prediction under uncertainty; incorporates prior knowledge easily; used to express relational decisions (influence diagrams); and can provide powerful performance while being mindful about dataset sizes. The Bayesian network models the Bayesian paradigm which states that anything which we have uncertainty over we must maintain a distribution over.  We will explore the representation, inference, and learning of these networks as well as present some trending software which can be used to execute these powerful graphical models on real datasets. ' ],
      categoryInfoPath: './assets/speaker_data/ritesh_ajoodha/category.txt',
      category: 'Theory' },
   'Stuart Reid':
@@ -101,6 +107,17 @@ INFO = { 'Adriaan Rowan':
      lectureAbstract: [],
      categoryInfoPath: './assets/speaker_data/stuart_reid/category.txt',
      category: 'Theory' },
+  'Taliesin Beynon':
+   { imagePath: './assets/speaker_data/taliesin_beynon/image.jpg',
+     lectureInfoPath: './assets/speaker_data/taliesin_beynon/lecture_info.txt',
+     lectureHeading: 'Peering inside the black box',
+     lectureAbstract: [],
+     categoryInfoPath: './assets/speaker_data/taliesin_beynon/category.txt',
+     category: 'Theory' },
+  Tobias:
+   { lectureInfoPath: './assets/speaker_data/tobias/lecture_info.txt',
+     lectureHeading: '???',
+     lectureAbstract: [] },
   'Alex Conway':
    { imagePath: './assets/speaker_data/alex_conway/image.jpg',
      lectureInfoPath: './assets/speaker_data/alex_conway/lecture_info.txt',
@@ -111,11 +128,6 @@ INFO = { 'Adriaan Rowan':
         'The talk will give an overview of the cutting edge and some of the core mathematical concepts and will also include a short code-first tutorial to show how easy it is to get started using deep learning for computer vision in python.' ],
      categoryInfoPath: './assets/speaker_data/alex_conway/category.txt',
      category: 'Vision' },
-  Tobias:
-   { lectureInfoPath: './assets/speaker_data/tobias/lecture_info.txt',
-     lectureHeading: '???',
-     lectureAbstract: [] },
-  'Untitled folder': {},
   'More Speakers TBC':
    { imagePath: './assets/speaker_data/more_speakers_TBC/image.jpg' } };
 
