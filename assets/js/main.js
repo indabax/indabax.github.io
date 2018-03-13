@@ -21,14 +21,18 @@ INFO = { 'Adriaan Rowan':
         'Design principles from a technology and human perspective will be disseminated with examples of current production systems and their impact. Furthermore, the audience will have the opportunity to advance these best practices.',
         'Resources will be made available, so the technology is relevant, practical, and accessible.' ],
      categoryInfoPath: './assets/speaker_data/chris_currin/category.txt',
-     category: 'Natural language processing' },
+     category: 'Natural language processing',
+     affiliationInfoPath: './assets/speaker_data/chris_currin/affiliation.txt',
+     affiliation: 'The University of Cape Town' },
   'Dr. Herman Kamper':
    { imagePath: './assets/speaker_data/dr._herman_kamper/image.jpg',
      lectureInfoPath: './assets/speaker_data/dr._herman_kamper/lecture_info.txt',
      lectureHeading: 'Deep Learning for Speech Recognition',
      lectureAbstract: [],
      categoryInfoPath: './assets/speaker_data/dr._herman_kamper/category.txt',
-     category: 'Speech' },
+     category: 'Speech',
+     affiliationInfoPath: './assets/speaker_data/dr._herman_kamper/affiliation.txt',
+     affiliation: 'The University of Stellenbosch' },
   'Dr. Thuso Simon':
    { imagePath: './assets/speaker_data/dr._thuso_simon/image.jpg',
      lectureInfoPath: './assets/speaker_data/dr._thuso_simon/lecture_info.txt',
@@ -36,14 +40,18 @@ INFO = { 'Adriaan Rowan':
      lectureAbstract:
       [ 'Know Your Consumer Legislation (KYC) is a big part of the legal framework of transactions in fintech. At Zoona we are required to verify the identity number and name of each consumer who use our products. To maximize efficiency in the digital era we want to have self-service KYC as we expand across Africa. Specifications for identity documents vary from country to country and can be anything from a letter from the chief to hand written identification cards. As a data scientist at Zoona, I am working on a KYC optical character recognition algorithm that must be robust enough to be used throughout Africa.' ],
      categoryInfoPath: './assets/speaker_data/dr._thuso_simon/category.txt',
-     category: 'Vision' },
+     category: 'Vision',
+     affiliationInfoPath: './assets/speaker_data/dr._thuso_simon/affiliation.txt',
+     affiliation: 'The University of Cape Town' },
   'Dr. Willie Brink':
    { imagePath: './assets/speaker_data/dr._willie_brink/image.jpg',
      lectureInfoPath: './assets/speaker_data/dr._willie_brink/lecture_info.txt',
      lectureHeading: 'Machine learning fundamentals, a probabilistic view',
      lectureAbstract: [],
      categoryInfoPath: './assets/speaker_data/dr._willie_brink/category.txt',
-     category: 'Theory' },
+     category: 'Theory',
+     affiliationInfoPath: './assets/speaker_data/dr._willie_brink/affiliation.txt',
+     affiliation: 'The University of Stellenbosch' },
   'Emmanuel Dufourq':
    { imagePath: './assets/speaker_data/emmanuel_dufourq/image.jpg',
      lectureInfoPath: './assets/speaker_data/emmanuel_dufourq/lecture_info.txt',
@@ -51,14 +59,18 @@ INFO = { 'Adriaan Rowan':
      lectureAbstract:
       [ 'We use facial expressions to convey happiness, sadness and many other emotions. Humans are good at understanding these universal expressions, however, this is non-trivial for a machine. These has not yet been significant effort at challenging the existing literature and to critically analyse what has been done and what should be improved upon in future research. In this talk we will discover what has been done in this field with respect to each primary aspect of pre-processing, building, training and evaluating convolutional neural networks (CNNs) for facial expression recognition (FER). The talk is targeted to those who wish to learn about the theoretical aspects to be considered when implementing a CNN from scratch for FER. No background knowledge in FER is required.' ],
      categoryInfoPath: './assets/speaker_data/emmanuel_dufourq/category.txt',
-     category: 'Vision' },
+     category: 'Vision',
+     affiliationInfoPath: './assets/speaker_data/emmanuel_dufourq/affiliation.txt',
+     affiliation: 'The University of Cape Town' },
   'Ismail Akhalwaya':
    { imagePath: './assets/speaker_data/ismail_akhalwaya/image.jpg',
      lectureInfoPath: './assets/speaker_data/ismail_akhalwaya/lecture_info.txt',
      lectureHeading: 'Quantum Machine Learning',
      lectureAbstract: [],
      categoryInfoPath: './assets/speaker_data/ismail_akhalwaya/category.txt',
-     category: 'Application' },
+     category: 'Application',
+     affiliationInfoPath: './assets/speaker_data/ismail_akhalwaya/affiliation.txt',
+     affiliation: 'IBM' },
   'Jacques Ludik':
    { imagePath: './assets/speaker_data/jacques_ludik/image.jpg',
      lectureInfoPath: './assets/speaker_data/jacques_ludik/lecture_info.txt',
@@ -66,7 +78,9 @@ INFO = { 'Adriaan Rowan':
      lectureAbstract:
       [ 'An introduction to the mathematics of neural networks and specialist architectures for solving a range of applied problems in a variety of domains.' ],
      categoryInfoPath: './assets/speaker_data/jacques_ludik/category.txt',
-     category: 'Theory' },
+     category: 'Theory',
+     affiliationInfoPath: './assets/speaker_data/jacques_ludik/affiliation.txt',
+     affiliation: 'Founder of MIIA, CEO of Cortex Logic' },
   'Obins Choudhary':
    { imagePath: './assets/speaker_data/obins_choudhary/image.jpg',
      lectureInfoPath: './assets/speaker_data/obins_choudhary/lecture_info.txt',
@@ -74,7 +88,9 @@ INFO = { 'Adriaan Rowan':
      lectureAbstract:
       [ 'How Barclays uses Artificial Intelligence at scale to solve real-world problems in finance.' ],
      categoryInfoPath: './assets/speaker_data/obins_choudhary/category.txt',
-     category: 'Theory' },
+     category: 'Theory',
+     affiliationInfoPath: './assets/speaker_data/obins_choudhary/affiliation.txt',
+     affiliation: 'Barclays Africa Group Limited' },
   'Prof. Amit Mishra':
    { imagePath: './assets/speaker_data/prof._amit_mishra/image.jpg',
      lectureInfoPath: './assets/speaker_data/prof._amit_mishra/lecture_info.txt',
@@ -82,7 +98,9 @@ INFO = { 'Adriaan Rowan':
      lectureAbstract:
       [ 'Past few years have seen unprecedented growth in terms of success of machine learning algorithms. People are talking about singularity more often now a days! How akin are the current developments to actual human brain? This talk will discuss machine learning from a neuromorphic point of view and try to answer \'How has brain inspired the development of deep NN and how can it keep inspiring more breakthrough innovations in the domain of AI\'' ],
      categoryInfoPath: './assets/speaker_data/prof._amit_mishra/category.txt',
-     category: 'Theory' },
+     category: 'Theory',
+     affiliationInfoPath: './assets/speaker_data/prof._amit_mishra/affiliation.txt',
+     affiliation: 'The University of Cape Town' },
   'Prof. Bruce Bassett':
    { imagePath: './assets/speaker_data/prof._bruce_bassett/image.jpg',
      lectureInfoPath: './assets/speaker_data/prof._bruce_bassett/lecture_info.txt',
@@ -90,7 +108,9 @@ INFO = { 'Adriaan Rowan':
      lectureAbstract:
       [ 'The Square Kilometer Array (SKA) will deliver of order one exabyte of data per day, making it the biggest science experiment in the world in the late 2020\'s. We discuss some of the open challenges and opportunities for AI and the SKA, particularly from an African perspective.' ],
      categoryInfoPath: './assets/speaker_data/prof._bruce_bassett/category.txt',
-     category: 'Application' },
+     category: 'Application',
+     affiliationInfoPath: './assets/speaker_data/prof._bruce_bassett/affiliation.txt',
+     affiliation: 'The University of Cape Town' },
   'Ritesh Ajoodha':
    { imagePath: './assets/speaker_data/ritesh_ajoodha/image.jpg',
      lectureInfoPath: './assets/speaker_data/ritesh_ajoodha/lecture_info.txt',
@@ -99,21 +119,27 @@ INFO = { 'Adriaan Rowan':
       [ 'Deep learning methods has enjoyed a tremendous amount of growth over recent years due to architectural and algorithmic innovations; larger datasets; growth in performance of processors; software innovations; and increased investment from industry. Although deep learning systems provide outstanding performance on many benchmark tasks, they are often data hungry; require a significant amount of computer resources; are poor at representing uncertainty; non-trivial to incorporate prior knowledge; easily fooled by adversarial examples; finicky to optimise; and are seen as uninterpretable black-boxes.',
         'Probabilistic graphical models is the current method-of-choice to address these issues. In this talk we will explore the Bayesian network which is a celebrated model for prediction under uncertainty; incorporates prior knowledge easily; used to express relational decisions (influence diagrams); and can provide powerful performance while being mindful about dataset sizes. The Bayesian network models the Bayesian paradigm which states that anything which we have uncertainty over we must maintain a distribution over.  We will explore the representation, inference, and learning of these networks as well as present some trending software which can be used to execute these powerful graphical models on real datasets. ' ],
      categoryInfoPath: './assets/speaker_data/ritesh_ajoodha/category.txt',
-     category: 'Theory' },
+     category: 'Theory',
+     affiliationInfoPath: './assets/speaker_data/ritesh_ajoodha/affiliation.txt',
+     affiliation: 'University of the Witwatersrand' },
   'Stuart Reid':
    { imagePath: './assets/speaker_data/stuart_reid/image.jpg',
      lectureInfoPath: './assets/speaker_data/stuart_reid/lecture_info.txt',
      lectureHeading: 'Deep Learning in Complex Dynamical Systems',
      lectureAbstract: [],
      categoryInfoPath: './assets/speaker_data/stuart_reid/category.txt',
-     category: 'Theory' },
+     category: 'Theory',
+     affiliationInfoPath: './assets/speaker_data/stuart_reid/affiliation.txt',
+     affiliation: 'Chief Engineer & Partner at NMRQL' },
   'Taliesin Beynon':
    { imagePath: './assets/speaker_data/taliesin_beynon/image.jpg',
      lectureInfoPath: './assets/speaker_data/taliesin_beynon/lecture_info.txt',
      lectureHeading: 'Peering inside the black box',
      lectureAbstract: [],
      categoryInfoPath: './assets/speaker_data/taliesin_beynon/category.txt',
-     category: 'Theory' },
+     category: 'Theory',
+     affiliationInfoPath: './assets/speaker_data/taliesin_beynon/affiliation.txt',
+     affiliation: 'Lead Developer, Deep Learning at Wolfram' },
   Tobias:
    { lectureInfoPath: './assets/speaker_data/tobias/lecture_info.txt',
      lectureHeading: '???',
@@ -127,7 +153,9 @@ INFO = { 'Adriaan Rowan':
         'In addition to being able to classify objects in images (including not hotdogs), deep learning can be used to automatically generate captions for images, convert photos into paintings, detect cancer in pathology slide images, and help self-driving cars \'see\'.',
         'The talk will give an overview of the cutting edge and some of the core mathematical concepts and will also include a short code-first tutorial to show how easy it is to get started using deep learning for computer vision in python.' ],
      categoryInfoPath: './assets/speaker_data/alex_conway/category.txt',
-     category: 'Vision' },
+     category: 'Vision',
+     affiliationInfoPath: './assets/speaker_data/alex_conway/affiliation.txt',
+     affiliation: 'The University of Cape Town' },
   'More Speakers TBC':
    { imagePath: './assets/speaker_data/more_speakers_TBC/image.jpg' } };
 
@@ -228,6 +256,9 @@ function populateSpeakerInfo(info) {
                     ) // append to figure
                     .append(
                         $("<div />").addClass("col-xs-12")
+                        .append(
+                            $("<h5 />").text(info[speaker].affiliation)
+                        ) // paragraph div
                         .append(
                             $("<p />").text(info[speaker].lectureHeading)
                         ) // paragraph div
