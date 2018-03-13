@@ -41,6 +41,13 @@ function getSpeakerInfo() {
 				info[speakerName].categoryInfoPath = categoryInfoPath;
 				info[speakerName].category = fs.readFileSync(categoryInfoPath).toString();
 			}
+
+			// get affiliation
+			var affiliationInfoPath = dataDir + "/affiliation.txt";
+			if (fs.existsSync(affiliationInfoPath)) {
+				info[speakerName].affiliationInfoPath = affiliationInfoPath;
+				info[speakerName].affiliation = fs.readFileSync(affiliationInfoPath).toString();
+			}
 		}
 	}
 

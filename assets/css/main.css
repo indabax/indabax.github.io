@@ -445,8 +445,18 @@ ul li {
   margin-top: 15px;
   margin-bottom: 5px;
 }
+.speaker h5 {
+  text-align: center;
+  margin-left: 0.7em;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: #aaaaaa;
+  /*text-shadow: 1px 1px black;*/
+}
 .speaker p {
   margin-bottom: 5px;
+  font-style: italic;
+  text-transform: capitalize;
 }
 .speaker img {
   width: 60%;
@@ -465,6 +475,10 @@ ul li {
 
 .speaker .modal {
   text-transform: none;
+}
+
+.speaker a i {
+  color: #888888;
 }
 
 /*
