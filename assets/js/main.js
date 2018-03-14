@@ -7,28 +7,25 @@ CATEGORY_TO_ICON = {
     "Application": "ion-settings"
 };
 
-INFO = { 'Adriaan Rowan':
+INFO = { 'Ntombi':
+   { imagePath: './assets/speaker_data/ntombi/image.jpg',
+     lectureInfoPath: './assets/speaker_data/ntombi/lecture_info.txt',
+     lectureHeading: 'Multimodal Emotion Recognition',
+     lectureAbstract:
+      [ 'During communication, research shows that a large portion of the message is conveyed through emotional displays, with the content of the message accounting for approximately 7%. Moreover, human brains make use of these complementary emotional displays such as facial expressions, vocal expressions, and body postures to resolve any decision ambiguities and infer reliable emotion decisions. This talk will explore how computers can emulate humans by making use of visual, audio and bio-signal modalities to recognize complex emotions using variants of recurrent neural networks' ],
+     categoryInfoPath: './assets/speaker_data/ntombi/category.txt',
+     category: 'Vision',
+     affiliationInfoPath: './assets/speaker_data/ntombi/affiliation.txt',
+     affiliation: 'University of Cambridge' },'Adriaan Rowan':
    { lectureInfoPath: './assets/speaker_data/adriaan_rowan/lecture_info.txt',
      lectureHeading: '???',
      lectureAbstract: [] },
-  'Chris Currin':
-   { imagePath: './assets/speaker_data/chris_currin/image.jpg',
-     lectureInfoPath: './assets/speaker_data/chris_currin/lecture_info.txt',
-     lectureHeading: 'Artificial Assistants: How can I help you?',
-     lectureAbstract:
-      [ 'Chatbots are not equal; with different forms permeating our lives more and more. Virtual assistants are increasingly relevant for businesses and our day-to-day lives. Chatbots have become ubiquitous for interactions, yet ‘reasonable’ intelligence remains elusive.',
-        'In this talk, we explore and explain their underlying architectures and capabilities to understand what makes them work, their weaknesses, and future improvements.',
-        'Design principles from a technology and human perspective will be disseminated with examples of current production systems and their impact. Furthermore, the audience will have the opportunity to advance these best practices.',
-        'Resources will be made available, so the technology is relevant, practical, and accessible.' ],
-     categoryInfoPath: './assets/speaker_data/chris_currin/category.txt',
-     category: 'Natural language processing',
-     affiliationInfoPath: './assets/speaker_data/chris_currin/affiliation.txt',
-     affiliation: 'The University of Cape Town' },
   'Dr. Herman Kamper':
    { imagePath: './assets/speaker_data/dr._herman_kamper/image.jpg',
      lectureInfoPath: './assets/speaker_data/dr._herman_kamper/lecture_info.txt',
-     lectureHeading: 'Deep Learning for Speech Recognition',
-     lectureAbstract: [],
+     lectureHeading: 'Deep Learning for (More Than) Speech Recognition',
+     lectureAbstract:
+      [ 'How cool would it be to ask your fridge to order a pizza? As our lives become more intertwined with technology, we will increasingly be communicating with machines and devices. The most natural way to do this is through speech, which is why companies like Google, Apple and Microsoft are betting big on automatic speech recognition (ASR). But there is so much more to speech than just ASR! Speech and language is a core part of what it means to be human, and could therefore give deep (pun!) insights into how humans organise and deal with the world. My talk will consist of three parts (two of which will be rants). In the first, I will give an overview of how deep learning is used to build today\'s state-of-the-art ASR systems. The second part will be a rant about the shortcomings of focusing only on traditional ASR. I will highlight interesting new studies in the speech community addressing problems ranging from disaster tracking to using speech as a way to get insights into human cognition; I will argue that we need more of this type of research. In the third part, I will quickly highlight (and rant about) some of our own work on interesting speech problems.' ],
      categoryInfoPath: './assets/speaker_data/dr._herman_kamper/category.txt',
      category: 'Speech',
      affiliationInfoPath: './assets/speaker_data/dr._herman_kamper/affiliation.txt',
@@ -71,6 +68,31 @@ INFO = { 'Adriaan Rowan':
      category: 'Application',
      affiliationInfoPath: './assets/speaker_data/ismail_akhalwaya/affiliation.txt',
      affiliation: 'IBM' },
+  'Alex Conway':
+   { imagePath: './assets/speaker_data/alex_conway/image.jpg',
+     lectureInfoPath: './assets/speaker_data/alex_conway/lecture_info.txt',
+     lectureHeading: 'Deep Learning for Computer Vision',
+     lectureAbstract:
+      [ 'The state-of-the-art in image classification has skyrocketed thanks to the development of deep convolutional neural networks and increases in the amount of data and computing power available to train them. The top-5 error rate in the ImageNet competition to predict which of 1000 classes an image belongs to has plummeted from 28% error in 2010 to just 2.25% in 2017 (human level error is around 5%).',
+        'In addition to being able to classify objects in images (including not hotdogs), deep learning can be used to automatically generate captions for images, convert photos into paintings, detect cancer in pathology slide images, and help self-driving cars \'see\'.',
+        'The talk will give an overview of the cutting edge and some of the core mathematical concepts and will also include a short code-first tutorial to show how easy it is to get started using deep learning for computer vision in python.' ],
+     categoryInfoPath: './assets/speaker_data/alex_conway/category.txt',
+     category: 'Vision',
+     affiliationInfoPath: './assets/speaker_data/alex_conway/affiliation.txt',
+     affiliation: 'The University of Cape Town' },
+  'Chris Currin':
+   { imagePath: './assets/speaker_data/chris_currin/image.jpg',
+     lectureInfoPath: './assets/speaker_data/chris_currin/lecture_info.txt',
+     lectureHeading: 'Artificial Assistants: How can I help you?',
+     lectureAbstract:
+      [ 'Chatbots are not equal; with different forms permeating our lives more and more. Virtual assistants are increasingly relevant for businesses and our day-to-day lives. Chatbots have become ubiquitous for interactions, yet ‘reasonable’ intelligence remains elusive.',
+        'In this talk, we explore and explain their underlying architectures and capabilities to understand what makes them work, their weaknesses, and future improvements.',
+        'Design principles from a technology and human perspective will be disseminated with examples of current production systems and their impact. Furthermore, the audience will have the opportunity to advance these best practices.',
+        'Resources will be made available, so the technology is relevant, practical, and accessible.' ],
+     categoryInfoPath: './assets/speaker_data/chris_currin/category.txt',
+     category: 'Natural language processing',
+     affiliationInfoPath: './assets/speaker_data/chris_currin/affiliation.txt',
+     affiliation: 'The University of Cape Town' },
   'Jacques Ludik':
    { imagePath: './assets/speaker_data/jacques_ludik/image.jpg',
      lectureInfoPath: './assets/speaker_data/jacques_ludik/lecture_info.txt',
@@ -144,20 +166,10 @@ INFO = { 'Adriaan Rowan':
    { lectureInfoPath: './assets/speaker_data/tobias/lecture_info.txt',
      lectureHeading: '???',
      lectureAbstract: [] },
-  'Alex Conway':
-   { imagePath: './assets/speaker_data/alex_conway/image.jpg',
-     lectureInfoPath: './assets/speaker_data/alex_conway/lecture_info.txt',
-     lectureHeading: 'Deep Learning for Computer Vision',
-     lectureAbstract:
-      [ 'The state-of-the-art in image classification has skyrocketed thanks to the development of deep convolutional neural networks and increases in the amount of data and computing power available to train them. The top-5 error rate in the ImageNet competition to predict which of 1000 classes an image belongs to has plummeted from 28% error in 2010 to just 2.25% in 2017 (human level error is around 5%).',
-        'In addition to being able to classify objects in images (including not hotdogs), deep learning can be used to automatically generate captions for images, convert photos into paintings, detect cancer in pathology slide images, and help self-driving cars \'see\'.',
-        'The talk will give an overview of the cutting edge and some of the core mathematical concepts and will also include a short code-first tutorial to show how easy it is to get started using deep learning for computer vision in python.' ],
-     categoryInfoPath: './assets/speaker_data/alex_conway/category.txt',
-     category: 'Vision',
-     affiliationInfoPath: './assets/speaker_data/alex_conway/affiliation.txt',
-     affiliation: 'The University of Cape Town' },
   'More Speakers TBC':
-   { imagePath: './assets/speaker_data/more_speakers_TBC/image.jpg' } };
+   { imagePath: './assets/speaker_data/more_speakers_TBC/image.jpg',
+     affiliationInfoPath: './assets/speaker_data/more_speakers_TBC/affiliation.txt',
+     affiliation: '' } };
 
 SPONSORS = [ './assets/images/sponsors/aerobotics.png',
   './assets/images/sponsors/dli.PNG',
