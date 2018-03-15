@@ -16,10 +16,18 @@ INFO = { 'Ntombi':
      categoryInfoPath: './assets/speaker_data/ntombi/category.txt',
      category: 'Vision',
      affiliationInfoPath: './assets/speaker_data/ntombi/affiliation.txt',
-     affiliation: 'University of Cambridge' },'Adriaan Rowan':
+     affiliation: 'University of Cambridge' },
+  'Adriaan Rowan':
    { lectureInfoPath: './assets/speaker_data/adriaan_rowan/lecture_info.txt',
      lectureHeading: '???',
      lectureAbstract: [] },
+  'Dr. Alta De Waal':
+   { imagePath: './assets/speaker_data/dr._alta_de_waal/image.jpg',
+     lectureInfoPath: './assets/speaker_data/dr._alta_de_waal/lecture_info.txt',
+     lectureHeading: 'Establishing semantic similarity between short text using deep learning',
+     lectureAbstract: [],
+     categoryInfoPath: './assets/speaker_data/dr._alta_de_waal/category.txt',
+     category: 'Natural language processing' },
   'Dr. Herman Kamper':
    { imagePath: './assets/speaker_data/dr._herman_kamper/image.jpg',
      lectureInfoPath: './assets/speaker_data/dr._herman_kamper/lecture_info.txt',
@@ -30,6 +38,14 @@ INFO = { 'Ntombi':
      category: 'Speech',
      affiliationInfoPath: './assets/speaker_data/dr._herman_kamper/affiliation.txt',
      affiliation: 'The University of Stellenbosch' },
+  'Dr. Inger Fabris Rotelli':
+   { imagePath: './assets/speaker_data/dr._inger_fabris_rotelli/image.jpg',
+     lectureInfoPath: './assets/speaker_data/dr._inger_fabris_rotelli/lecture_info.txt',
+     lectureHeading: 'What you need to know about Bayesian statistics',
+     lectureAbstract: [],
+     categoryInfoPath: './assets/speaker_data/dr._inger_fabris_rotelli/category.txt',
+     category: 'Theory' },
+  'Dr. Janto Dreijer': {},
   'Dr. Thuso Simon':
    { imagePath: './assets/speaker_data/dr._thuso_simon/image.jpg',
      lectureInfoPath: './assets/speaker_data/dr._thuso_simon/lecture_info.txt',
@@ -43,8 +59,9 @@ INFO = { 'Ntombi':
   'Dr. Willie Brink':
    { imagePath: './assets/speaker_data/dr._willie_brink/image.jpg',
      lectureInfoPath: './assets/speaker_data/dr._willie_brink/lecture_info.txt',
-     lectureHeading: 'Machine learning fundamentals, a probabilistic view',
-     lectureAbstract: [],
+     lectureHeading: 'Intro to machine (and deep) learning, with a focus on probability and uncertainty',
+     lectureAbstract:
+      [ 'I will begin by quickly introducing a few basic principles of machine learning, explaining core mathematical concepts through examples, and telling you what I think "deep learning" is. I will then discuss in some depth a fundamentally important (but often neglected) concept in machine learning, which is to view everything in terms of probability distributions. Finally, with this concept in mind, I will talk about recent attempts to inject probability and uncertainty into deep neural networks.' ],
      categoryInfoPath: './assets/speaker_data/dr._willie_brink/category.txt',
      category: 'Theory',
      affiliationInfoPath: './assets/speaker_data/dr._willie_brink/affiliation.txt',
@@ -68,31 +85,6 @@ INFO = { 'Ntombi':
      category: 'Application',
      affiliationInfoPath: './assets/speaker_data/ismail_akhalwaya/affiliation.txt',
      affiliation: 'IBM' },
-  'Alex Conway':
-   { imagePath: './assets/speaker_data/alex_conway/image.jpg',
-     lectureInfoPath: './assets/speaker_data/alex_conway/lecture_info.txt',
-     lectureHeading: 'Deep Learning for Computer Vision',
-     lectureAbstract:
-      [ 'The state-of-the-art in image classification has skyrocketed thanks to the development of deep convolutional neural networks and increases in the amount of data and computing power available to train them. The top-5 error rate in the ImageNet competition to predict which of 1000 classes an image belongs to has plummeted from 28% error in 2010 to just 2.25% in 2017 (human level error is around 5%).',
-        'In addition to being able to classify objects in images (including not hotdogs), deep learning can be used to automatically generate captions for images, convert photos into paintings, detect cancer in pathology slide images, and help self-driving cars \'see\'.',
-        'The talk will give an overview of the cutting edge and some of the core mathematical concepts and will also include a short code-first tutorial to show how easy it is to get started using deep learning for computer vision in python.' ],
-     categoryInfoPath: './assets/speaker_data/alex_conway/category.txt',
-     category: 'Vision',
-     affiliationInfoPath: './assets/speaker_data/alex_conway/affiliation.txt',
-     affiliation: 'The University of Cape Town' },
-  'Chris Currin':
-   { imagePath: './assets/speaker_data/chris_currin/image.jpg',
-     lectureInfoPath: './assets/speaker_data/chris_currin/lecture_info.txt',
-     lectureHeading: 'Artificial Assistants: How can I help you?',
-     lectureAbstract:
-      [ 'Chatbots are not equal; with different forms permeating our lives more and more. Virtual assistants are increasingly relevant for businesses and our day-to-day lives. Chatbots have become ubiquitous for interactions, yet ‘reasonable’ intelligence remains elusive.',
-        'In this talk, we explore and explain their underlying architectures and capabilities to understand what makes them work, their weaknesses, and future improvements.',
-        'Design principles from a technology and human perspective will be disseminated with examples of current production systems and their impact. Furthermore, the audience will have the opportunity to advance these best practices.',
-        'Resources will be made available, so the technology is relevant, practical, and accessible.' ],
-     categoryInfoPath: './assets/speaker_data/chris_currin/category.txt',
-     category: 'Natural language processing',
-     affiliationInfoPath: './assets/speaker_data/chris_currin/affiliation.txt',
-     affiliation: 'The University of Cape Town' },
   'Jacques Ludik':
    { imagePath: './assets/speaker_data/jacques_ludik/image.jpg',
      lectureInfoPath: './assets/speaker_data/jacques_ludik/lecture_info.txt',
@@ -166,6 +158,31 @@ INFO = { 'Ntombi':
    { lectureInfoPath: './assets/speaker_data/tobias/lecture_info.txt',
      lectureHeading: '???',
      lectureAbstract: [] },
+  'Alex Conway':
+   { imagePath: './assets/speaker_data/alex_conway/image.jpg',
+     lectureInfoPath: './assets/speaker_data/alex_conway/lecture_info.txt',
+     lectureHeading: 'Deep Learning for Computer Vision',
+     lectureAbstract:
+      [ 'The state-of-the-art in image classification has skyrocketed thanks to the development of deep convolutional neural networks and increases in the amount of data and computing power available to train them. The top-5 error rate in the ImageNet competition to predict which of 1000 classes an image belongs to has plummeted from 28% error in 2010 to just 2.25% in 2017 (human level error is around 5%).',
+        'In addition to being able to classify objects in images (including not hotdogs), deep learning can be used to automatically generate captions for images, convert photos into paintings, detect cancer in pathology slide images, and help self-driving cars \'see\'.',
+        'The talk will give an overview of the cutting edge and some of the core mathematical concepts and will also include a short code-first tutorial to show how easy it is to get started using deep learning for computer vision in python.' ],
+     categoryInfoPath: './assets/speaker_data/alex_conway/category.txt',
+     category: 'Vision',
+     affiliationInfoPath: './assets/speaker_data/alex_conway/affiliation.txt',
+     affiliation: 'The University of Cape Town' },
+  'Chris Currin':
+   { imagePath: './assets/speaker_data/chris_currin/image.jpg',
+     lectureInfoPath: './assets/speaker_data/chris_currin/lecture_info.txt',
+     lectureHeading: 'Artificial Assistants: How can I help you?',
+     lectureAbstract:
+      [ 'Chatbots are not equal; with different forms permeating our lives more and more. Virtual assistants are increasingly relevant for businesses and our day-to-day lives. Chatbots have become ubiquitous for interactions, yet ‘reasonable’ intelligence remains elusive.',
+        'In this talk, we explore and explain their underlying architectures and capabilities to understand what makes them work, their weaknesses, and future improvements.',
+        'Design principles from a technology and human perspective will be disseminated with examples of current production systems and their impact. Furthermore, the audience will have the opportunity to advance these best practices.',
+        'Resources will be made available, so the technology is relevant, practical, and accessible.' ],
+     categoryInfoPath: './assets/speaker_data/chris_currin/category.txt',
+     category: 'Natural language processing',
+     affiliationInfoPath: './assets/speaker_data/chris_currin/affiliation.txt',
+     affiliation: 'The University of Cape Town' },
   'More Speakers TBC':
    { imagePath: './assets/speaker_data/more_speakers_TBC/image.jpg',
      affiliationInfoPath: './assets/speaker_data/more_speakers_TBC/affiliation.txt',
