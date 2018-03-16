@@ -74,5 +74,5 @@ function getSponsorInfo() {
 	return info;
 }
 
-console.log(getSpeakerInfo()["Philip Sterne"]);
-// console.log(getSponsorInfo());
+// console.log(getSpeakerInfo());
+console.log(getSponsorInfo());
