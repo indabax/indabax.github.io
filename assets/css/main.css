@@ -375,7 +375,7 @@ ul li {
 .site-header .intro h2 {
   margin-top: 1em;
   /*margin-top: 0px;*/
-  font-size: 25px;
+  font-size: 18px;
   font-weight: 300;
 }
 .site-header .intro h1 {
@@ -406,6 +406,9 @@ ul li {
 /*
  * 6.1 Section: About
  */
+section.about {
+  margin-left: 1em;
+}
 .about .section-title {
   margin: 0 0 25px;
 }
@@ -465,7 +468,7 @@ ul li {
   box-shadow: 0.25em 0.25em 0.25em grey
 }
 .speaker img:hover {
-  border: 0.5em solid #ea531c;
+  border: 0.5em solid #62d65e;
   cursor: pointer;
   -webkit-transition: all 0.3s;
    -moz-transition: all 0.3s;
@@ -523,7 +526,7 @@ ul li {
 }
 
 .schedule-tab .nav-tabs > li.active > a {
-	 background: #ea531c;
+	 background: #62d65e;
 	 color: #fff;
 }
 
@@ -532,7 +535,7 @@ ul li {
 	 position: absolute;
 	 left: 0;
 	 z-index: 0;
-	 border-left: 20px solid #ea531c;
+	 border-left: 20px solid #62d65e;
 	 border-right: 0 solid transparent;
 	 border-bottom: 20px solid transparent;
 	 bottom: -20px;
@@ -566,7 +569,7 @@ ul li {
 	 height: 25px;
 	 top: 5px;
 	 width: 5px;
-	 background: #ea531c;
+	 background: #62d65e;
 }
 
 .schedule-listing{
@@ -610,7 +613,7 @@ ul li {
 }
 
 .schedule-slot-info:hover .schedule-slot-speakers{
-	 border: 2px solid #ea531c;
+	 border: 2px solid #62d65e;
 }
 
 .schedule-slot-info-content{
@@ -623,7 +626,7 @@ ul li {
 }
 
 .schedule-slot-speaker-name{
-	 color: #ea531c;
+	 color: #62d65e;
 	 margin-top: 5px;
 	 font-size: 16px;
 }
