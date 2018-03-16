@@ -7,7 +7,7 @@ CATEGORY_TO_ICON = {
     "Application": "ion-settings"
 };
 
-INFO = { 'Ntombi':
+INFO = { 'Ntombikayise Banda':
    { imagePath: './assets/speaker_data/ntombi/image.jpg',
      lectureInfoPath: './assets/speaker_data/ntombi/lecture_info.txt',
      lectureHeading: 'Multimodal Emotion Recognition',
