@@ -220,10 +220,13 @@ INFO = {
      affiliation: '' }}
 ;
 
-SPONSORS = [ './assets/images/sponsors/aerobotics.png',
+SPONSORS = [ './assets/images/sponsors/Stone-Three-logo_transparent.png',
+  './assets/images/sponsors/aerobotics.png',
   './assets/images/sponsors/dli.PNG',
-  './assets/images/sponsors/numberboost.png',
-  './assets/images/sponsors/stone-three-mining-logo.jpg' ];
+  './assets/images/sponsors/logo-text.png',
+  './assets/images/sponsors/logo_textv2.png',
+  './assets/images/sponsors/stone-three-mining-logo-BIG.jpg' ]
+;
 
 /*
  * Change Navbar color while scrolling
@@ -446,9 +449,17 @@ function populateSponsors(sponsors) {
         $logosDiv.append(
             $("<div />").addClass("col-sm-3")
             .append(
-                $("<a />").addClass("sponsors-box").attr({
-                    "style": "background: url(" + sponsor + ") no-repeat center center/contain;"
-                })
+                $("<a />").addClass("sponsors-box")
+                .append(
+                    $("<img />").attr({
+                        "src": sponsor,
+                    }).css({
+                        "width": "80%",
+                        "position": "absolute",
+                        "top": "50%",
+                        "transform": "translateY(-50%)"
+                    })
+                )
             )
         );
     }
