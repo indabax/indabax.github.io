@@ -7,27 +7,26 @@ CATEGORY_TO_ICON = {
     "Application": "ion-settings"
 };
 
-INFO = { 'Ntombikayise Banda':
-   { imagePath: './assets/speaker_data/ntombi/image.jpg',
-     lectureInfoPath: './assets/speaker_data/ntombi/lecture_info.txt',
+INFO = {
+  'Ntombikayise Banda':
+   { imagePath: './assets/speaker_data/ntombikayise_banda/image.jpg',
+     lectureInfoPath: './assets/speaker_data/ntombikayise_banda/lecture_info.txt',
      lectureHeading: 'Multimodal Emotion Recognition',
      lectureAbstract:
       [ 'During communication, research shows that a large portion of the message is conveyed through emotional displays, with the content of the message accounting for approximately 7%. Moreover, human brains make use of these complementary emotional displays such as facial expressions, vocal expressions, and body postures to resolve any decision ambiguities and infer reliable emotion decisions. This talk will explore how computers can emulate humans by making use of visual, audio and bio-signal modalities to recognize complex emotions using variants of recurrent neural networks' ],
-     categoryInfoPath: './assets/speaker_data/ntombi/category.txt',
+     categoryInfoPath: './assets/speaker_data/ntombikayise_banda/category.txt',
      category: 'Vision',
-     affiliationInfoPath: './assets/speaker_data/ntombi/affiliation.txt',
+     affiliationInfoPath: './assets/speaker_data/ntombikayise_banda/affiliation.txt',
      affiliation: 'University of Cambridge' },
-  'Adriaan Rowan':
-   { lectureInfoPath: './assets/speaker_data/adriaan_rowan/lecture_info.txt',
-     lectureHeading: '???',
-     lectureAbstract: [] },
   'Dr. Alta De Waal':
    { imagePath: './assets/speaker_data/dr._alta_de_waal/image.jpg',
      lectureInfoPath: './assets/speaker_data/dr._alta_de_waal/lecture_info.txt',
      lectureHeading: 'Establishing semantic similarity between short text using deep learning',
      lectureAbstract: [],
      categoryInfoPath: './assets/speaker_data/dr._alta_de_waal/category.txt',
-     category: 'Natural language processing' },
+     category: 'Natural language processing',
+     affiliationInfoPath: './assets/speaker_data/dr._alta_de_waal/affiliation.txt',
+     affiliation: 'The University of Pretoria' },
   'Dr. Herman Kamper':
    { imagePath: './assets/speaker_data/dr._herman_kamper/image.jpg',
      lectureInfoPath: './assets/speaker_data/dr._herman_kamper/lecture_info.txt',
@@ -44,8 +43,9 @@ INFO = { 'Ntombikayise Banda':
      lectureHeading: 'What you need to know about Bayesian statistics',
      lectureAbstract: [],
      categoryInfoPath: './assets/speaker_data/dr._inger_fabris_rotelli/category.txt',
-     category: 'Theory' },
-  'Dr. Janto Dreijer': {},
+     category: 'Theory',
+     affiliationInfoPath: './assets/speaker_data/dr._inger_fabris_rotelli/affiliation.txt',
+     affiliation: 'The University of Pretoria' },
   'Dr. Thuso Simon':
    { imagePath: './assets/speaker_data/dr._thuso_simon/image.jpg',
      lectureInfoPath: './assets/speaker_data/dr._thuso_simon/lecture_info.txt',
@@ -85,16 +85,6 @@ INFO = { 'Ntombikayise Banda':
      category: 'Application',
      affiliationInfoPath: './assets/speaker_data/ismail_akhalwaya/affiliation.txt',
      affiliation: 'IBM' },
-  'Jacques Ludik':
-   { imagePath: './assets/speaker_data/jacques_ludik/image.jpg',
-     lectureInfoPath: './assets/speaker_data/jacques_ludik/lecture_info.txt',
-     lectureHeading: 'Mathematical Foundations of Deep Learning',
-     lectureAbstract:
-      [ 'An introduction to the mathematics of neural networks and specialist architectures for solving a range of applied problems in a variety of domains.' ],
-     categoryInfoPath: './assets/speaker_data/jacques_ludik/category.txt',
-     category: 'Theory',
-     affiliationInfoPath: './assets/speaker_data/jacques_ludik/affiliation.txt',
-     affiliation: 'Founder of MIIA, CEO of Cortex Logic' },
   'Obins Choudhary':
    { imagePath: './assets/speaker_data/obins_choudhary/image.jpg',
      lectureInfoPath: './assets/speaker_data/obins_choudhary/lecture_info.txt',
@@ -115,6 +105,25 @@ INFO = { 'Ntombikayise Banda':
      category: 'Theory',
      affiliationInfoPath: './assets/speaker_data/prof._amit_mishra/affiliation.txt',
      affiliation: 'The University of Cape Town' },
+  'Dr. Janto Dreijer':
+   { imagePath: './assets/speaker_data/dr._janto_dreijer/image.jpg',
+     lectureInfoPath: './assets/speaker_data/dr._janto_dreijer/lecture_info.txt',
+     lectureHeading: 'AI Ethics',
+     lectureAbstract: [],
+     categoryInfoPath: './assets/speaker_data/dr._janto_dreijer/category.txt',
+     category: 'Theory',
+     affiliationInfoPath: './assets/speaker_data/dr._janto_dreijer/affiliation.txt',
+     affiliation: 'Ambrite ZA' },
+  'Jacques Ludik':
+   { imagePath: './assets/speaker_data/jacques_ludik/image.jpg',
+     lectureInfoPath: './assets/speaker_data/jacques_ludik/lecture_info.txt',
+     lectureHeading: 'Mathematical Foundations of Deep Learning',
+     lectureAbstract:
+      [ 'An introduction to the mathematics of neural networks and specialist architectures for solving a range of applied problems in a variety of domains.' ],
+     categoryInfoPath: './assets/speaker_data/jacques_ludik/category.txt',
+     category: 'Theory',
+     affiliationInfoPath: './assets/speaker_data/jacques_ludik/affiliation.txt',
+     affiliation: 'Founder of MIIA, CEO of Cortex Logic' },
   'Prof. Bruce Bassett':
    { imagePath: './assets/speaker_data/prof._bruce_bassett/image.jpg',
      lectureInfoPath: './assets/speaker_data/prof._bruce_bassett/lecture_info.txt',
@@ -145,6 +154,15 @@ INFO = { 'Ntombikayise Banda':
      category: 'Theory',
      affiliationInfoPath: './assets/speaker_data/stuart_reid/affiliation.txt',
      affiliation: 'Chief Engineer & Partner at NMRQL' },
+  'Philip Sterne' :
+  { imagePath: './assets/speaker_data/philip_sterne/image.jpg',
+    lectureInfoPath: './assets/speaker_data/philip_sterne/lecture_info.txt',
+    lectureHeading: 'Advice for Deep Learning Students',
+    lectureAbstract: [],
+    categoryInfoPath: './assets/speaker_data/philip_sterne/category.txt',
+    category: 'Lightning talk',
+    affiliationInfoPath: './assets/speaker_data/philip_sterne/affiliation.txt',
+    affiliation: 'Data Scientist at Stochastic Consulting' },
   'Taliesin Beynon':
    { imagePath: './assets/speaker_data/taliesin_beynon/image.jpg',
      lectureInfoPath: './assets/speaker_data/taliesin_beynon/lecture_info.txt',
@@ -156,6 +174,10 @@ INFO = { 'Ntombikayise Banda':
      affiliation: 'Lead Developer, Deep Learning at Wolfram' },
   Tobias:
    { lectureInfoPath: './assets/speaker_data/tobias/lecture_info.txt',
+     lectureHeading: '???',
+     lectureAbstract: [] },
+   'Adriaan Rowan':
+   { lectureInfoPath: './assets/speaker_data/adriaan_rowan/lecture_info.txt',
      lectureHeading: '???',
      lectureAbstract: [] },
   'Alex Conway':
@@ -170,6 +192,15 @@ INFO = { 'Ntombikayise Banda':
      category: 'Vision',
      affiliationInfoPath: './assets/speaker_data/alex_conway/affiliation.txt',
      affiliation: 'The University of Cape Town' },
+  'Andrew Beaven':
+   { imagePath: './assets/speaker_data/andrew_beaven/image.jpg',
+     lectureInfoPath: './assets/speaker_data/andrew_beaven/lecture_info.txt',
+     lectureHeading: 'Generalization Error',
+     lectureAbstract: [],
+     categoryInfoPath: './assets/speaker_data/andrew_beaven/category.txt',
+     category: 'Lightning talk',
+     affiliationInfoPath: './assets/speaker_data/andrew_beaven/affiliation.txt',
+     affiliation: 'Portecon' },
   'Chris Currin':
    { imagePath: './assets/speaker_data/chris_currin/image.jpg',
      lectureInfoPath: './assets/speaker_data/chris_currin/lecture_info.txt',
@@ -186,7 +217,8 @@ INFO = { 'Ntombikayise Banda':
   'More Speakers TBC':
    { imagePath: './assets/speaker_data/more_speakers_TBC/image.jpg',
      affiliationInfoPath: './assets/speaker_data/more_speakers_TBC/affiliation.txt',
-     affiliation: '' } };
+     affiliation: '' }}
+;
 
 SPONSORS = [ './assets/images/sponsors/aerobotics.png',
   './assets/images/sponsors/dli.PNG',
