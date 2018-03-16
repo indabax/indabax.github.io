@@ -406,6 +406,9 @@ ul li {
 /*
  * 6.1 Section: About
  */
+section.about {
+  margin-left: 1em;
+}
 .about .section-title {
   margin: 0 0 25px;
 }
