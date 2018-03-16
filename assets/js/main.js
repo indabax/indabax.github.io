@@ -8,7 +8,17 @@ CATEGORY_TO_ICON = {
 };
 
 INFO = {
-  'Ntombikayise Banda':
+    'Prof. Amit Mishra':
+   { imagePath: './assets/speaker_data/prof._amit_mishra/image.jpg',
+     lectureInfoPath: './assets/speaker_data/prof._amit_mishra/lecture_info.txt',
+     lectureHeading: 'From Neuron to Brain',
+     lectureAbstract:
+      [ 'Past few years have seen unprecedented growth in terms of success of machine learning algorithms. People are talking about singularity more often now a days! How akin are the current developments to actual human brain? This talk will discuss machine learning from a neuromorphic point of view and try to answer \'How has brain inspired the development of deep NN and how can it keep inspiring more breakthrough innovations in the domain of AI\'' ],
+     categoryInfoPath: './assets/speaker_data/prof._amit_mishra/category.txt',
+     category: 'Theory',
+     affiliationInfoPath: './assets/speaker_data/prof._amit_mishra/affiliation.txt',
+     affiliation: 'The University of Cape Town' },
+    'Ntombikayise Banda':
    { imagePath: './assets/speaker_data/ntombikayise_banda/image.jpg',
      lectureInfoPath: './assets/speaker_data/ntombikayise_banda/lecture_info.txt',
      lectureHeading: 'Multimodal Emotion Recognition',
@@ -18,34 +28,6 @@ INFO = {
      category: 'Vision',
      affiliationInfoPath: './assets/speaker_data/ntombikayise_banda/affiliation.txt',
      affiliation: 'University of Cambridge' },
-  'Dr. Alta De Waal':
-   { imagePath: './assets/speaker_data/dr._alta_de_waal/image.jpg',
-     lectureInfoPath: './assets/speaker_data/dr._alta_de_waal/lecture_info.txt',
-     lectureHeading: 'Establishing semantic similarity between short text using deep learning',
-     lectureAbstract: [],
-     categoryInfoPath: './assets/speaker_data/dr._alta_de_waal/category.txt',
-     category: 'Natural language processing',
-     affiliationInfoPath: './assets/speaker_data/dr._alta_de_waal/affiliation.txt',
-     affiliation: 'The University of Pretoria' },
-  'Dr. Herman Kamper':
-   { imagePath: './assets/speaker_data/dr._herman_kamper/image.jpg',
-     lectureInfoPath: './assets/speaker_data/dr._herman_kamper/lecture_info.txt',
-     lectureHeading: 'Deep Learning for (More Than) Speech Recognition',
-     lectureAbstract:
-      [ 'How cool would it be to ask your fridge to order a pizza? As our lives become more intertwined with technology, we will increasingly be communicating with machines and devices. The most natural way to do this is through speech, which is why companies like Google, Apple and Microsoft are betting big on automatic speech recognition (ASR). But there is so much more to speech than just ASR! Speech and language is a core part of what it means to be human, and could therefore give deep (pun!) insights into how humans organise and deal with the world. My talk will consist of three parts (two of which will be rants). In the first, I will give an overview of how deep learning is used to build today\'s state-of-the-art ASR systems. The second part will be a rant about the shortcomings of focusing only on traditional ASR. I will highlight interesting new studies in the speech community addressing problems ranging from disaster tracking to using speech as a way to get insights into human cognition; I will argue that we need more of this type of research. In the third part, I will quickly highlight (and rant about) some of our own work on interesting speech problems.' ],
-     categoryInfoPath: './assets/speaker_data/dr._herman_kamper/category.txt',
-     category: 'Speech',
-     affiliationInfoPath: './assets/speaker_data/dr._herman_kamper/affiliation.txt',
-     affiliation: 'The University of Stellenbosch' },
-  'Dr. Inger Fabris Rotelli':
-   { imagePath: './assets/speaker_data/dr._inger_fabris_rotelli/image.jpg',
-     lectureInfoPath: './assets/speaker_data/dr._inger_fabris_rotelli/lecture_info.txt',
-     lectureHeading: 'What you need to know about Bayesian statistics',
-     lectureAbstract: [],
-     categoryInfoPath: './assets/speaker_data/dr._inger_fabris_rotelli/category.txt',
-     category: 'Theory',
-     affiliationInfoPath: './assets/speaker_data/dr._inger_fabris_rotelli/affiliation.txt',
-     affiliation: 'The University of Pretoria' },
   'Dr. Thuso Simon':
    { imagePath: './assets/speaker_data/dr._thuso_simon/image.jpg',
      lectureInfoPath: './assets/speaker_data/dr._thuso_simon/lecture_info.txt',
@@ -66,6 +48,16 @@ INFO = {
      category: 'Theory',
      affiliationInfoPath: './assets/speaker_data/dr._willie_brink/affiliation.txt',
      affiliation: 'The University of Stellenbosch' },
+    'Dr. Herman Kamper':
+   { imagePath: './assets/speaker_data/dr._herman_kamper/image.jpg',
+     lectureInfoPath: './assets/speaker_data/dr._herman_kamper/lecture_info.txt',
+     lectureHeading: 'Deep Learning for (More Than) Speech Recognition',
+     lectureAbstract:
+      [ 'How cool would it be to ask your fridge to order a pizza? As our lives become more intertwined with technology, we will increasingly be communicating with machines and devices. The most natural way to do this is through speech, which is why companies like Google, Apple and Microsoft are betting big on automatic speech recognition (ASR). But there is so much more to speech than just ASR! Speech and language is a core part of what it means to be human, and could therefore give deep (pun!) insights into how humans organise and deal with the world. My talk will consist of three parts (two of which will be rants). In the first, I will give an overview of how deep learning is used to build today\'s state-of-the-art ASR systems. The second part will be a rant about the shortcomings of focusing only on traditional ASR. I will highlight interesting new studies in the speech community addressing problems ranging from disaster tracking to using speech as a way to get insights into human cognition; I will argue that we need more of this type of research. In the third part, I will quickly highlight (and rant about) some of our own work on interesting speech problems.' ],
+     categoryInfoPath: './assets/speaker_data/dr._herman_kamper/category.txt',
+     category: 'Speech',
+     affiliationInfoPath: './assets/speaker_data/dr._herman_kamper/affiliation.txt',
+     affiliation: 'The University of Stellenbosch' },
   'Emmanuel Dufourq':
    { imagePath: './assets/speaker_data/emmanuel_dufourq/image.jpg',
      lectureInfoPath: './assets/speaker_data/emmanuel_dufourq/lecture_info.txt',
@@ -84,7 +76,16 @@ INFO = {
      categoryInfoPath: './assets/speaker_data/ismail_akhalwaya/category.txt',
      category: 'Application',
      affiliationInfoPath: './assets/speaker_data/ismail_akhalwaya/affiliation.txt',
-     affiliation: 'IBM' },
+     affiliation: 'IBM' },    
+    'Dr. Alta De Waal':
+   { imagePath: './assets/speaker_data/dr._alta_de_waal/image.jpg',
+     lectureInfoPath: './assets/speaker_data/dr._alta_de_waal/lecture_info.txt',
+     lectureHeading: 'Establishing semantic similarity between short text using deep learning',
+     lectureAbstract: [],
+     categoryInfoPath: './assets/speaker_data/dr._alta_de_waal/category.txt',
+     category: 'Natural language processing',
+     affiliationInfoPath: './assets/speaker_data/dr._alta_de_waal/affiliation.txt',
+     affiliation: 'The University of Pretoria' },
   'Obins Choudhary':
    { imagePath: './assets/speaker_data/obins_choudhary/image.jpg',
      lectureInfoPath: './assets/speaker_data/obins_choudhary/lecture_info.txt',
@@ -95,16 +96,6 @@ INFO = {
      category: 'Theory',
      affiliationInfoPath: './assets/speaker_data/obins_choudhary/affiliation.txt',
      affiliation: 'Barclays Africa Group Limited' },
-  'Prof. Amit Mishra':
-   { imagePath: './assets/speaker_data/prof._amit_mishra/image.jpg',
-     lectureInfoPath: './assets/speaker_data/prof._amit_mishra/lecture_info.txt',
-     lectureHeading: 'From Neuron to Brain',
-     lectureAbstract:
-      [ 'Past few years have seen unprecedented growth in terms of success of machine learning algorithms. People are talking about singularity more often now a days! How akin are the current developments to actual human brain? This talk will discuss machine learning from a neuromorphic point of view and try to answer \'How has brain inspired the development of deep NN and how can it keep inspiring more breakthrough innovations in the domain of AI\'' ],
-     categoryInfoPath: './assets/speaker_data/prof._amit_mishra/category.txt',
-     category: 'Theory',
-     affiliationInfoPath: './assets/speaker_data/prof._amit_mishra/affiliation.txt',
-     affiliation: 'The University of Cape Town' },
   'Dr. Janto Dreijer':
    { imagePath: './assets/speaker_data/dr._janto_dreijer/image.jpg',
      lectureInfoPath: './assets/speaker_data/dr._janto_dreijer/lecture_info.txt',
@@ -114,6 +105,15 @@ INFO = {
      category: 'Theory',
      affiliationInfoPath: './assets/speaker_data/dr._janto_dreijer/affiliation.txt',
      affiliation: 'Ambrite ZA' },
+    'Dr. Inger Fabris Rotelli':
+   { imagePath: './assets/speaker_data/dr._inger_fabris_rotelli/image.jpg',
+     lectureInfoPath: './assets/speaker_data/dr._inger_fabris_rotelli/lecture_info.txt',
+     lectureHeading: 'What you need to know about Bayesian statistics',
+     lectureAbstract: [],
+     categoryInfoPath: './assets/speaker_data/dr._inger_fabris_rotelli/category.txt',
+     category: 'Theory',
+     affiliationInfoPath: './assets/speaker_data/dr._inger_fabris_rotelli/affiliation.txt',
+     affiliation: 'The University of Pretoria' },
   'Jacques Ludik':
    { imagePath: './assets/speaker_data/jacques_ludik/image.jpg',
      lectureInfoPath: './assets/speaker_data/jacques_ludik/lecture_info.txt',
