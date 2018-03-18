@@ -656,6 +656,8 @@ section.about {
 }
 .sponsors .sponsors-box:hover {
   opacity: 1;
+  border: 0.5em solid #62d65e;
+  cursor: pointer;
 }
 
 /*
