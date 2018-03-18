@@ -658,6 +658,8 @@ section.about {
   opacity: 1;
   border: 0.5em solid #62d65e;
   cursor: pointer;
+  border-style: dotted;
+  width: 100%;
 }
 
 /*
