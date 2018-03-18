@@ -647,7 +647,7 @@ section.about {
 }
 .sponsors .sponsors-box {
   display: block;
-  opacity: 0.3;
+  opacity: 1;
   height: 12em;
   width: 12em;
   margin: 25px auto;

@@ -220,14 +220,13 @@ INFO = {
      affiliation: '' }}
 ;
 
-SPONSORS = [ './assets/images/sponsors/Stone-Three-logo_transparent.png',
-  './assets/images/sponsors/aerobotics.png',
-  './assets/images/sponsors/dli.PNG',
-  './assets/images/sponsors/logo-text.png',
-  './assets/images/sponsors/logo_textv2.png',
-  './assets/images/sponsors/stone-three-mining-logo-BIG.jpg' ]
+SPONSORS = [['./assets/images/sponsors/Stone-Three-logo_transparent.png', 'https://www.stonethree.com/'],
+  ['./assets/images/sponsors/aerobotics.png', 'https://aerobotics.co/'],
+  ['./assets/images/sponsors/dli.PNG', 'http://www.deeplearningindaba.com/'],
+  ['./assets/images/sponsors/logo-text.png', 'http://www.stochastic-consulting.com/'],
+  ['./assets/images/sponsors/logo_textv2.png', 'http://www.numberboost.com/'],
+  ['./assets/images/sponsors/stone-three-mining-logo-BIG.jpg', 'https://www.stonethreemining.com/']]
 ;
-
 /*
  * Change Navbar color while scrolling
  */
@@ -449,10 +448,13 @@ function populateSponsors(sponsors) {
         $logosDiv.append(
             $("<div />").addClass("col-sm-3")
             .append(
-                $("<a />").addClass("sponsors-box")
+                $("<a />").attr({
+                    "href":sponsor[1],
+                    "target": "_blank"})
+                .addClass("sponsors-box")
                 .append(
                     $("<img />").attr({
-                        "src": sponsor,
+                        "src": sponsor[0],
                     }).css({
                         "width": "80%",
                         "position": "absolute",
