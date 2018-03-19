@@ -249,7 +249,9 @@ SPONSORS = [['./assets/images/sponsors/Stone-Three-logo_transparent.png', 'https
   ['./assets/images/sponsors/dli.PNG', 'http://www.deeplearningindaba.com/'],
   ['./assets/images/sponsors/logo-text.png', 'http://www.stochastic-consulting.com/'],
   ['./assets/images/sponsors/logo_textv2.png', 'http://www.numberboost.com/'],
-  ['./assets/images/sponsors/stone-three-mining-logo-BIG.jpg', 'https://www.stonethreemining.com/']]
+  ['./assets/images/sponsors/stone-three-mining-logo-BIG.jpg', 'https://www.stonethreemining.com/'],
+  ['./assets/images/sponsors/cortex_logic.png', 'http://cortexlogic.com/'],
+  ['./assets/images/sponsors/miia.png', 'http://machineintelligenceafrica.org/']]
 ;
 /*
  * Change Navbar color while scrolling

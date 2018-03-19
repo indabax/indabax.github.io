@@ -656,7 +656,7 @@ section.about {
 }
 .sponsors .sponsors-box:hover {
   opacity: 1;
-  border: 0.1em solid #62d65e;
+  border: 0.0 solid #62d65e;
   cursor: pointer;
   /*border-style: dotted;*/
   width: 100%;
