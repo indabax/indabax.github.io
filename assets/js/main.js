@@ -143,7 +143,8 @@ INFO = {
      affiliationInfoPath: './assets/speaker_data/jacques_ludik/affiliation.txt',
      affiliation: 'Founder of MIIA, CEO of Cortex Logic' },
     'Benji Meltzer':
-   { lectureInfoPath: './assets/speaker_data/benji_meltzer/lecture_info.txt',
+   { imagePath: './assets/speaker_data/benji_meltzer/image.jpg',
+     lectureInfoPath: './assets/speaker_data/benji_meltzer/lecture_info.txt',
      lectureHeading: 'Deep Learning in Agriculture Space',
      lectureAbstract: [],
      category: 'Lightening talk',
@@ -189,7 +190,8 @@ INFO = {
      affiliationInfoPath: './assets/speaker_data/taliesin_beynon/affiliation.txt',
      affiliation: 'Lead Developer, Deep Learning at Wolfram' },
   'Tobias Brandt':
-   { lectureInfoPath: './assets/speaker_data/tobias/lecture_info.txt',
+   { imagePath: './assets/speaker_data/tobias_brandt/image.jpg',
+     lectureInfoPath: './assets/speaker_data/tobias_brandt/lecture_info.txt',
      lectureHeading: 'Deep Learning in Finance',
      lectureAbstract: [],
      category: 'Lightening talk',
@@ -197,7 +199,8 @@ INFO = {
      affiliationInfoPath: './assets/speaker_data/tobias_brandt/affiliation.txt',
      affiliation: 'Argon Asset Management'},
    'Adriaan Rowan':
-   { lectureInfoPath: './assets/speaker_data/adriaan_rowan/lecture_info.txt',
+   { imagePath: './assets/speaker_data/adriaan_rowan/image.png',
+     lectureInfoPath: './assets/speaker_data/adriaan_rowan/lecture_info.txt',
      lectureHeading: 'The Blessing and Curse of High Dimensionality',
      lectureAbstract: [],
      category: 'Lightening talk',
