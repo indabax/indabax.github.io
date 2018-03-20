@@ -52,7 +52,7 @@ INFO = {
    { imagePath: './assets/speaker_data/dr._herman_kamper/image.jpg',
      lectureInfoPath: './assets/speaker_data/dr._herman_kamper/lecture_info.txt',
      lectureHeading: 'Deep Learning for (More Than) Speech Recognition',
-     lectureAbstract:
+     lectureAbst.1em.1em.1em.1em.1em.1em.1em.1em.1em.1emract:
       [ 'How cool would it be to ask your fridge to order a pizza? As our lives become more intertwined with technology, we will increasingly be communicating with machines and devices. The most natural way to do this is through speech, which is why companies like Google, Apple and Microsoft are betting big on automatic speech recognition (ASR). But there is so much more to speech than just ASR! Speech and language is a core part of what it means to be human, and could therefore give deep (pun!) insights into how humans organise and deal with the world. My talk will consist of three parts (two of which will be rants). In the first, I will give an overview of how deep learning is used to build today\'s state-of-the-art ASR systems. The second part will be a rant about the shortcomings of focusing only on traditional ASR. I will highlight interesting new studies in the speech community addressing problems ranging from disaster tracking to using speech as a way to get insights into human cognition; I will argue that we need more of this type of research. In the third part, I will quickly highlight (and rant about) some of our own work on interesting speech problems.' ],
      categoryInfoPath: './assets/speaker_data/dr._herman_kamper/category.txt',
      category: 'Speech',
@@ -71,7 +71,7 @@ INFO = {
   'Ismail Akhalwaya':
    { imagePath: './assets/speaker_data/ismail_akhalwaya/image.jpg',
      lectureInfoPath: './assets/speaker_data/ismail_akhalwaya/lecture_info.txt',
-     lectureHeading: 'Quantum Machine Learning',
+     lectureH.1em.1em.1em.1em.1em.1em.1em.1em.1emeading: 'Quantum Machine Learning',
      lectureAbstract: [],
      categoryInfoPath: './assets/speaker_data/ismail_akhalwaya/category.txt',
      category: 'Application',
@@ -143,7 +143,8 @@ INFO = {
      affiliationInfoPath: './assets/speaker_data/jacques_ludik/affiliation.txt',
      affiliation: 'Founder of MIIA, CEO of Cortex Logic' },
     'Benji Meltzer':
-   { lectureInfoPath: './assets/speaker_data/benji_meltzer/lecture_info.txt',
+   { imagePath: './assets/speaker_data/benji_meltzer/image.jpg',
+     lectureInfoPath: './assets/speaker_data/benji_meltzer/lecture_info.txt',
      lectureHeading: 'Deep Learning in Agriculture Space',
      lectureAbstract: [],
      category: 'Lightening talk',
@@ -189,7 +190,8 @@ INFO = {
      affiliationInfoPath: './assets/speaker_data/taliesin_beynon/affiliation.txt',
      affiliation: 'Lead Developer, Deep Learning at Wolfram' },
   'Tobias Brandt':
-   { lectureInfoPath: './assets/speaker_data/tobias/lecture_info.txt',
+   { imagePath: './assets/speaker_data/tobias_brandt/image.jpg',
+     lectureInfoPath: './assets/speaker_data/tobias_brandt/lecture_info.txt',
      lectureHeading: 'Deep Learning in Finance',
      lectureAbstract: [],
      category: 'Lightening talk',
@@ -197,7 +199,8 @@ INFO = {
      affiliationInfoPath: './assets/speaker_data/tobias_brandt/affiliation.txt',
      affiliation: 'Argon Asset Management'},
    'Adriaan Rowan':
-   { lectureInfoPath: './assets/speaker_data/adriaan_rowan/lecture_info.txt',
+   { imagePath: './assets/speaker_data/adriaan_rowan/image.jpg',
+     lectureInfoPath: './assets/speaker_data/adriaan_rowan/lecture_info.txt',
      lectureHeading: 'The Blessing and Curse of High Dimensionality',
      lectureAbstract: [],
      category: 'Lightening talk',
