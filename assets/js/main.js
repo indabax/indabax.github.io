@@ -71,7 +71,7 @@ INFO = {
   'Ismail Akhalwaya':
    { imagePath: './assets/speaker_data/ismail_akhalwaya/image.jpg',
      lectureInfoPath: './assets/speaker_data/ismail_akhalwaya/lecture_info.txt',
-     lectureH.1em.1em.1em.1em.1em.1em.1em.1em.1emeading: 'Quantum Machine Learning',
+     lectureHeading: 'Quantum Machine Learning',
      lectureAbstract: [],
      categoryInfoPath: './assets/speaker_data/ismail_akhalwaya/category.txt',
      category: 'Application',
@@ -199,7 +199,7 @@ INFO = {
      affiliationInfoPath: './assets/speaker_data/tobias_brandt/affiliation.txt',
      affiliation: 'Argon Asset Management'},
    'Adriaan Rowan':
-   { imagePath: './assets/speaker_data/adriaan_rowan/image.jpg',
+   { imagePath: './assets/speaker_data/adriaan_rowan/image.png',
      lectureInfoPath: './assets/speaker_data/adriaan_rowan/lecture_info.txt',
      lectureHeading: 'The Blessing and Curse of High Dimensionality',
      lectureAbstract: [],
