@@ -173,15 +173,15 @@ INFO = { 'Ntombikayise Banda':
      category: 'Vision',
      affiliationInfoPath: './assets/speaker_data/alex_conway/affiliation.txt',
      affiliation: 'The University of Cape Town' },
-  'Andrew Beaven':
-   { imagePath: './assets/speaker_data/andrew_beaven/image.jpg',
-     lectureInfoPath: './assets/speaker_data/andrew_beaven/lecture_info.txt',
-     lectureHeading: 'Generalization Error',
+  'Benjamin De Charmoy':
+   { imagePath: './assets/speaker_data/benjamin_de_charmoy/image.jpg',
+     lectureInfoPath: './assets/speaker_data/benjamin_de_charmoy/lecture_info.txt',
+     lectureHeading: 'Applications of deep reinforcement learning from competitive self-play',
      lectureAbstract: [],
-     categoryInfoPath: './assets/speaker_data/andrew_beaven/category.txt',
+     categoryInfoPath: './assets/speaker_data/benjamin_de_charmoy/category.txt',
      category: 'Lightning talk',
-     affiliationInfoPath: './assets/speaker_data/andrew_beaven/affiliation.txt',
-     affiliation: 'Portecon' },
+     affiliationInfoPath: './assets/speaker_data/benjamin_de_charmoy/affiliation.txt',
+     affiliation: 'Cortex Logic' },
   'Benji Meltzer':
    { imagePath: './assets/speaker_data/benji_meltzer/image.jpg',
      lectureInfoPath: './assets/speaker_data/benji_meltzer/lecture_info.txt',
