@@ -161,7 +161,7 @@ INFO = { 'Ntombikayise Banda':
      categoryInfoPath: './assets/speaker_data/ritesh_ajoodha/category.txt',
      category: 'Theory',
      affiliationInfoPath: './assets/speaker_data/ritesh_ajoodha/affiliation.txt',
-     affiliation: 'University of the Witwatersrand' },
+     affiliation: 'The University of the Witwatersrand' },
   'Adriaan Rowan':
    { lectureInfoPath: './assets/speaker_data/adriaan_rowan/lecture_info.txt',
      lectureHeading: 'The Blessing and Curse of High Dimensionality.',
@@ -226,7 +226,8 @@ INFO = { 'Ntombikayise Banda':
    { imagePath: './assets/speaker_data/stuart_reid/image.jpg',
      lectureInfoPath: './assets/speaker_data/stuart_reid/lecture_info.txt',
      lectureHeading: 'Deep Learning in Complex Dynamical Systems',
-     lectureAbstract: [],
+     lectureAbstract:
+      [ 'One assumption often made by machine learning methods is that the data generating process is stationary meaning that it doesn\'t change over time. In seemingly stationary environments this assumption can, surprisingly, be unsound. Sensors attached machinery (including self-driving cars) degrade over time and with them so do the quality and distribution of the data. In dynamical environments this assumption is, unsurprisingly, unsound. Many real-world systems including fluid flows, ecosystems, weather, financial markets, and the human body are nonstationary meaning that the distribution of data in such systems change over time. Such dynamics go by many names: regime changes, phase transitions, or concept drift. One side effect of this is that any model trained on historical data will inevitably deteriorate with time. In this talk I will contrast passive and active approaches for dealing with non-stationarity in complex dynamical systems including: online learning, ensembles, dynamic ensembles, stacking, dynamic reinitialization, adaptive window sizing using change detection tests, and non-contiguous data sampling. These techniques can be used individually or in combination to combat model deterioration.' ],
      categoryInfoPath: './assets/speaker_data/stuart_reid/category.txt',
      category: 'Theory',
      affiliationInfoPath: './assets/speaker_data/stuart_reid/affiliation.txt',
