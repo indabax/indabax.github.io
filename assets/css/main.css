@@ -745,6 +745,9 @@ ul li.UWC:before {
    -o-transition: all 0.3s;
    transition: all 0.3s;
 }
+.sponsors .register-button {
+  text-align: center;
+}
 
 /*
  * 6.8 Section: FAQ
