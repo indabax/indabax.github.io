@@ -173,7 +173,7 @@ INFO = { 'Ntombikayise Banda':
   'Alex Conway':
    { imagePath: './assets/speaker_data/alex_conway/image.jpg',
      lectureInfoPath: './assets/speaker_data/alex_conway/lecture_info.txt',
-     lectureHeading: 'Deep Learning for Computer Vision',
+     lectureHeading: '10 Real World Problems Solved with Deep Learning (with code examples)',
      lectureAbstract:
       ['This talk will take your hand and walk you along the cutting-edge of applied deep learning. We say we turn the latest deep learning research into software solutions. When I say \'we\', I mean my startup - see bio below:',
 
