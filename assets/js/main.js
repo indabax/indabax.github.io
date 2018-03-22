@@ -245,14 +245,17 @@ INFO = { 'Ntombikayise Banda':
 
 ;
 
-SPONSORS = [['./assets/images/sponsors/Stone-Three-logo_transparent.png', 'https://www.stonethree.com/'],
-  ['./assets/images/sponsors/aerobotics.png', 'https://aerobotics.co/'],
-  ['./assets/images/sponsors/dli.PNG', 'http://www.deeplearningindaba.com/'],
-  ['./assets/images/sponsors/logo-text.png', 'http://www.stochastic-consulting.com/'],
-  ['./assets/images/sponsors/logo_textv2.png', 'http://www.numberboost.com/'],
-  ['./assets/images/sponsors/stone-three-mining-logo-BIG.jpg', 'https://www.stonethreemining.com/'],
-  ['./assets/images/sponsors/cortex_logic.png', 'http://cortexlogic.com/'],
-  ['./assets/images/sponsors/miia.png', 'http://machineintelligenceafrica.org/']]
+SPONSORS = [ './assets/images/sponsors/Stone-Three-logo_transparent.png',
+  './assets/images/sponsors/aerobotics.png',
+  './assets/images/sponsors/cortex_logic.png',
+  './assets/images/sponsors/dli.PNG',
+  './assets/images/sponsors/launchlablogo.png',
+  './assets/images/sponsors/logo-text.png',
+  './assets/images/sponsors/logo_textv2.png',
+  './assets/images/sponsors/miia.png',
+  './assets/images/sponsors/rezco-asset-management-logo.png',
+  './assets/images/sponsors/stone-three-mining-logo-BIG.jpg' ]
+
 ;
 /*
  * Change Navbar color while scrolling
@@ -471,6 +474,7 @@ function populateSponsors(sponsors) {
 
     for(i in sponsors) {
         var sponsor = sponsors[i];
+        console.log(sponsor);
 
         $logosDiv.append(
             $("<div />").addClass("col-sm-3")
@@ -481,7 +485,7 @@ function populateSponsors(sponsors) {
                 .addClass("sponsors-box")
                 .append(
                     $("<img />").attr({
-                        "src": sponsor[0],
+                        "src": sponsor,
                     }).css({
                         "width": "80%",
                         "position": "absolute",
