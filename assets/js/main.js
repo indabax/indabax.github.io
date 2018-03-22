@@ -36,16 +36,6 @@ INFO = { 'Ntombikayise Banda':
      category: 'Natural language processing',
      affiliationInfoPath: './assets/speaker_data/dr._alta_de_waal/affiliation.txt',
      affiliation: 'The University of Pretoria' },
-  'Dr. Thuso Simon':
-   { imagePath: './assets/speaker_data/dr._thuso_simon/image.jpg',
-     lectureInfoPath: './assets/speaker_data/dr._thuso_simon/lecture_info.txt',
-     lectureHeading: 'Extracting ID numbers from African Identity cards using Deep Learning',
-     lectureAbstract:
-      [ 'Know Your Consumer Legislation (KYC) is a big part of the legal framework of transactions in fintech. At Zoona we are required to verify the identity number and name of each consumer who use our products. To maximize efficiency in the digital era we want to have self-service KYC as we expand across Africa. Specifications for identity documents vary from country to country and can be anything from a letter from the chief to hand written identification cards. As a data scientist at Zoona, I am working on a KYC optical character recognition algorithm that must be robust enough to be used throughout Africa.' ],
-     categoryInfoPath: './assets/speaker_data/dr._thuso_simon/category.txt',
-     category: 'Vision',
-     affiliationInfoPath: './assets/speaker_data/dr._thuso_simon/affiliation.txt',
-     affiliation: 'The University of Cape Town' },
   'Dr. Herman Kamper':
    { imagePath: './assets/speaker_data/dr._herman_kamper/image.jpg',
      lectureInfoPath: './assets/speaker_data/dr._herman_kamper/lecture_info.txt',
@@ -75,16 +65,7 @@ INFO = { 'Ntombikayise Banda':
      category: 'Theory',
      affiliationInfoPath: './assets/speaker_data/dr._jacques_ludik/affiliation.txt',
      affiliation: 'Founder of MIIA, CEO of Cortex Logic' },
-  'Prof. Sugnet Lubbe':
-    { imagePath: './assets/speaker_data/prof._sugnet_lubbe/image.jpg',
-      lectureInfoPath: './assets/speaker_data/prof._sugnet_lubbe/lecture_info.txt',
-      lectureHeading: 'Visualising a Deep Learning black box',
-      lectureAbstract: [],
-      categoryInfoPath: './assets/speaker_data/prof._sugnet_lubbe/category.txt',
-      category: 'Theory',
-      affiliationInfoPath: './assets/speaker_data/prof._sugnet_lubbe/affiliation.txt',
-      affiliation: 'The University of Stellenbosch' },
-    'Dr. Janto Dreijer':
+  'Dr. Janto Dreijer':
    { imagePath: './assets/speaker_data/dr._janto_dreijer/image.jpg',
      lectureInfoPath: './assets/speaker_data/dr._janto_dreijer/lecture_info.txt',
      lectureHeading: 'AI Ethics',
@@ -93,6 +74,16 @@ INFO = { 'Ntombikayise Banda':
      category: 'Theory',
      affiliationInfoPath: './assets/speaker_data/dr._janto_dreijer/affiliation.txt',
      affiliation: 'Ambrite ZA' },
+  'Dr. Thuso Simon':
+   { imagePath: './assets/speaker_data/dr._thuso_simon/image.jpg',
+     lectureInfoPath: './assets/speaker_data/dr._thuso_simon/lecture_info.txt',
+     lectureHeading: 'Extracting ID numbers from African Identity cards using Deep Learning',
+     lectureAbstract:
+      [ 'Know Your Consumer Legislation (KYC) is a big part of the legal framework of transactions in fintech. At Zoona we are required to verify the identity number and name of each consumer who use our products. To maximize efficiency in the digital era we want to have self-service KYC as we expand across Africa. Specifications for identity documents vary from country to country and can be anything from a letter from the chief to hand written identification cards. As a data scientist at Zoona, I am working on a KYC optical character recognition algorithm that must be robust enough to be used throughout Africa.' ],
+     categoryInfoPath: './assets/speaker_data/dr._thuso_simon/category.txt',
+     category: 'Vision',
+     affiliationInfoPath: './assets/speaker_data/dr._thuso_simon/affiliation.txt',
+     affiliation: 'The University of Cape Town' },
   'Dr. Willie Brink':
    { imagePath: './assets/speaker_data/dr._willie_brink/image.jpg',
      lectureInfoPath: './assets/speaker_data/dr._willie_brink/lecture_info.txt',
@@ -141,27 +132,6 @@ INFO = { 'Ntombikayise Banda':
      category: 'Theory',
      affiliationInfoPath: './assets/speaker_data/prof._amit_mishra/affiliation.txt',
      affiliation: 'The University of Cape Town' },
-  'Prof. Bruce Bassett':
-   { imagePath: './assets/speaker_data/prof._bruce_bassett/image.jpg',
-     lectureInfoPath: './assets/speaker_data/prof._bruce_bassett/lecture_info.txt',
-     lectureHeading: 'AI challenges arising from the SKA',
-     lectureAbstract:
-      [ 'The Square Kilometer Array (SKA) will deliver of order one exabyte of data per day, making it the biggest science experiment in the world in the late 2020\'s. We discuss some of the open challenges and opportunities for AI and the SKA, particularly from an African perspective.' ],
-     categoryInfoPath: './assets/speaker_data/prof._bruce_bassett/category.txt',
-     category: 'Application',
-     affiliationInfoPath: './assets/speaker_data/prof._bruce_bassett/affiliation.txt',
-     affiliation: 'The University of Cape Town' },
-  'Ritesh Ajoodha':
-   { imagePath: './assets/speaker_data/ritesh_ajoodha/image.jpg',
-     lectureInfoPath: './assets/speaker_data/ritesh_ajoodha/lecture_info.txt',
-     lectureHeading: 'Bayesian Networks',
-     lectureAbstract:
-      [ 'Deep learning methods has enjoyed a tremendous amount of growth over recent years due to architectural and algorithmic innovations; larger datasets; growth in performance of processors; software innovations; and increased investment from industry. Although deep learning systems provide outstanding performance on many benchmark tasks, they are often data hungry; require a significant amount of computer resources; are poor at representing uncertainty; non-trivial to incorporate prior knowledge; easily fooled by adversarial examples; finicky to optimise; and are seen as uninterpretable black-boxes.',
-        'Probabilistic graphical models is the current method-of-choice to address these issues. In this talk we will explore the Bayesian network which is a celebrated model for prediction under uncertainty; incorporates prior knowledge easily; used to express relational decisions (influence diagrams); and can provide powerful performance while being mindful about dataset sizes. The Bayesian network models the Bayesian paradigm which states that anything which we have uncertainty over we must maintain a distribution over.  We will explore the representation, inference, and learning of these networks as well as present some trending software which can be used to execute these powerful graphical models on real datasets. ' ],
-     categoryInfoPath: './assets/speaker_data/ritesh_ajoodha/category.txt',
-     category: 'Theory',
-     affiliationInfoPath: './assets/speaker_data/ritesh_ajoodha/affiliation.txt',
-     affiliation: 'The University of the Witwatersrand' },
   'Adriaan Rowan':
    { imagePath: './assets/speaker_data/adriaan_rowan/image.jpg',
      lectureInfoPath: './assets/speaker_data/adriaan_rowan/lecture_info.txt',
@@ -176,13 +146,11 @@ INFO = { 'Ntombikayise Banda':
      lectureInfoPath: './assets/speaker_data/alex_conway/lecture_info.txt',
      lectureHeading: '10 Real World Problems Solved with Deep Learning (with code examples)',
      lectureAbstract:
-      ['This talk will take your hand and walk you along the cutting-edge of applied deep learning. We say we turn the latest deep learning research into software solutions. When I say \'we\', I mean my startup - see bio below:',
-
-'Alex is the founder and Director of Research at NumberBoost, a startup that solves problems using deep learning. He previously worked as a quant for on the buy side and as a data scientist for Superbalist.com. He has an honours degree in actuarial science and currently writing a Statistics MSc focused on machine learning. He is one of the organizers of the Cape Town Deep Learning meet-up.', 
-
-'This talk will contain code samples for many of the solutions. We will go over the architecture for each real-world challenge. We build up from a simple 10 line 95% accurate on 1000 real world classes computer vision model… to complex multi-modal compound architectures to solve problems such as house price prediction, computer vision powered dent-detection and a smart email bot. Beginners welcome.'],
+      [ 'This talk will take your hand and walk you along the cutting-edge of applied deep learning. We say we turn the latest deep learning research into software solutions. When I say "we", I mean my startup - see bio below:',
+        'Alex is the founder and Director of Research at NumberBoost, a startup that solves problems using deep learning. He previously worked as a quant for on the buy side and as a data scientist for Superbalist.com. He has an honours degree in actuarial science and currently writing a Statistics MSc focused on machine learning. He is one of the organizers of the Cape Town Deep Learning meet-up. ',
+        'This talk will contain code samples for many of the solutions. We will go over the architecture for each real-world challenge. We build up from a simple 10 line 95% accurate on 1000 real world classes computer vision model… to complex multi-modal compound architectures to solve problems such as house price prediction, computer vision powered dent-detection and a smart email bot. Beginners welcome.' ],
      categoryInfoPath: './assets/speaker_data/alex_conway/category.txt',
-     category: 'Vision',
+     category: 'Application',
      affiliationInfoPath: './assets/speaker_data/alex_conway/affiliation.txt',
      affiliation: 'The University of Cape Town' },
   'Benjamin De Charmoy':
@@ -216,6 +184,36 @@ INFO = { 'Ntombikayise Banda':
      category: 'Natural language processing',
      affiliationInfoPath: './assets/speaker_data/chris_currin/affiliation.txt',
      affiliation: 'The University of Cape Town' },
+  'Prof. Bruce Bassett':
+   { imagePath: './assets/speaker_data/prof._bruce_bassett/image.jpg',
+     lectureInfoPath: './assets/speaker_data/prof._bruce_bassett/lecture_info.txt',
+     lectureHeading: 'AI challenges arising from the SKA',
+     lectureAbstract:
+      [ 'The Square Kilometer Array (SKA) will deliver of order one exabyte of data per day, making it the biggest science experiment in the world in the late 2020\'s. We discuss some of the open challenges and opportunities for AI and the SKA, particularly from an African perspective.' ],
+     categoryInfoPath: './assets/speaker_data/prof._bruce_bassett/category.txt',
+     category: 'Application',
+     affiliationInfoPath: './assets/speaker_data/prof._bruce_bassett/affiliation.txt',
+     affiliation: 'The University of Cape Town' },
+  'Prof. Sugnet Lubbe':
+   { imagePath: './assets/speaker_data/prof._sugnet_lubbe/image.jpg',
+     lectureInfoPath: './assets/speaker_data/prof._sugnet_lubbe/lecture_info.txt',
+     lectureHeading: 'Visualising a Deep Learning black box',
+     lectureAbstract: [],
+     categoryInfoPath: './assets/speaker_data/prof._sugnet_lubbe/category.txt',
+     category: 'Theory',
+     affiliationInfoPath: './assets/speaker_data/prof._sugnet_lubbe/affiliation.txt',
+     affiliation: 'The University of Stellenbosch' },
+  'Ritesh Ajoodha':
+   { imagePath: './assets/speaker_data/ritesh_ajoodha/image.jpg',
+     lectureInfoPath: './assets/speaker_data/ritesh_ajoodha/lecture_info.txt',
+     lectureHeading: 'Bayesian Networks',
+     lectureAbstract:
+      [ 'Deep learning methods has enjoyed a tremendous amount of growth over recent years due to architectural and algorithmic innovations; larger datasets; growth in performance of processors; software innovations; and increased investment from industry. Although deep learning systems provide outstanding performance on many benchmark tasks, they are often data hungry; require a significant amount of computer resources; are poor at representing uncertainty; non-trivial to incorporate prior knowledge; easily fooled by adversarial examples; finicky to optimise; and are seen as uninterpretable black-boxes.',
+        'Probabilistic graphical models is the current method-of-choice to address these issues. In this talk we will explore the Bayesian network which is a celebrated model for prediction under uncertainty; incorporates prior knowledge easily; used to express relational decisions (influence diagrams); and can provide powerful performance while being mindful about dataset sizes. The Bayesian network models the Bayesian paradigm which states that anything which we have uncertainty over we must maintain a distribution over.  We will explore the representation, inference, and learning of these networks as well as present some trending software which can be used to execute these powerful graphical models on real datasets. ' ],
+     categoryInfoPath: './assets/speaker_data/ritesh_ajoodha/category.txt',
+     category: 'Theory',
+     affiliationInfoPath: './assets/speaker_data/ritesh_ajoodha/affiliation.txt',
+     affiliation: 'The University of the Witwatersrand' },
   'Shaun Irwin':
    { imagePath: './assets/speaker_data/shaun_irwin/image.jpg',
      lectureInfoPath: './assets/speaker_data/shaun_irwin/lecture_info.txt',
@@ -239,7 +237,10 @@ INFO = { 'Ntombikayise Banda':
    { imagePath: './assets/speaker_data/taliesin_beynon/image.jpg',
      lectureInfoPath: './assets/speaker_data/taliesin_beynon/lecture_info.txt',
      lectureHeading: 'Peering inside the black box',
-     lectureAbstract: [],
+     lectureAbstract:
+      [ 'In this presentation I\'ll try to dispel the popular perception that neural nets are black boxes, and show some examples of how we can \'peek under the hood\' of a net during and after training. I’ll briefly cover topics like LIME, anchors, semantic dictionaries, curriculum learning, visualizing loss landscapes, adversarial examples, and the like.',
+        'I hope you\'ll leave with a better intuition of the overall training process and the behavior of specific kinds of nets and how they succeed (or fail) to learn.',
+        'Bio: Taliesin Beynon is the developer of the high-level neural net framework that can be found in recent versions of Mathematica. He studied mathematics at the University of Cape Town.' ],
      categoryInfoPath: './assets/speaker_data/taliesin_beynon/category.txt',
      category: 'Theory',
      affiliationInfoPath: './assets/speaker_data/taliesin_beynon/affiliation.txt',
@@ -255,7 +256,6 @@ INFO = { 'Ntombikayise Banda':
      affiliation: 'Argon Asset Management' },
   'More Speakers TBC':
    { imagePath: './assets/speaker_data/more_speakers_TBC/image.jpg' } }
-
 ;
 
 SPONSORS = [ [ './assets/images/sponsors/deeplearningindaba_com.PNG',
