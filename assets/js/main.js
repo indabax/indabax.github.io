@@ -175,9 +175,11 @@ INFO = { 'Ntombikayise Banda':
      lectureInfoPath: './assets/speaker_data/alex_conway/lecture_info.txt',
      lectureHeading: 'Deep Learning for Computer Vision',
      lectureAbstract:
-      [ 'The state-of-the-art in image classification has skyrocketed thanks to the development of deep convolutional neural networks and increases in the amount of data and computing power available to train them. The top-5 error rate in the ImageNet competition to predict which of 1000 classes an image belongs to has plummeted from 28% error in 2010 to just 2.25% in 2017 (human level error is around 5%).',
-        'In addition to being able to classify objects in images (including not hotdogs), deep learning can be used to automatically generate captions for images, convert photos into paintings, detect cancer in pathology slide images, and help self-driving cars \'see\'.',
-        'The talk will give an overview of the cutting edge and some of the core mathematical concepts and will also include a short code-first tutorial to show how easy it is to get started using deep learning for computer vision in python.' ],
+      ['This talk will take your hand and walk you along the cutting-edge of applied deep learning. We say we turn the latest deep learning research into software solutions. When I say \'we\', I mean my startup - see bio below:',
+
+'Alex is the founder and Director of Research at NumberBoost, a startup that solves problems using deep learning. He previously worked as a quant for on the buy side and as a data scientist for Superbalist.com. He has an honours degree in actuarial science and currently writing a Statistics MSc focused on machine learning. He is one of the organizers of the Cape Town Deep Learning meet-up.', 
+
+'This talk will contain code samples for many of the solutions. We will go over the architecture for each real-world challenge. We build up from a simple 10 line 95% accurate on 1000 real world classes computer vision model… to complex multi-modal compound architectures to solve problems such as house price prediction, computer vision powered dent-detection and a smart email bot. Beginners welcome.'],
      categoryInfoPath: './assets/speaker_data/alex_conway/category.txt',
      category: 'Vision',
      affiliationInfoPath: './assets/speaker_data/alex_conway/affiliation.txt',
