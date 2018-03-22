@@ -75,7 +75,16 @@ INFO = { 'Ntombikayise Banda':
      category: 'Theory',
      affiliationInfoPath: './assets/speaker_data/dr._jacques_ludik/affiliation.txt',
      affiliation: 'Founder of MIIA, CEO of Cortex Logic' },
-  'Dr. Janto Dreijer':
+  'Prof. Sugnet Lubbe':
+    { imagePath: './assets/speaker_data/prof._sugnet_lubbe/image.jpg',
+      lectureInfoPath: './assets/speaker_data/prof._sugnet_lubbe/lecture_info.txt',
+      lectureHeading: 'Visualising a Deep Learning black box',
+      lectureAbstract: [],
+      categoryInfoPath: './assets/speaker_data/prof._sugnet_lubbe/category.txt',
+      category: 'Theory',
+      affiliationInfoPath: './assets/speaker_data/prof._sugnet_lubbe/affiliation.txt',
+      affiliation: 'The University of Stellenbosch' },
+    'Dr. Janto Dreijer':
    { imagePath: './assets/speaker_data/dr._janto_dreijer/image.jpg',
      lectureInfoPath: './assets/speaker_data/dr._janto_dreijer/lecture_info.txt',
      lectureHeading: 'AI Ethics',
