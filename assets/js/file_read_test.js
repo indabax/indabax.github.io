@@ -62,12 +62,17 @@ function getSponsorInfo() {
 	var info = []
 
 	for(var i in sponsors) {
+		sponsor_secton = [];
 		var sponsor = sponsors[i];
 
 		var filePath = sponsorsPath + sponsor;
 		if (fs.lstatSync(filePath).isFile()) {
-			// info.push(path.relative(cssPath, filePath));
-			info.push(filePath);
+			sponsor_secton.push(filePath);
+			sponsor_secton.push("http://www."+sponsor.split(".")[0].split("_").join("."));
+		}
+
+		if(sponsor_secton) {
+			info.push(sponsor_secton)
 		}
 	}
 
