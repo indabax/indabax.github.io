@@ -274,6 +274,15 @@ ul li {
 /*
  * 4.0 Navigation
  */
+
+ul.nav.navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 .navbar-custom {
   border: 0;
   margin: 0;
