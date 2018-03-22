@@ -163,7 +163,8 @@ INFO = { 'Ntombikayise Banda':
      affiliationInfoPath: './assets/speaker_data/ritesh_ajoodha/affiliation.txt',
      affiliation: 'The University of the Witwatersrand' },
   'Adriaan Rowan':
-   { lectureInfoPath: './assets/speaker_data/adriaan_rowan/lecture_info.txt',
+   { imagePath: './assets/speaker_data/adriaan_rowan/image.jpg',
+     lectureInfoPath: './assets/speaker_data/adriaan_rowan/lecture_info.txt',
      lectureHeading: 'The Blessing and Curse of High Dimensionality.',
      lectureAbstract: [],
      categoryInfoPath: './assets/speaker_data/adriaan_rowan/category.txt',
