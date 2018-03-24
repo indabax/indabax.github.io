@@ -79,5 +79,5 @@ function getSponsorInfo() {
 	return info;
 }
 
-console.log(getSpeakerInfo()["Prof. Sugnet Lubbe"]);
+console.log(getSpeakerInfo());
 // console.log(getSponsorInfo());

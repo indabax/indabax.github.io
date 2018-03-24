@@ -1,1 +1,6 @@
 Peering inside the black box
+In this presentation I'll try to dispel the popular perception that neural nets are black boxes, and show some examples of how we can 'peek under the hood' of a net during and after training. I’ll briefly cover topics like LIME, anchors, semantic dictionaries, curriculum learning, visualizing loss landscapes, adversarial examples, and the like.
+
+I hope you'll leave with a better intuition of the overall training process and the behavior of specific kinds of nets and how they succeed (or fail) to learn.
+
+Bio: Taliesin Beynon is the developer of the high-level neural net framework that can be found in recent versions of Mathematica. He studied mathematics at the University of Cape Town.
