@@ -135,15 +135,6 @@ INFO = { 'Ntombikayise Banda':
      category: 'Theory',
      affiliationInfoPath: './assets/speaker_data/prof._amit_mishra/affiliation.txt',
      affiliation: 'The University of Cape Town' },
-  'Adriaan Rowan':
-   { imagePath: './assets/speaker_data/adriaan_rowan/image.jpg',
-     lectureInfoPath: './assets/speaker_data/adriaan_rowan/lecture_info.txt',
-     lectureHeading: 'The Blessing and Curse of High Dimensionality.',
-     lectureAbstract: [],
-     categoryInfoPath: './assets/speaker_data/adriaan_rowan/category.txt',
-     category: 'Lightning talk',
-     affiliationInfoPath: './assets/speaker_data/adriaan_rowan/affiliation.txt',
-     affiliation: 'NumberBoost' },
   'Alex Conway':
    { imagePath: './assets/speaker_data/alex_conway/image.jpg',
      lectureInfoPath: './assets/speaker_data/alex_conway/lecture_info.txt',
@@ -155,7 +146,7 @@ INFO = { 'Ntombikayise Banda':
      categoryInfoPath: './assets/speaker_data/alex_conway/category.txt',
      category: 'Application',
      affiliationInfoPath: './assets/speaker_data/alex_conway/affiliation.txt',
-     affiliation: 'The University of Cape Town' },
+     affiliation: 'NumberBoost' },
   'Benjamin De Charmoy':
    { imagePath: './assets/speaker_data/benjamin_de_charmoy/image.jpg',
      lectureInfoPath: './assets/speaker_data/benjamin_de_charmoy/lecture_info.txt',
@@ -197,6 +188,15 @@ INFO = { 'Ntombikayise Banda':
      category: 'Application',
      affiliationInfoPath: './assets/speaker_data/prof._bruce_bassett/affiliation.txt',
      affiliation: 'The University of Cape Town' },
+  'Adriaan Rowan':
+   { imagePath: './assets/speaker_data/adriaan_rowan/image.jpg',
+     lectureInfoPath: './assets/speaker_data/adriaan_rowan/lecture_info.txt',
+     lectureHeading: 'The Blessing and Curse of High Dimensionality.',
+     lectureAbstract: [],
+     categoryInfoPath: './assets/speaker_data/adriaan_rowan/category.txt',
+     category: 'Lightning talk',
+     affiliationInfoPath: './assets/speaker_data/adriaan_rowan/affiliation.txt',
+     affiliation: 'NumberBoost' },
   'Prof. Sugnet Lubbe':
    { imagePath: './assets/speaker_data/prof._sugnet_lubbe/image.jpg',
      lectureInfoPath: './assets/speaker_data/prof._sugnet_lubbe/lecture_info.txt',
