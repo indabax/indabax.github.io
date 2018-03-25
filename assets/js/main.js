@@ -29,13 +29,16 @@ INFO = { 'Ntombikayise Banda':
      affiliation: 'Barclays Africa Group Limited' },
   'Dr. Alta De Waal':
    { imagePath: './assets/speaker_data/dr._alta_de_waal/image.jpg',
-     lectureInfoPath: './assets/speaker_data/dr._alta_de_waal/lecture_info.txt',
-     lectureHeading: 'Establishing semantic similarity between short text using deep learning',
-     lectureAbstract: [],
-     categoryInfoPath: './assets/speaker_data/dr._alta_de_waal/category.txt',
-     category: 'Natural language processing',
-     affiliationInfoPath: './assets/speaker_data/dr._alta_de_waal/affiliation.txt',
-     affiliation: 'The University of Pretoria' },
+  lectureInfoPath: './assets/speaker_data/dr._alta_de_waal/lecture_info.txt',
+  lectureHeading: 'Establishing semantic similarity between short text',
+  lectureAbstract:
+   [ 'The manifold hypothesis states that high dimensional data lie on low-dimensional manifolds embedded in the high-dimensional space. Applied to text, these manifolds can be described as the semantic space, or the vector space model of the corpus: It makes assumptions about the way in which the data was generated and translate the text into numbers.',
+     'Many such vector space models exist, the most basic being tf-idf. In this presentation I will discuss some vector space models such as LDA (topic models) and word2vec (word embeddings) that can be used to semantically index the corpus. Ultimately, we want to establish how similar a query is to the corpus in question. For this purpose, I will discuss distance metrics and propose a statistical method to summarise the semantic index of a corpus.',
+     'Finally, this talk is scoped within the context of short text which poses special statistical challenges to vector space models. ' ],
+  categoryInfoPath: './assets/speaker_data/dr._alta_de_waal/category.txt',
+  category: 'Natural language processing',
+  affiliationInfoPath: './assets/speaker_data/dr._alta_de_waal/affiliation.txt',
+  affiliation: 'The University of Pretoria' },
   'Dr. Herman Kamper':
    { imagePath: './assets/speaker_data/dr._herman_kamper/image.jpg',
      lectureInfoPath: './assets/speaker_data/dr._herman_kamper/lecture_info.txt',
