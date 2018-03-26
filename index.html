@@ -128,15 +128,15 @@
     <div class="container">
      <div class="row text-center">
       <span class="icon-wrap"><i class="fa fa-calendar"></i></span>
-      <h2 class="section-title">Preliminary Event Schedule</h2>
+      <h2 class="section-title">Event Schedule</h2>
       <p class="section-sub-title">Full-day events with awesome speakers and 3 parallel streams of lectures for you to choose from!</p>
-    </div><!--/ Title row end -->
+     </div><!--/ Title row end -->
 
     <div class="row">
       <div class="col-md-12">
 
        <div class="schedule-tab">
-        <ul class="nav nav-tabs" id="nav-tabs">
+        <!-- <ul class="nav nav-tabs" id="nav-tabs">
           <li class="active">
             <a class="animated fadeIn" href="#tab_zero" data-toggle="tab" aria-expanded="true" >
               <span class="tab-head">
@@ -165,24 +165,52 @@
             </span>
           </a>
         </li>
-      </ul>
+      </ul> -->
 
       <div class="tab-content">
        <div class="tab-pane animated fadeInRight active" id="tab_zero">
-        <h2 class="schedule-date">Overview of the day</h2>
+        <div class="row schedule-date">
+          <div class="col-md-2 col-xs-12">
+            <h2>Slot Time</h2>
+          </div>
 
-        <div class="schedule-listing">
-         <span class="schedule-slot-time">08:00 - 08:30</span>
+          <div class="col-md-10 col-xs-12">
+            <div class="col-md-4 col-xs-12">
+              <h2>Introductory Stream</h2>
+            </div>
+
+            <div class="col-md-4 col-xs-12">
+              <h2>NLP / Vision Stream</h2>
+            </div>
+
+            <div class="col-md-4 col-xs-12">
+              <h2>Bayesian / Philosophy Stream</h2>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row schedule-listing">
+         <div class="col-md-2 col-xs-12">
+            <span class="schedule-slot-time">08:00 - 08:30</span>
+          </div>
+
+          <div class="col-md-10 col-xs-12">
          <div class="schedule-slot-info">
           <div class="schedule-slot-info-content">
             <h3 class="schedule-slot-title">Registration</h3>
             <p class="schedule-slot-desc">Pick up your name badge</p>
            </div><!--Info content end -->
          </div><!-- Slot info end -->
+       </div>
        </div><!-- Slot listing 1 end -->
 
-       <div class="schedule-listing">
-         <span class="schedule-slot-time">08:30 - 09:15</span>
+       <div class="row schedule-listing">
+         <div class="col-md-2 col-xs-12">
+            <span class="schedule-slot-time">08:30 - 09:30</span>
+          </div>
+
+          <div class="col-md-10 col-xs-12">
          <div class="schedule-slot-info">
             <div class="schedule-slot-info-content">
               <h3 class="schedule-slot-title">Keynote and introduction to event</h3>
@@ -190,305 +218,236 @@
               <p class="schedule-slot-desc"></p>
             </div><!--Info content end -->
           </div><!-- Slot info end -->
+       </div>
         </div><!-- Slot listing 2 end -->
 
-        <div class="schedule-listing">
-          <span class="schedule-slot-time">09:15 - 09:30</span>
-          <div class="schedule-slot-info">
-            <div class="schedule-slot-info-content">
-              <h3 class="schedule-slot-title">Water break / walk to lecture halls</h3>
-            </div><!--Info content end -->
-          </div><!-- Slot info end -->
-        </div><!-- Slot listing 3 end -->
+        <div class="row schedule-listing">
+          <div class="col-md-2 col-xs-12">
+            <span class="schedule-slot-time">09:30 - 10:30</span>
+          </div>
 
-
-      <div class="schedule-listing">
-        <span class="schedule-slot-time">09:30 - 10:30</span>
-          <div class="row">
-            <div class="col-md-3">
+          <div class="col-md-10 col-xs-12">
+            <div class="col-md-4 col-xs-12">
               <div class="schedule-slot-info">
                 <div class="schedule-slot-info-content">
-                  <h3 class="schedule-slot-title">Machine Learning Fundamentals, A Probabilistic View</h3>
+                  <h3 class="schedule-slot-title">Intro To Machine (And Deep) Learning, With A Focus On Probability And Uncertainty</h3>
                 </div><!--Info content end -->
               </div><!-- Slot info end -->
             </div>
-            <div class="col-md-3">
+
+            <div class="col-md-4 col-xs-12">
               <div class="schedule-slot-info">
                 <div class="schedule-slot-info-content">
                   <h3 class="schedule-slot-title">Deep Learning for (More Than) Speech Recognition</h3>
                 </div><!--Info content end -->
               </div><!-- Slot info end -->
             </div>
-            <div class="col-md-3">
+
+            <div class="col-md-4 col-xs-12">
               <div class="schedule-slot-info">
                 <div class="schedule-slot-info-content">
-                  <h3 class="schedule-slot-title">Deep Learning For Computer Vision</h3>
+                  <h3 class="schedule-slot-title">Artificial Intelligence at Scale</h3>
                 </div><!--Info content end -->
               </div><!-- Slot info end -->
             </div>
           </div>
-        </div><!-- Slot listing 4 end -->
+        </div><!-- Slot listing 3 end -->
 
-        <div class="schedule-listing">
-          <span class="schedule-slot-time">10:30 - 11:00</span>
+
+      <div class="row schedule-listing">
+        <div class="col-md-2 col-xs-12">
+            <span class="schedule-slot-time">10:30 - 11:00</span>
+        </div>
+
+        <div class="col-md-10 col-xs-12">
           <div class="schedule-slot-info">
             <div class="schedule-slot-info-content">
-              <h3 class="schedule-slot-title">Coffee Break</h3>
+              <h3 class="schedule-slot-title">Coffee and Snack Break</h3>
             </div><!--Info content end -->
           </div><!-- Slot info end -->
-        </div><!-- Slot listing 5 end -->
+       </div>
+      </div><!-- Slot listing 4 end -->
 
-        <div class="schedule-listing">
-          <span class="schedule-slot-time">11:00 - 12:00</span>
-          <div class="row">
-            <div class="col-md-3">
-              <div class="schedule-slot-info">
-                <div class="schedule-slot-info-content">
-                  <h3 class="schedule-slot-title">From Neuron To Brain</h3>
-                </div><!--Info content end -->
-              </div><!-- Slot info end -->
-            </div>
-            <div class="col-md-3">
-              <div class="schedule-slot-info">
-                <div class="schedule-slot-info-content">
-                  <h3 class="schedule-slot-title">Artificial Assistants: How Can I Help You?</h3>
-                </div><!--Info content end -->
-              </div><!-- Slot info end -->
-            </div>
-            <div class="col-md-3">
-              <div class="schedule-slot-info">
-                <div class="schedule-slot-info-content">
-                  <h3 class="schedule-slot-title">Extracting ID Numbers From African Identity Cards Using Deep Learning</h3>
-                </div><!--Info content end -->
-              </div><!-- Slot info end -->
-            </div>
+        <div class="row schedule-listing">
+          <div class="col-md-2 col-xs-12">
+            <span class="schedule-slot-time">11:00 - 12:00</span>
           </div>
-        </div><!-- Slot listing 6 end -->
 
-        <div class="schedule-listing">
-          <span class="schedule-slot-time">12:00 - 13:00</span>
-          <div class="schedule-slot-info">
-            <div class="schedule-slot-info-content">
-              <h3 class="schedule-slot-title">Lunch</h3>
-            </div><!--Info content end -->
-          </div><!-- Slot info end -->
-        </div><!-- Slot listing 7 end -->
-
-        <div class="schedule-listing">
-          <span class="schedule-slot-time">13:00 - 14:00</span>
-          <div class="row">
-            <div class="col-md-3">
-              <div class="schedule-slot-info">
-                <div class="schedule-slot-info-content">
-                  <h3 class="schedule-slot-title">Mathematical Foundations Of Deep Learning</h3>
-                </div><!--Info content end -->
-              </div><!-- Slot info end -->
-            </div>
-            <div class="col-md-3">
+          <div class="col-md-10 col-xs-12">
+            <div class="col-md-4 col-xs-12">
               <div class="schedule-slot-info">
                 <div class="schedule-slot-info-content">
                   <h3 class="schedule-slot-title">Quantum Machine Learning</h3>
                 </div><!--Info content end -->
               </div><!-- Slot info end -->
             </div>
-            <div class="col-md-3">
+
+            <div class="col-md-4 col-xs-12">
               <div class="schedule-slot-info">
                 <div class="schedule-slot-info-content">
-                  <h3 class="schedule-slot-title">AI Challenges Arising From The SKA</h3>
-                </div><!--Info content end -->
-              </div><!-- Slot info end -->
-            </div><!-- Slot listing 4 end -->
-          </div>
-        </div><!-- Slot listing 8 end -->
-
-        <div class="schedule-listing">
-          <span class="schedule-slot-time">14:00 - 14:30</span>
-          <div class="schedule-slot-info">
-            <div class="schedule-slot-info-content">
-              <h3 class="schedule-slot-title">Coffee Break</h3>
-            </div><!--Info content end -->
-          </div><!-- Slot info end -->
-        </div><!-- Slot listing 9 end -->
-
-        <div class="schedule-listing">
-          <span class="schedule-slot-time">14:30 - 16:00</span>
-          <div class="row">
-            <div class="col-md-3">
-              <div class="schedule-slot-info">
-                <div class="schedule-slot-info-content">
-                  <h3 class="schedule-slot-title">Interactive Lecture - Bayesian Networks</h3>
+                  <h3 class="schedule-slot-title">Extracting ID numbers from African Identity cards using Deep Learning</h3>
                 </div><!--Info content end -->
               </div><!-- Slot info end -->
             </div>
-            <div class="col-md-3">
+
+            <div class="col-md-4 col-xs-12">
               <div class="schedule-slot-info">
                 <div class="schedule-slot-info-content">
-                  <h3 class="schedule-slot-title">Artificial Intelligence At Scale</h3>
+                  <h3 class="schedule-slot-title">Bayesian Networks</h3>
                 </div><!--Info content end -->
               </div><!-- Slot info end -->
             </div>
-            <div class="col-md-3">
-              <div class="schedule-slot-info">
-                <div class="schedule-slot-info-content">
-                  <h3 class="schedule-slot-title">Interactive Lecture - TBA</h3>
-                </div><!--Info content end -->
-              </div><!-- Slot info end -->
-            </div><!-- Slot listing 4 end -->
           </div>
-        </div><!-- Slot listing 10 end -->
-
-        <div class="schedule-listing">
-          <span class="schedule-slot-time">16:00 - 16:30</span>
-          <div class="schedule-slot-info">
-            <div class="schedule-slot-info-content">
-              <h3 class="schedule-slot-title">Lightning Talks</h3>
-              <h4 class="schedule-slot-speaker-name"></h4>
-              <p class="schedule-slot-desc">Quick discussions about interesting applications of Deep Learning.</p>
-            </div><!--Info content end -->
-          </div><!-- Slot info end -->
-        </div><!-- Slot listing 11 end -->
-
-        <div class="schedule-listing">
-          <span class="schedule-slot-time">16:30 - 17:00</span>
-          <div class="schedule-slot-info">
-            <div class="schedule-slot-info-content">
-              <h3 class="schedule-slot-title">Coffee Break</h3>
-            </div><!--Info content end -->
-          </div><!-- Slot info end -->
-        </div><!-- Slot listing 12 end -->
-
-        <div class="schedule-listing">
-          <span class="schedule-slot-time">17:00 - 18:00</span>
-          <div class="schedule-slot-info">
-            <div class="schedule-slot-info-content">
-              <h3 class="schedule-slot-title">Panel Discussion</h3>
-              <h4 class="schedule-slot-speaker-name"></h4>
-              <p class="schedule-slot-desc">Strengthening machine learning in Africa.</p>
-            </div><!--Info content end -->
-          </div><!-- Slot info end -->
-        </div><!-- Slot listing 13 end -->
-
-        <div class="schedule-listing listing-last">
-         <span class="schedule-slot-time">18:30 - TBC</span>
-         <div class="schedule-slot-info">
-          <div class="schedule-slot-info-content">
-            <h3 class="schedule-slot-title">After Party!</h3>
-            <p class="schedule-slot-desc">A chance to cut lose after a long day and socialize with everyone that was at the event!</p>
-          </div><!--Info content end -->
-        </div><!-- Slot info end -->
-      </div><!-- Slot listing 14 end -->
-
-      </div><!-- Tab pane 0 end -->
-
-       <div class="tab-pane animated fadeInRight" id="tab_one">
-        <h2 class="schedule-date">For those that are beginning to learn about ML</h2>
-
-        <div class="schedule-listing">
-         <span class="schedule-slot-time">08:00 - 08:30</span>
-         <div class="schedule-slot-info">
-          <div class="schedule-slot-info-content">
-            <h3 class="schedule-slot-title">Registration</h3>
-            <p class="schedule-slot-desc">Pick up your name badge</p>
-           </div><!--Info content end -->
-         </div><!-- Slot info end -->
-       </div><!-- Slot listing 1 end -->
-
-       <div class="schedule-listing">
-         <span class="schedule-slot-time">08:30 - 09:15</span>
-         <div class="schedule-slot-info">
-      			<!-- <a href="#">
-      				<img class="schedule-slot-speakers" src="images/speakers/speaker1.jpg" alt="">
-      			</a> -->
-      			<div class="schedule-slot-info-content">
-      				<h3 class="schedule-slot-title">Keynote and introduction to event</h3>
-      				<h4 class="schedule-slot-speaker-name"><!-- Speaker To be Confirmed --></h4>
-      				<p class="schedule-slot-desc"></p>
-      			</div><!--Info content end -->
-      		</div><!-- Slot info end -->
-      	</div><!-- Slot listing 2 end -->
-
-      	<div class="schedule-listing">
-      		<span class="schedule-slot-time">09:15 - 09:30</span>
-      		<div class="schedule-slot-info">
-      			<div class="schedule-slot-info-content">
-      				<h3 class="schedule-slot-title">Water break / walk to lecture halls</h3>
-      			</div><!--Info content end -->
-      		</div><!-- Slot info end -->
-      	</div><!-- Slot listing 3 end -->
-
-      	<div class="schedule-listing">
-      		<span class="schedule-slot-time">09:30 - 10:30</span>
-      		<div class="schedule-slot-info">
-      			<div class="schedule-slot-info-content">
-      				<h3 class="schedule-slot-title">Machine Learning Fundamentals, A Probabilistic View</h3>
-              <h4 class="schedule-slot-speaker-name"></h4>
-              <p class="schedule-slot-desc">This is the place to be if you do not yet know what machine learning is about and if you want to learn the basics.</p>
-            </div><!--Info content end -->
-          </div><!-- Slot info end -->
-        </div><!-- Slot listing 4 end -->
-
-        <div class="schedule-listing">
-          <span class="schedule-slot-time">10:30 - 11:00</span>
-          <div class="schedule-slot-info">
-            <div class="schedule-slot-info-content">
-              <h3 class="schedule-slot-title">Coffee Break</h3>
-            </div><!--Info content end -->
-          </div><!-- Slot info end -->
         </div><!-- Slot listing 5 end -->
 
-        <div class="schedule-listing">
-          <span class="schedule-slot-time">11:00 - 12:00</span>
-          <div class="schedule-slot-info">
-            <div class="schedule-slot-info-content">
-              <h3 class="schedule-slot-title">From Neuron To Brain</h3>
-              <h4 class="schedule-slot-speaker-name"></h4>
-              <p class="schedule-slot-desc">How has brain inspired the development of deep NN and how can it keep inspiring more breakthrough innovations in the domain of AI?</p>
-            </div><!--Info content end -->
-          </div><!-- Slot info end -->
+        <div class="row schedule-listing">
+          <div class="col-md-2 col-xs-12">
+            <span class="schedule-slot-time">12:00 - 13:00</span>
+          </div>
+
+          <div class="col-md-10 col-xs-12">
+            <div class="col-md-4 col-xs-12">
+              <div class="schedule-slot-info">
+                <div class="schedule-slot-info-content">
+                  <h3 class="schedule-slot-title">AI challenges arising from the SKA</h3>
+                </div><!--Info content end -->
+              </div><!-- Slot info end -->
+            </div>
+
+            <div class="col-md-4 col-xs-12">
+              <div class="schedule-slot-info">
+                <div class="schedule-slot-info-content">
+                  <h3 class="schedule-slot-title">Multimodal Emotion Recognition</h3>
+                </div><!--Info content end -->
+              </div><!-- Slot info end -->
+            </div>
+
+            <div class="col-md-4 col-xs-12">
+              <div class="schedule-slot-info">
+                <div class="schedule-slot-info-content">
+                  <h3 class="schedule-slot-title">What you need to know about Bayesian statistics</h3>
+                </div><!--Info content end -->
+              </div><!-- Slot info end -->
+            </div><!-- Slot listing 4 end -->
+          </div>
         </div><!-- Slot listing 6 end -->
 
-        <div class="schedule-listing">
-          <span class="schedule-slot-time">12:00 - 13:00</span>
-          <div class="schedule-slot-info">
-            <div class="schedule-slot-info-content">
-              <h3 class="schedule-slot-title">Lunch</h3>
-            </div><!--Info content end -->
-          </div><!-- Slot info end -->
+        <div class="row schedule-listing">
+          <div class="col-md-2 col-xs-12">
+            <span class="schedule-slot-time">13:00 - 14:00</span>
+          </div>
+
+          <div class="col-md-10 col-xs-12">
+            <div class="schedule-slot-info">
+              <div class="schedule-slot-info-content">
+                <h3 class="schedule-slot-title">Lunch and Networking</h3>
+              </div><!--Info content end -->
+            </div><!-- Slot info end -->
+          </div>
         </div><!-- Slot listing 7 end -->
 
-        <div class="schedule-listing">
-          <span class="schedule-slot-time">13:00 - 14:00</span>
-          <div class="schedule-slot-info">
-            <div class="schedule-slot-info-content">
-              <h3 class="schedule-slot-title">Mathematical Foundations Of Deep Learning</h3>
-              <h4 class="schedule-slot-speaker-name"></h4>
-              <p class="schedule-slot-desc">An introduction to the mathematics of neural networks.</p>
-            </div><!--Info content end -->
-          </div><!-- Slot info end -->
+        <div class="row schedule-listing">
+          <div class="col-md-2 col-xs-12">
+            <span class="schedule-slot-time">14:00 - 15:00</span>
+          </div>
+
+          <div class="col-md-10 col-xs-12">
+            <div class="col-md-4 col-xs-12">
+              <div class="schedule-slot-info">
+                <div class="schedule-slot-info-content">
+                  <h3 class="schedule-slot-title">10 Real World Problems Solved With Deep Learning (With Code Examples)</h3>
+                </div><!--Info content end -->
+              </div><!-- Slot info end -->
+            </div>
+
+            <div class="col-md-4 col-xs-12">
+              <div class="schedule-slot-info">
+                <div class="schedule-slot-info-content">
+                  <h3 class="schedule-slot-title">Establishing semantic similarity between short text using deep learning</h3>
+                </div><!--Info content end -->
+              </div><!-- Slot info end -->
+            </div>
+
+            <div class="col-md-4 col-xs-12">
+              <div class="schedule-slot-info">
+                <div class="schedule-slot-info-content">
+                  <h3 class="schedule-slot-title">Deep Learning in Complex Dynamical Systems</h3>
+                </div><!--Info content end -->
+              </div><!-- Slot info end -->
+            </div><!-- Slot listing 4 end -->
+          </div>
         </div><!-- Slot listing 8 end -->
 
-        <div class="schedule-listing">
-          <span class="schedule-slot-time">14:00 - 14:30</span>
-          <div class="schedule-slot-info">
-            <div class="schedule-slot-info-content">
-              <h3 class="schedule-slot-title">Coffee Break</h3>
-            </div><!--Info content end -->
-          </div><!-- Slot info end -->
+        <div class="row schedule-listing">
+          <div class="col-md-2 col-xs-12">
+            <span class="schedule-slot-time">15:00 - 15:45</span>
+          </div>
+
+          <div class="col-md-10 col-xs-12">
+            <div class="col-md-4 col-xs-12">
+              <div class="schedule-slot-info">
+                <div class="schedule-slot-info-content">
+                  <h3 class="schedule-slot-title">Mathematical Foundations Of Deep Learning</h3>
+                </div><!--Info content end -->
+              </div><!-- Slot info end -->
+            </div>
+
+            <div class="col-md-4 col-xs-12">
+              <div class="schedule-slot-info">
+                <div class="schedule-slot-info-content">
+                  <h3 class="schedule-slot-title">Artificial Assistants: How can I help you?</h3>
+                </div><!--Info content end -->
+              </div><!-- Slot info end -->
+            </div>
+
+            <div class="col-md-4 col-xs-12">
+              <div class="schedule-slot-info">
+                <div class="schedule-slot-info-content">
+                  <h3 class="schedule-slot-title">From Neuron to Brain</h3>
+                </div><!--Info content end -->
+              </div><!-- Slot info end -->
+            </div><!-- Slot listing 4 end -->
+          </div>
         </div><!-- Slot listing 9 end -->
 
-        <div class="schedule-listing">
-          <span class="schedule-slot-time">14:30 - 16:00</span>
-          <div class="schedule-slot-info">
-            <div class="schedule-slot-info-content">
-              <h3 class="schedule-slot-title">Interactive Lecture - Bayesian Networks</h3>
-              <h4 class="schedule-slot-speaker-name"></h4>
-              <p class="schedule-slot-desc">Now you will get practical examples of how to use what you have learnt throughout the day and apply it to a vision-based problem.</p>
-            </div><!--Info content end -->
-          </div><!-- Slot info end -->
+        <div class="row schedule-listing">
+          <div class="col-md-2 col-xs-12">
+            <span class="schedule-slot-time">15:45 - 16:30</span>
+          </div>
+
+          <div class="col-md-10 col-xs-12">
+            <div class="col-md-4 col-xs-12">
+              <div class="schedule-slot-info">
+                <div class="schedule-slot-info-content">
+                  <h3 class="schedule-slot-title">Peering inside the black box</h3>
+                </div><!--Info content end -->
+              </div><!-- Slot info end -->
+            </div>
+
+            <div class="col-md-4 col-xs-12">
+              <div class="schedule-slot-info">
+                <div class="schedule-slot-info-content">
+                  <h3 class="schedule-slot-title">Facial Expression Recognition and Convolutional Neural Networks</h3>
+                </div><!--Info content end -->
+              </div><!-- Slot info end -->
+            </div>
+
+            <div class="col-md-4 col-xs-12">
+              <div class="schedule-slot-info">
+                <div class="schedule-slot-info-content">
+                  <h3 class="schedule-slot-title">AI Ethics</h3>
+                </div><!--Info content end -->
+              </div><!-- Slot info end -->
+            </div><!-- Slot listing 4 end -->
+          </div>
         </div><!-- Slot listing 10 end -->
 
-        <div class="schedule-listing">
-          <span class="schedule-slot-time">16:00 - 16:30</span>
+        <div class="row schedule-listing">
+          <div class="col-md-2 col-xs-12">
+            <span class="schedule-slot-time">16:30 - 17:00</span>
+          </div>
+
+          <div class="col-md-10 col-xs-12">
           <div class="schedule-slot-info">
             <div class="schedule-slot-info-content">
               <h3 class="schedule-slot-title">Lightning Talks</h3>
@@ -496,19 +455,29 @@
               <p class="schedule-slot-desc">Quick discussions about interesting applications of Deep Learning.</p>
             </div><!--Info content end -->
           </div><!-- Slot info end -->
+       </div>
         </div><!-- Slot listing 11 end -->
 
-        <div class="schedule-listing">
-          <span class="schedule-slot-time">16:30 - 17:00</span>
+        <div class="row schedule-listing">
+          <div class="col-md-2 col-xs-12">
+            <span class="schedule-slot-time">17:00 - 17:30</span>
+          </div>
+
+          <div class="col-md-10 col-xs-12">
           <div class="schedule-slot-info">
             <div class="schedule-slot-info-content">
               <h3 class="schedule-slot-title">Coffee Break</h3>
             </div><!--Info content end -->
           </div><!-- Slot info end -->
         </div><!-- Slot listing 12 end -->
+      </div>
 
-        <div class="schedule-listing">
-          <span class="schedule-slot-time">17:00 - 18:00</span>
+        <div class="row schedule-listing">
+          <div class="col-md-2 col-xs-12">
+            <span class="schedule-slot-time">17:30 - 19:00</span>
+          </div>
+
+          <div class="col-md-10 col-xs-12">
           <div class="schedule-slot-info">
             <div class="schedule-slot-info-content">
               <h3 class="schedule-slot-title">Panel Discussion</h3>
@@ -516,10 +485,15 @@
               <p class="schedule-slot-desc">Strengthening machine learning in Africa.</p>
             </div><!--Info content end -->
           </div><!-- Slot info end -->
+       </div>
         </div><!-- Slot listing 13 end -->
 
-        <div class="schedule-listing listing-last">
-         <span class="schedule-slot-time">18:30 - TBC</span>
+        <div class="row schedule-listing listing-last">
+         <div class="col-md-2 col-xs-12">
+            <span class="schedule-slot-time">19:00 - TBC</span>
+          </div>
+
+          <div class="col-md-10 col-xs-12">
          <div class="schedule-slot-info">
           <div class="schedule-slot-info-content">
             <h3 class="schedule-slot-title">After Party!</h3>
@@ -528,305 +502,9 @@
         </div><!-- Slot info end -->
       </div><!-- Slot listing 14 end -->
 
-      </div><!-- Tab pane 1 end -->
+       </div>
+      </div><!-- Tab pane 0 end -->
 
-      <div class="tab-pane animated fadeInRight" id="tab_two">
-      <h2 class="schedule-date">For those who already know what Deep Learning is and want to learn about specific topics or applications. Focus is on time series input data and Natural Language Processing.</h2>
-
-      <div class="schedule-listing">
-        <span class="schedule-slot-time">08:00 - 08:30</span>
-        <div class="schedule-slot-info">
-          <div class="schedule-slot-info-content">
-            <h3 class="schedule-slot-title">Registration</h3>
-            <p class="schedule-slot-desc">Pick up your name badge</p>
-          </div><!--Info content end -->
-        </div><!-- Slot info end -->
-      </div><!-- Slot listing 1 end -->
-
-      <div class="schedule-listing">
-        <span class="schedule-slot-time">08:30 - 09:15</span>
-        <div class="schedule-slot-info">
-                <!-- <a href="#">
-                    <img class="schedule-slot-speakers" src="images/speakers/speaker1.jpg" alt="">
-                  </a> -->
-                  <div class="schedule-slot-info-content">
-                    <h3 class="schedule-slot-title">Keynote and introduction to event</h3>
-                    <h4 class="schedule-slot-speaker-name"><!-- Speaker To be Confirmed --></h4>
-                    <p class="schedule-slot-desc"></p>
-                  </div><!--Info content end -->
-                </div><!-- Slot info end -->
-              </div><!-- Slot listing 2 end -->
-
-              <div class="schedule-listing">
-                <span class="schedule-slot-time">09:15 - 09:30</span>
-                <div class="schedule-slot-info">
-                  <div class="schedule-slot-info-content">
-                    <h3 class="schedule-slot-title">Water break / walk to lecture halls</h3>
-                  </div><!--Info content end -->
-                </div><!-- Slot info end -->
-              </div><!-- Slot listing 3 end -->
-
-              <div class="schedule-listing">
-                <span class="schedule-slot-time">09:30 - 10:30</span>
-                <div class="schedule-slot-info">
-                  <div class="schedule-slot-info-content">
-                    <h3 class="schedule-slot-title">Deep Learning for (More Than) Speech Recognition</h3>
-                    <h4 class="schedule-slot-speaker-name"></h4>
-                    <p class="schedule-slot-desc">Learn how to use the neural network to handle sequential waveform data.</p>
-                  </div><!--Info content end -->
-                </div><!-- Slot info end -->
-              </div><!-- Slot listing 4 end -->
-
-              <div class="schedule-listing">
-                <span class="schedule-slot-time">10:30 - 11:00</span>
-                <div class="schedule-slot-info">
-                  <div class="schedule-slot-info-content">
-                    <h3 class="schedule-slot-title">Coffee Break</h3>
-                  </div><!--Info content end -->
-                </div><!-- Slot info end -->
-              </div><!-- Slot listing 5 end -->
-
-              <div class="schedule-listing">
-                <span class="schedule-slot-time">11:00 - 12:00</span>
-                <div class="schedule-slot-info">
-                  <div class="schedule-slot-info-content">
-                    <h3 class="schedule-slot-title">Artificial Assistants: How Can I Help You?</h3>
-                    <h4 class="schedule-slot-speaker-name"></h4>
-                    <p class="schedule-slot-desc">Explore the underlying architectures and capabilities of chatbots to understand what makes them work, their weaknesses, and future improvements.</p>
-                  </div><!--Info content end -->
-                </div><!-- Slot info end -->
-              </div><!-- Slot listing 6 end -->
-
-              <div class="schedule-listing">
-                <span class="schedule-slot-time">12:00 - 13:00</span>
-                <div class="schedule-slot-info">
-                  <div class="schedule-slot-info-content">
-                    <h3 class="schedule-slot-title">Lunch</h3>
-                  </div><!--Info content end -->
-                </div><!-- Slot info end -->
-              </div><!-- Slot listing 7 end -->
-
-              <div class="schedule-listing">
-                <span class="schedule-slot-time">13:00 - 14:00</span>
-                <div class="schedule-slot-info">
-                  <div class="schedule-slot-info-content">
-                    <h3 class="schedule-slot-title">Quantum Machine Learning</h3>
-                    <h4 class="schedule-slot-speaker-name"></h4>
-                    <p class="schedule-slot-desc">Learn more about the exciting field of quantum ML.</p>
-                  </div><!--Info content end -->
-                </div><!-- Slot info end -->
-              </div><!-- Slot listing 8 end -->
-
-              <div class="schedule-listing">
-                <span class="schedule-slot-time">14:00 - 14:30</span>
-                <div class="schedule-slot-info">
-                  <div class="schedule-slot-info-content">
-                    <h3 class="schedule-slot-title">Coffee Break</h3>
-                  </div><!--Info content end -->
-                </div><!-- Slot info end -->
-              </div><!-- Slot listing 9 end -->
-
-              <div class="schedule-listing">
-                <span class="schedule-slot-time">14:30 - 16:00</span>
-                <div class="schedule-slot-info">
-                  <div class="schedule-slot-info-content">
-                    <h3 class="schedule-slot-title">Artificial Intelligence At Scale</h3>
-                    <h4 class="schedule-slot-speaker-name"></h4>
-                    <p class="schedule-slot-desc"></p>
-                  </div><!--Info content end -->
-                </div><!-- Slot info end -->
-              </div><!-- Slot listing 10 end -->
-
-              <div class="schedule-listing">
-                <span class="schedule-slot-time">16:00 - 16:30</span>
-                <div class="schedule-slot-info">
-                  <div class="schedule-slot-info-content">
-                    <h3 class="schedule-slot-title">Lightning Talks</h3>
-                    <h4 class="schedule-slot-speaker-name"></h4>
-                    <p class="schedule-slot-desc">Quick discussions about interesting applications of Deep Learning.</p>
-                  </div><!--Info content end -->
-                </div><!-- Slot info end -->
-              </div><!-- Slot listing 11 end -->
-
-              <div class="schedule-listing">
-                <span class="schedule-slot-time">16:30 - 17:00</span>
-                <div class="schedule-slot-info">
-                  <div class="schedule-slot-info-content">
-                    <h3 class="schedule-slot-title">Coffee Break</h3>
-                  </div><!--Info content end -->
-                </div><!-- Slot info end -->
-              </div><!-- Slot listing 12 end -->
-
-              <div class="schedule-listing">
-                <span class="schedule-slot-time">17:00 - 18:00</span>
-                <div class="schedule-slot-info">
-                  <div class="schedule-slot-info-content">
-                    <h3 class="schedule-slot-title">Panel Discussion</h3>
-                    <h4 class="schedule-slot-speaker-name"></h4>
-                    <p class="schedule-slot-desc">Strengthening machine learning in Africa.</p>
-                  </div><!--Info content end -->
-                </div><!-- Slot info end -->
-              </div><!-- Slot listing 13 end -->
-
-              <div class="schedule-listing listing-last">
-                <span class="schedule-slot-time">18:30 - TBC</span>
-                <div class="schedule-slot-info">
-                  <div class="schedule-slot-info-content">
-                    <h3 class="schedule-slot-title">After Party!</h3>
-                    <p class="schedule-slot-desc">A chance to cut lose after a long day and socialize with everyone that was at the event!</p>
-                  </div><!--Info content end -->
-                </div><!-- Slot info end -->
-              </div><!-- Slot listing 14 end -->
-            </div><!-- Tab pane 2 end -->
-
-            <div class="tab-pane animated fadeInRight" id="tab_three">
-              <h2 class="schedule-date">For those who already know what Deep Learning is and want to learn about specific topics or applications. Focus is on Reinforcement Learning and Vision.</h2>
-
-              <div class="schedule-listing">
-                <span class="schedule-slot-time">08:00 - 08:30</span>
-                <div class="schedule-slot-info">
-                  <div class="schedule-slot-info-content">
-                    <h3 class="schedule-slot-title">Registration</h3>
-                    <p class="schedule-slot-desc">Pick up your name badge</p>
-                  </div><!--Info content end -->
-                </div><!-- Slot info end -->
-              </div><!-- Slot listing 1 end -->
-
-              <div class="schedule-listing">
-                <span class="schedule-slot-time">08:30 - 09:15</span>
-                <div class="schedule-slot-info">
-                <!-- <a href="#">
-                    <img class="schedule-slot-speakers" src="images/speakers/speaker1.jpg" alt="">
-                  </a> -->
-                  <div class="schedule-slot-info-content">
-                    <h3 class="schedule-slot-title">Keynote and introduction to event</h3>
-                    <h4 class="schedule-slot-speaker-name"><!-- Speaker To be Confirmed --></h4>
-                    <p class="schedule-slot-desc"></p>
-                  </div><!--Info content end -->
-                </div><!-- Slot info end -->
-              </div><!-- Slot listing 2 end -->
-
-              <div class="schedule-listing">
-                <span class="schedule-slot-time">09:15 - 09:30</span>
-                <div class="schedule-slot-info">
-                  <div class="schedule-slot-info-content">
-                    <h3 class="schedule-slot-title">Water break / walk to lecture halls</h3>
-                  </div><!--Info content end -->
-                </div><!-- Slot info end -->
-              </div><!-- Slot listing 3 end -->
-
-              <div class="schedule-listing">
-                <span class="schedule-slot-time">09:30 - 10:30</span>
-                <div class="schedule-slot-info">
-                  <div class="schedule-slot-info-content">
-                    <h3 class="schedule-slot-title">Deep Learning For Computer Vision</h3>
-                    <h4 class="schedule-slot-speaker-name"></h4>
-                    <p class="schedule-slot-desc">Learn what state of the art machine learning techniques are being used in the field of computer vision.</p>
-                  </div><!--Info content end -->
-                </div><!-- Slot info end -->
-              </div><!-- Slot listing 4 end -->
-
-              <div class="schedule-listing">
-                <span class="schedule-slot-time">10:30 - 11:00</span>
-                <div class="schedule-slot-info">
-                  <div class="schedule-slot-info-content">
-                    <h3 class="schedule-slot-title">Coffee Break</h3>
-                  </div><!--Info content end -->
-                </div><!-- Slot info end -->
-              </div><!-- Slot listing 5 end -->
-
-              <div class="schedule-listing">
-                <span class="schedule-slot-time">11:00 - 12:00</span>
-                <div class="schedule-slot-info">
-                  <div class="schedule-slot-info-content">
-                    <h3 class="schedule-slot-title">Extracting ID Numbers From African Identity Cards Using Deep Learning</h3>
-                    <h4 class="schedule-slot-speaker-name"></h4>
-                    <p class="schedule-slot-desc"></p>
-                  </div><!--Info content end -->
-                </div><!-- Slot info end -->
-              </div><!-- Slot listing 6 end -->
-
-              <div class="schedule-listing">
-                <span class="schedule-slot-time">12:00 - 13:00</span>
-                <div class="schedule-slot-info">
-                  <div class="schedule-slot-info-content">
-                    <h3 class="schedule-slot-title">Lunch</h3>
-                  </div><!--Info content end -->
-                </div><!-- Slot info end -->
-              </div><!-- Slot listing 7 end -->
-
-              <div class="schedule-listing">
-                <span class="schedule-slot-time">13:00 - 14:00</span>
-                <div class="schedule-slot-info">
-                  <div class="schedule-slot-info-content">
-                    <h3 class="schedule-slot-title">AI Challenges Arising From The SKA</h3>
-                    <h4 class="schedule-slot-speaker-name"></h4>
-                    <p class="schedule-slot-desc"></p>
-                  </div><!--Info content end -->
-                </div><!-- Slot info end -->
-              </div><!-- Slot listing 8 end -->
-
-              <div class="schedule-listing">
-                <span class="schedule-slot-time">14:00 - 14:30</span>
-                <div class="schedule-slot-info">
-                  <div class="schedule-slot-info-content">
-                    <h3 class="schedule-slot-title">Coffee Break</h3>
-                  </div><!--Info content end -->
-                </div><!-- Slot info end -->
-              </div><!-- Slot listing 9 end -->
-
-              <div class="schedule-listing">
-                <span class="schedule-slot-time">14:30 - 16:00</span>
-                <div class="schedule-slot-info">
-                  <div class="schedule-slot-info-content">
-                    <h3 class="schedule-slot-title">Demo Lecture: To Be confirmed</h3>
-                    <h4 class="schedule-slot-speaker-name"></h4>
-                    <p class="schedule-slot-desc"></p>
-                  </div><!--Info content end -->
-                </div><!-- Slot info end -->
-              </div><!-- Slot listing 10 end -->
-
-              <div class="schedule-listing">
-                <span class="schedule-slot-time">16:00 - 16:30</span>
-                <div class="schedule-slot-info">
-                  <div class="schedule-slot-info-content">
-                    <h3 class="schedule-slot-title">Lightning Talks</h3>
-                    <h4 class="schedule-slot-speaker-name"></h4>
-                    <p class="schedule-slot-desc">Quick discussions about interesting applications of Deep Learning.</p>
-                  </div><!--Info content end -->
-                </div><!-- Slot info end -->
-              </div><!-- Slot listing 11 end -->
-
-              <div class="schedule-listing">
-                <span class="schedule-slot-time">16:30 - 17:00</span>
-                <div class="schedule-slot-info">
-                  <div class="schedule-slot-info-content">
-                    <h3 class="schedule-slot-title">Coffee Break</h3>
-                  </div><!--Info content end -->
-                </div><!-- Slot info end -->
-              </div><!-- Slot listing 12 end -->
-
-              <div class="schedule-listing">
-                <span class="schedule-slot-time">17:00 - 18:00</span>
-                <div class="schedule-slot-info">
-                  <div class="schedule-slot-info-content">
-                    <h3 class="schedule-slot-title">Panel Discussion</h3>
-                    <h4 class="schedule-slot-speaker-name"></h4>
-                    <p class="schedule-slot-desc">Strengthening machine learning in Africa.</p>
-                  </div><!--Info content end -->
-                </div><!-- Slot info end -->
-              </div><!-- Slot listing 13 end -->
-
-              <div class="schedule-listing listing-last">
-                <span class="schedule-slot-time">18:30 - TBC</span>
-                <div class="schedule-slot-info">
-                  <div class="schedule-slot-info-content">
-                    <h3 class="schedule-slot-title">After Party!</h3>
-                    <p class="schedule-slot-desc">A chance to cut lose after a long day and socialize with everyone that was at the event!</p>
-                  </div><!--Info content end -->
-                </div><!-- Slot info end -->
-              </div><!-- Slot listing 14 end -->
-            </div><!-- Tab pane 2 end -->
           </div><!-- tab content -->
         </div><!-- Schedule tab end -->
 

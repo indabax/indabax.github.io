@@ -447,21 +447,28 @@ function populateSpeakerInfo(info) {
         $scheduleSection = $(".schedule .tab-content");
         // find title of this speaker and insert information (if not in tab zero)
         $scheduleSlot = $scheduleSection.find("h3.schedule-slot-title:containsi('" + info[speaker].lectureHeading + "')").closest(".schedule-slot-info");
+        $slotInfo = $scheduleSlot.find("div.schedule-slot-info-content")
 
-        $scheduleSlot = $scheduleSlot.filter(function(index, $element) {
-            return ($element.closest("#tab_zero") == null);
-        });
+        $slotInfo.wrap($("<div />").addClass("col-xs-8"))
+        // $scheduleSlot = $scheduleSlot.filter(function(index, $element) {
+        //     return ($element.closest("#tab_zero") == null);
+        // });
 
         $scheduleSlot.prepend(
-            $("<a />")
+            $("<div />").addClass("col-xs-4")
             .append(
-                $("<img />").addClass("schedule-slot-speakers").attr({
-                    "src": info[speaker].imagePath
-                })
+                $("<a />")
+                .append(
+                    $("<img />").addClass("schedule-slot-speakers").attr({
+                        "src": info[speaker].imagePath
+                    })
+                )
             )
         );
 
-        $scheduleSlot.find("h4.schedule-slot-speaker-name").text(speaker);
+        $slotInfo.append(
+            $("<h4 />").addClass("schedule-slot-speaker-name").text(speaker)
+        );
 
         $scheduleSlot.attr({
             "data-target": ("#myModal" + count),
@@ -471,9 +478,9 @@ function populateSpeakerInfo(info) {
         $scheduleSlot.mouseenter(function() {
             $(this).css({
                 "cursor": "pointer",
-                "-webkit-transform": "scale(1.1)",
-                    "-ms-transform": "scale(1.1)",
-                        "transform": "scale(1.1)",
+                "-webkit-transform": "scale(1.2)",
+                    "-ms-transform": "scale(1.2)",
+                        "transform": "scale(1.2)",
                 "-webkit-transition": "all 0.3s",
                 "-moz-transition": "all 0.3s",
                 "-o-transition": "all 0.3s",
@@ -482,9 +489,9 @@ function populateSpeakerInfo(info) {
         }).mouseleave(function() {
             $(this).css({
                 "cursor": "default",
-                "-webkit-transform": "scale(0.90909090909)",
-                    "-ms-transform": "scale(0.90909090909)",
-                        "transform": "scale(0.90909090909)",
+                "-webkit-transform": "scale(1)",
+                    "-ms-transform": "scale(1)",
+                        "transform": "scale(1)",
                 "-webkit-transition": "all 0.3s",
                 "-moz-transition": "all 0.3s",
                 "-o-transition": "all 0.3s",
