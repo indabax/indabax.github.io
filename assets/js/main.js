@@ -97,6 +97,15 @@ INFO = { 'Ntombikayise Banda':
      category: 'Theory',
      affiliationInfoPath: './assets/speaker_data/dr._willie_brink/affiliation.txt',
      affiliation: 'The University of Stellenbosch' },
+  'Pat Govender':
+  { imagePath: './assets/speaker_data/pat_govender/image.jpg',
+    lectureInfoPath: './assets/speaker_data/pat_govender/lecture_info.txt',
+    lectureHeading: 'Deep Learning and Behaviour Change',
+    lectureAbstract: [],
+    categoryInfoPath: './assets/speaker_data/pat_govender/category.txt',
+    category: 'Lightning talk',
+    affiliationInfoPath: './assets/speaker_data/pat_govender/affiliation.txt',
+    affiliation: 'Managing Director, The Behaviour Change Agency' },
   'Emmanuel Dufourq':
    { imagePath: './assets/speaker_data/emmanuel_dufourq/image.jpg',
      lectureInfoPath: './assets/speaker_data/emmanuel_dufourq/lecture_info.txt',
