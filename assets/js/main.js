@@ -212,7 +212,7 @@ INFO = { 'Ntombikayise Banda':
      lectureHeading: 'Visualising a Deep Learning black box',
      lectureAbstract: [],
      categoryInfoPath: './assets/speaker_data/prof._sugnet_lubbe/category.txt',
-     category: 'Theory',
+     category: 'Lightning talk',
      affiliationInfoPath: './assets/speaker_data/prof._sugnet_lubbe/affiliation.txt',
      affiliation: 'The University of Stellenbosch' },
   'Ritesh Ajoodha':
@@ -335,7 +335,7 @@ function populateSpeakerInfo(info) {
 
     // add info to speakers section
     for(speaker in info) {
-        if(info[speaker].imagePath == null) {
+        if(info[speaker].imagePath == null || speaker.toUpperCase() == "MORE SPEAKERS TBC") {
           continue;
         }
 
@@ -456,29 +456,66 @@ function populateSpeakerInfo(info) {
         $scheduleSection = $(".schedule .tab-content");
         // find title of this speaker and insert information (if not in tab zero)
         $scheduleSlot = $scheduleSection.find("h3.schedule-slot-title:containsi('" + info[speaker].lectureHeading + "')").closest(".schedule-slot-info");
-        $slotInfo = $scheduleSlot.find("div.schedule-slot-info-content")
 
-        $slotInfo.wrap($("<div />").addClass("col-xs-8"))
-        // $scheduleSlot = $scheduleSlot.filter(function(index, $element) {
-        //     return ($element.closest("#tab_zero") == null);
-        // });
+        if($scheduleSlot.length > 0) {
+            $slotInfo = $scheduleSlot.find("div.schedule-slot-info-content");
 
-        $scheduleSlot.prepend(
-            $("<div />").addClass("col-xs-4")
-            .append(
-                $("<a />")
+            $slotInfo.wrap($("<div />").addClass("col-xs-8"))
+            // $scheduleSlot = $scheduleSlot.filter(function(index, $element) {
+            //     return ($element.closest("#tab_zero") == null);
+            // });
+
+            $scheduleSlot.prepend(
+                $("<div />").addClass("col-xs-4")
                 .append(
-                    $("<img />").addClass("schedule-slot-speakers").attr({
-                        "src": info[speaker].imagePath
-                    })
+                    $("<a />")
+                    .append(
+                        $("<img />").addClass("schedule-slot-speakers").attr({
+                            "src": info[speaker].imagePath
+                        })
+                    )
                 )
-            )
-        );
+            );
 
-        $slotInfo.append(
-            $("<h4 />").addClass("schedule-slot-speaker-name").text(speaker)
-        );
+            $slotInfo.append(
+                $("<h4 />").addClass("schedule-slot-speaker-name").text(speaker)
+            );
+        } else if(info[speaker].category && info[speaker].category.toLowerCase() == "lightning talk") {
+            $scheduleSlot = $scheduleSection.find("div.row.lightning-speakers");
+            $slot = $("<div />").addClass("col-xs-3").css({
+                  "height": "7.5em"
+                })
+                .append(
+                    $("<div />").addClass("text-center")
+                    .append(
+                        $("<img />").addClass("schedule-slot-speakers").attr({
+                            "src": info[speaker].imagePath
+                        }).css({
+                            "position": "absolute",
+                            "right": "50%",
+                            "transform": "translateX(+50%)"
+                        })
+                    )
+                )
+                .append(
+                    $("<div />").addClass("text-center")
+                    .append(
+                        $("<h4 />").addClass("schedule-slot-speaker-name").text(speaker).css({
+                            "position": "absolute",
+                            "top": "70%",
+                            "transform": "translateY(-100%)",
+                            "right": "50%",
+                            "transform": "translateX(+50%)",
+                            "width": "100%"
+                        })
+                        // $("<h3 />").text(info[speaker].lectureHeading)
+                    )
+                );
+            $scheduleSlot.append($slot);
+            $scheduleSlot = $slot;
+        }
 
+        console.log($scheduleSlot);
         $scheduleSlot.attr({
             "data-target": ("#myModal" + count),
             "data-toggle": "modal"
@@ -517,7 +554,7 @@ function populateSponsors(sponsors) {
 
     for(i in sponsors) {
         var sponsor = sponsors[i];
-        console.log(sponsor);
+        // console.log(sponsor);
 
         $logosDiv.append(
             $("<div />").addClass("col-sm-3")
