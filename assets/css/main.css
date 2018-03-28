@@ -723,6 +723,18 @@ ul li.UWC:before {
 	 border: 2px solid #62d65e;
 }
 
+.schedule-slot-info:hover .lightning-speakers .schedule-slot-speakers{
+   border: 2px solid #dadada;
+}
+
+.schedule-slot-info div.lightning-speakers .schedule-slot-speakers:hover {
+   border: 2px solid #62d65e;
+}
+
+.schedule-slot-info div.lightning-speakers {
+  padding-top: 0.5em;
+}
+
 .schedule-slot-info-content{
 	 margin-left: 100px;
 }
