@@ -773,7 +773,7 @@ ul li.UWC:before {
   -webkit-transition: 0.5s all linear;
           transition: 0.5s all linear;
 }
-.sponsors .sponsors-box .col-md-4 {
+.sponsors .sponsors-box .col-sm-3 {
   height: 12em;
   width: 12em;
 }

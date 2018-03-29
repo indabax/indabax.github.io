@@ -291,7 +291,9 @@ SPONSORS = [ [ './assets/images/sponsors/deeplearningindaba_com.PNG',
   [ './assets/images/sponsors/numberboost_com.png',
     'http://www.numberboost.com' ],
   [ './assets/images/sponsors/stochastic-consulting_com.png',
-    'http://www.stochastic-consulting.com' ] ]
+    'http://www.stochastic-consulting.com' ],
+  [ './assets/images/sponsors/omnisient_com.png',
+  'http://www.omnisient.com' ] ]
 ;
 /*
  * Change Navbar color while scrolling
