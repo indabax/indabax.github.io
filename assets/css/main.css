@@ -833,6 +833,12 @@ span.schedule-slot-speaker-name{
   top: 50%;
   transform: translateY(-50%);
 }
+#sponsors .logos {
+  background: url("../images/spon-back.png") no-repeat center center/cover;
+  height: 35em;
+  /*height: 496px;
+  width: 1140px;*/
+}
 
 /*
  * 6.8 Section: FAQ
