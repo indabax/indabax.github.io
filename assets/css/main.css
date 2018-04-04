@@ -233,6 +233,12 @@ ul li {
   background-color: #4286f4;
 }
 
+a#schedule {
+  font-weight: bold;
+  font-size: 1.4em;
+  background-color: #62d65e;
+}
+
 
 /*
  * 3.5 Helper Class: background
