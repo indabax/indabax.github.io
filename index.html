@@ -159,7 +159,7 @@
         </div>
 
         <div class="col-md-6 col-md-pull-3 col-xs-12">
-          <a class="btn btn-white" id="schedule" href="./assets/schedule.pdf" download>Download Schedule</a>
+          <a class="btn btn-white" id="schedule" href="./assets/schedule.pdf" target="_blank">Download Schedule</a>
         </div>
       </div>
       <p class="section-sub-title">Full-day events with awesome speakers and 3 parallel streams of lectures for you to choose from!</p>
@@ -171,42 +171,6 @@
       <div class="col-md-12">
 
        <div class="schedule-tab">
-        <!-- <ul class="nav nav-tabs" id="nav-tabs">
-          <li class="active">
-            <a class="animated fadeIn" href="#tab_zero" data-toggle="tab" aria-expanded="true" >
-              <span class="tab-head">
-                <span class="tab-text-title">Overview</span>
-              </span>
-            </a>
-          </li>
-         <li class="">
-          <a class="animated fadeIn" href="#tab_one" data-toggle="tab" aria-expanded="false" >
-            <span class="tab-head">
-              <span class="tab-text-title">Intro To ML</span>
-            </span>
-          </a>
-        </li>
-        <li class="">
-          <a class="animated fadeIn" href="#tab_two" data-toggle="tab" aria-expanded="false">
-            <span class="tab-head">
-              <span class="tab-text-title">Advanced ML 1 <i class="ion-android-chat">
-              </i> <i class="ion-ios-book">
-              </i>
-              </span>
-            </span>
-          </a>
-        </li>
-        <li class="">
-          <a class="animated fadeIn" href="#tab_three" data-toggle="tab" aria-expanded="false">
-            <span class="tab-head">
-              <span class="tab-text-title">Advanced ML 2 <i class="ion-ios-game-controller-b">
-              </i> <i class="ion-eye">
-              </i>
-              </span>
-            </span>
-          </a>
-        </li>
-      </ul> -->
 
       <div class="tab-content">
        <div class="tab-pane animated fadeInRight active" id="tab_zero">
@@ -226,21 +190,21 @@
               </div>
 
               <div class="col-md-4 col-xs-12">
-                <h2>Bayesian / Philosophy Stream</h2>
+                <h2>Theory / Bayesian / Other Stream</h2>
               </div>
             </div>
 
-            <div class="row">
+            <div class="row lecture-rooms">
               <div class="col-md-4 col-xs-12">
-                <h3>PD Hahn Lecture Room 1</h3>
+                <button class="btn btn-primary">PD Hahn Lecture Room 1</button>
               </div>
 
               <div class="col-md-4 col-xs-12">
-                <h3>PD Hahn Lecture Room 4</h3>
+                <button class="btn btn-primary">PD Hahn Lecture Room 4</button>
               </div>
 
               <div class="col-md-4 col-xs-12">
-                <h3>PD Hahn Lecture Room 2</h3>
+                <button class="btn btn-primary">PD Hahn Lecture Room 2</button>
               </div>
             </div>
           </div>
@@ -254,7 +218,8 @@
           <div class="col-md-10 col-xs-12">
          <div class="schedule-slot-info">
           <div class="schedule-slot-info-content">
-            <h3 class="schedule-slot-title">Registration - PD Hahn Foyer</h3>
+            <h3 class="schedule-slot-title">Registration</h3>
+            <button class="btn btn-primary">PD Hahn Foyer</button>
             <p class="schedule-slot-desc">Pick up your name badge</p>
            </div>
            <!--Info content end -->
@@ -272,12 +237,14 @@
           <div class="col-md-10 col-xs-12">
          <div class="schedule-slot-info">
             <div class="schedule-slot-info-content">
-              <h3 class="schedule-slot-title">Keynote and introduction to event - PD Hahn Lecture Room 1</h3>
-              <h4 class="">
-              </h4>
-              <p class="schedule-slot-desc">
-                Mathematical Foundations Of Deep Learning?
-              </p>
+              <div class="col-md-4 col-xs-12">
+                <h3 class="schedule-slot-title">Keynote and introduction to event</h3>
+                <button class="btn btn-primary">PD Hahn Lecture Room 1</button>
+              </div>
+
+              <div class="col-md-8 col-xs-12 keynote">
+                <h3 class="schedule-slot-title">Deep Learning Foundations, Architectures &amp Applications</h3>
+              </div>
             </div>
             <!--Info content end -->
           </div>
@@ -589,7 +556,8 @@
               <div class="schedule-slot-info-content">
                 <div class="row">
                   <div class="col-xs-12">
-                    <h3 class="schedule-slot-title">Lightning Talks - PD Hahn Lecture Room 1</h3>
+                    <h3 class="schedule-slot-title">Lightning Talks</h3>
+                    <button class="btn btn-primary">PD Hahn Lecture Room 1</button>
                     <h4 class="">
                     </h4>
                   </div>
@@ -615,15 +583,15 @@
           <div class="col-md-10 col-xs-12">
           <div class="schedule-slot-info">
             <div class="schedule-slot-info-content">
-              <h3 class="schedule-slot-title">Panel Discussion - PD Hahn Lecture Room 1</h3>
-              <h4 class="">
-              </h4>
+              <h3 class="schedule-slot-title">Panel Discussion</h3>
+              <button class="btn btn-primary">PD Hahn Lecture Room 1</button>
+              <h4 class=""></h4>
               <p class="schedule-slot-desc">
                 A conversation on ways to strengthen African machine learning, and how knowledge and capacity in machine learning can be spread more widely.
-                <br>
-                Panellists:
-                <span class="schedule-slot-speaker-name"> Ntombikayise Banda, Ismail Akhalwaya, Dr. Jacques Ludik, Dr. Herman Kamper, Prof. Amit Mishra and Prof. Sugnet Lubbe. </span>
               </p>
+              <div class="row panel-speakers">
+
+              </div>
             </div>
             <!--Info content end -->
           </div>
