@@ -662,6 +662,11 @@ ul li.UWC:before {
   text-align: center;
 }
 
+.schedule-date h3 {
+  font-size: 0.5em;
+  text-align: center;
+}
+
 .schedule-listing{
 	 padding-top: 25px;
 	 padding-bottom: 20px;
