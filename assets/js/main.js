@@ -28,15 +28,6 @@ INFO = {
      category: 'Theory',
      affiliationInfoPath: './assets/speaker_data/obins_choudhary/affiliation.txt',
      affiliation: 'Barclays Africa Group Limited' },
-  'Pat Govender':
-   { imagePath: './assets/speaker_data/pat_govender/image.jpg',
-     lectureInfoPath: './assets/speaker_data/pat_govender/lecture_info.txt',
-     lectureHeading: 'Deep Learning and Behaviour Change',
-     lectureAbstract: [],
-     categoryInfoPath: './assets/speaker_data/pat_govender/category.txt',
-     category: 'Lightning talk',
-     affiliationInfoPath: './assets/speaker_data/pat_govender/affiliation.txt',
-     affiliation: 'Managing Director, The Behaviour Change Agency' },
   'Dr. Alta De Waal':
    { imagePath: './assets/speaker_data/dr._alta_de_waal/image.jpg',
      lectureInfoPath: './assets/speaker_data/dr._alta_de_waal/lecture_info.txt',
@@ -71,7 +62,7 @@ INFO = {
   'Dr. Jacques Ludik':
    { imagePath: './assets/speaker_data/dr._jacques_ludik/image.jpg',
      lectureInfoPath: './assets/speaker_data/dr._jacques_ludik/lecture_info.txt',
-     lectureHeading: 'Mathematical Foundations of Deep Learning',
+     lectureHeading: 'Deep Learning Foundations, Architectures & Applications',
      lectureAbstract:
       [ 'An introduction to the mathematics of neural networks and specialist architectures for solving a range of applied problems in a variety of domains.' ],
      categoryInfoPath: './assets/speaker_data/dr._jacques_ludik/category.txt',
@@ -288,14 +279,16 @@ INFO = {
      affiliation: 'Argon Asset Management' } }
 ;
 
-// PANEL = [
-//   "Ntombikayise Banda",
-//   "Ismail Akhalwaya",
-//   "Dr. Jacques Ludik",
-//   "Dr. Herman Kamper",
-//   "Prof. Amit Mishra",
-//   "Prof. Sugnet Lubbe"
-// ];
+PANEL = [
+  "Ntombikayise Banda",
+  "Ismail Akhalwaya",
+  "Dr. Jacques Ludik",
+  "Dr. Herman Kamper",
+  "Prof. Amit Mishra",
+  "Prof. Sugnet Lubbe"
+];
+
+KEYNOTE = "Dr. Jacques Ludik";
 
 // SPONSORS = [ [ './assets/images/sponsors/deeplearningindaba_com.PNG',
 //     'http://www.deeplearningindaba.com' ],
@@ -370,6 +363,8 @@ function populateSpeakerInfo(info) {
           continue;
         }
 
+        var id = "-" + speaker.toLowerCase().replace(".", "").split(" ").join("-");
+
         if(count % 3 == 0) {
             $row_div = $("<div />").addClass("row");
         }
@@ -383,7 +378,7 @@ function populateSpeakerInfo(info) {
                     $("<figure />")
                     .append(
                         $("<a />").attr({
-                            "data-target": ("#myModal" + count),
+                            "data-target": ("#myModal" + id),
                             "data-toggle": "modal"
                         })
                         .append(
@@ -426,7 +421,7 @@ function populateSpeakerInfo(info) {
                     .append(
                         $("<div />").addClass("modal fade").attr({
                             "tabindex": "-1",
-                            "id": ("myModal" + count),
+                            "id": ("myModal" + id),
                             "role": "dialog",
                             "aria-hidden": "true",
                             "aria-labelledby": "myModalLabel"
@@ -481,6 +476,10 @@ function populateSpeakerInfo(info) {
 
         if(count % 3 == 2) {
             $("#speakers div.container").append($row_div);
+        }
+
+        if(speaker == KEYNOTE) {
+          continue;
         }
 
         // add info to schedule
@@ -548,7 +547,7 @@ function populateSpeakerInfo(info) {
 
         // console.log($scheduleSlot);
         $scheduleSlot.attr({
-            "data-target": ("#myModal" + count),
+            "data-target": ("#myModal" + id),
             "data-toggle": "modal"
         });
 
@@ -616,7 +615,7 @@ function populateSponsors(sponsors) {
 
     $logosDiv.append($row_div);
 
-    console.log($logosDiv.html().toString());
+    // console.log($logosDiv.html().toString());
 }
 
 // add case insensitive contains
@@ -628,78 +627,135 @@ $.extend($.expr[':'], {
   }
 });
 
-// function populatePanelSpeakers(panel, info) {
-//   $scheduleSection = $(".schedule .tab-content");
+function populatePanelSpeakers(panel, info) {
+  $scheduleSection = $(".schedule .tab-content");
 
-//   for(i in panel) {
-//     var speaker = panel[i];
-//     console.log(speaker);
-//     console.log(info[speaker]);
+  for(i in panel) {
+    var speaker = panel[i];
+    var id = "-" + speaker.toLowerCase().replace(".", "").split(" ").join("-");
 
-//     $scheduleSlot = $scheduleSection.find("div.row.panel-speakers");
-//     $slot = $("<div />").addClass("col-xs-2").css({
-//       "height": "7.5em"
-//     })
-//     .append(
-//         $("<div />").addClass("text-center")
-//         .append(
-//             $("<img />").addClass("schedule-slot-speakers").attr({
-//                 "src": info[speaker].imagePath
-//             }).css({
-//                 "position": "absolute",
-//                 "right": "50%",
-//                 "transform": "translateX(+50%)"
-//             })
-//         )
-//     )
-//     .append(
-//         $("<div />").addClass("text-center")
-//         .append(
-//             $("<h4 />").addClass("schedule-slot-speaker-name").text(speaker).css({
-//                 "position": "absolute",
-//                 "top": "70%",
-//                 "transform": "translateY(-100%)",
-//                 "right": "50%",
-//                 "transform": "translateX(+50%)",
-//                 "width": "100%"
-//             })
-//         )
-//     );
 
-//     $scheduleSlot.append($slot);
-//     $scheduleSlot = $slot;
+    $scheduleSlot = $scheduleSection.find("div.row.panel-speakers");
+    $slot = $("<div />").addClass("col-xs-2").css({
+      "height": "7.5em"
+    })
+    .append(
+        $("<div />").addClass("text-center")
+        .append(
+            $("<img />").addClass("schedule-slot-speakers").attr({
+                "src": info[speaker].imagePath
+            }).css({
+                "position": "absolute",
+                "right": "50%",
+                "transform": "translateX(+50%)"
+            })
+        )
+    )
+    .append(
+        $("<div />").addClass("text-center")
+        .append(
+            $("<h4 />").addClass("schedule-slot-speaker-name").text(speaker).css({
+                "position": "absolute",
+                "top": "70%",
+                "transform": "translateY(-100%)",
+                "right": "50%",
+                "transform": "translateX(+50%)",
+                "width": "100%"
+            })
+        )
+    );
 
-//     $scheduleSlot.attr({
-//         "data-target": ("#myModal" + count),
-//         "data-toggle": "modal"
-//     });
+    $scheduleSlot.append($slot);
+    $scheduleSlot = $slot;
 
-//     $scheduleSlot.mouseenter(function() {
-//         $(this).css({
-//             "cursor": "pointer",
-//             "-webkit-transform": "scale(1.2)",
-//                 "-ms-transform": "scale(1.2)",
-//                     "transform": "scale(1.2)",
-//             "-webkit-transition": "all 0.3s",
-//             "-moz-transition": "all 0.3s",
-//             "-o-transition": "all 0.3s",
-//             "transition": "all 0.3s"
-//         })
-//     }).mouseleave(function() {
-//         $(this).css({
-//             "cursor": "default",
-//             "-webkit-transform": "scale(1)",
-//                 "-ms-transform": "scale(1)",
-//                     "transform": "scale(1)",
-//             "-webkit-transition": "all 0.3s",
-//             "-moz-transition": "all 0.3s",
-//             "-o-transition": "all 0.3s",
-//             "transition": "all 0.3s"
-//         })
-//     });
-//   }
-// }
+    $scheduleSlot.attr({
+        "data-target": ("#myModal" + id),
+        "data-toggle": "modal"
+    });
+
+    $scheduleSlot.mouseenter(function() {
+        $(this).css({
+            "cursor": "pointer",
+            "-webkit-transform": "scale(1.2)",
+                "-ms-transform": "scale(1.2)",
+                    "transform": "scale(1.2)",
+            "-webkit-transition": "all 0.3s",
+            "-moz-transition": "all 0.3s",
+            "-o-transition": "all 0.3s",
+            "transition": "all 0.3s"
+        })
+    }).mouseleave(function() {
+        $(this).css({
+            "cursor": "default",
+            "-webkit-transform": "scale(1)",
+                "-ms-transform": "scale(1)",
+                    "transform": "scale(1)",
+            "-webkit-transition": "all 0.3s",
+            "-moz-transition": "all 0.3s",
+            "-o-transition": "all 0.3s",
+            "transition": "all 0.3s"
+        })
+    });
+  }
+}
+
+function populateKeyNote(keynote, info) {
+    var speaker = keynote;
+    var id = "-" + speaker.toLowerCase().replace(".", "").split(" ").join("-");
+
+    var $scheduleSection = $(".schedule .tab-content");
+    var $keynoteSlot = $scheduleSection.find("div.keynote");
+    var $heading = $keynoteSlot.find("h3.schedule-slot-title:containsi('" + info[speaker].lectureHeading + "')");
+    var $headingDiv = $("<div />").addClass("col-xs-9");
+
+    var $newDiv = $heading.wrap($headingDiv);
+    $newDiv.append(
+        $("<h4 />").addClass("schedule-slot-speaker-name").text(speaker)
+    );
+
+    $keynoteSlot.prepend(
+        $("<div />").addClass("col-xs-3")
+        .append(
+            $("<a />")
+            .append(
+                $("<img />").addClass("schedule-slot-speakers").attr({
+                    "src": info[speaker].imagePath
+                })
+            )
+        )
+    );
+
+    $keynoteSlot.attr({
+        "data-target": ("#myModal" + id),
+        "data-toggle": "modal"
+    });
+
+    $keynoteSlot.mouseenter(function() {
+        $(this).css({
+            "cursor": "pointer",
+            "-webkit-transform": "scale(1.2)",
+                "-ms-transform": "scale(1.2)",
+                    "transform": "scale(1.2)",
+            "-webkit-transition": "all 0.3s",
+            "-moz-transition": "all 0.3s",
+            "-o-transition": "all 0.3s",
+            "transition": "all 0.3s"
+        })
+    }).mouseleave(function() {
+        $(this).css({
+            "cursor": "default",
+            "-webkit-transform": "scale(1)",
+                "-ms-transform": "scale(1)",
+                    "transform": "scale(1)",
+            "-webkit-transition": "all 0.3s",
+            "-moz-transition": "all 0.3s",
+            "-o-transition": "all 0.3s",
+            "transition": "all 0.3s"
+        })
+    });
+}
 
 // populateSponsors(SPONSORS);
 populateSpeakerInfo(INFO);
-// populatePanelSpeakers(PANEL, INFO);
+populatePanelSpeakers(PANEL, INFO);
+populateKeyNote(KEYNOTE, INFO);

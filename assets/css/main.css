@@ -119,6 +119,16 @@ ul li {
           transform: scale(1.2);
 }
 
+.btn.btn-primary {
+  border-radius: 0.5em;
+}
+.btn.btn-primary:hover {
+  cursor: default;
+  -webkit-transform: scale(1.0);
+      -ms-transform: scale(1.0);
+          transform: scale(1.0);
+}
+
 .form-control {
   border-radius: 0;
   box-shadow: none;
@@ -589,6 +599,18 @@ ul li.UWC:before {
 /*
  * 6.6 Section: Schedule
  */
+.row.lecture-rooms {
+  text-align: center;
+}
+.row.lecture-rooms button {
+  font-size: 0.35em;
+  font-weight: 1000;
+}
+.schedule-slot-info-content button {
+  display: inline;
+  font-size: 0.8em;
+  font-weight: 1000;
+}
 
 .schedule-tab, .schedule-content .container{
 	 max-width: 960px;
@@ -728,6 +750,11 @@ ul li.UWC:before {
 	 -moz-transition: all 0.3s;
 	 -o-transition: all 0.3s;
 	 transition: all 0.3s;
+}
+.keynote .schedule-slot-speakers {
+  right: 0%;
+  top: 0%;
+  transform: translateX(-95%) translateY(-15%);
 }
 
 .schedule-slot-info:hover .schedule-slot-speakers{
