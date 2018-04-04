@@ -554,11 +554,16 @@ function populateSpeakerInfo(info) {
 }
 
 function populateSponsors(sponsors) {
-    $logosDiv = $("#sponsors div.container div.row.logos");
+    var $row_div;
+    var count = 0;
+    var $logosDiv = $("#sponsors div.container div.logos");
 
     for(i in sponsors) {
         var sponsor = sponsors[i];
-        // console.log(sponsor);
+
+        if(count % 4 == 0) {
+            $row_div = $("<div />").addClass("row");
+        }
 
         $logosDiv.append(
             $("<div />").addClass("col-sm-3")
@@ -570,16 +575,25 @@ function populateSponsors(sponsors) {
                 .append(
                     $("<img />").attr({
                         "src": sponsor[0],
-                    }).css({
+                    })
+                    .css({
                         "width": "80%",
-                        "position": "absolute",
+                        // "position": "absolute",
                         "top": "50%",
                         "transform": "translateY(-50%)"
                     })
                 )
             )
         );
+
+        if(count % 4 == 3) {
+            $logosDiv.append($row_div);
+        }
+        count++;
     }
+
+    $logosDiv.append($row_div);
+
 }
 
 // add case insensitive contains
