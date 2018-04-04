@@ -7,7 +7,8 @@ CATEGORY_TO_ICON = {
     "Application": "ion-settings"
 };
 
-INFO = { 'Ntombikayise Banda':
+INFO = {
+  'Ntombikayise Banda':
    { imagePath: './assets/speaker_data/ntombikayise_banda/image.jpg',
      lectureInfoPath: './assets/speaker_data/ntombikayise_banda/lecture_info.txt',
      lectureHeading: 'Multimodal Emotion Recognition',
@@ -27,18 +28,27 @@ INFO = { 'Ntombikayise Banda':
      category: 'Theory',
      affiliationInfoPath: './assets/speaker_data/obins_choudhary/affiliation.txt',
      affiliation: 'Barclays Africa Group Limited' },
+  'Pat Govender':
+   { imagePath: './assets/speaker_data/pat_govender/image.jpg',
+     lectureInfoPath: './assets/speaker_data/pat_govender/lecture_info.txt',
+     lectureHeading: 'Deep Learning and Behaviour Change',
+     lectureAbstract: [],
+     categoryInfoPath: './assets/speaker_data/pat_govender/category.txt',
+     category: 'Lightning talk',
+     affiliationInfoPath: './assets/speaker_data/pat_govender/affiliation.txt',
+     affiliation: 'Managing Director, The Behaviour Change Agency' },
   'Dr. Alta De Waal':
    { imagePath: './assets/speaker_data/dr._alta_de_waal/image.jpg',
-  lectureInfoPath: './assets/speaker_data/dr._alta_de_waal/lecture_info.txt',
-  lectureHeading: 'Establishing semantic similarity between short text',
-  lectureAbstract:
-   [ 'The manifold hypothesis states that high dimensional data lie on low-dimensional manifolds embedded in the high-dimensional space. Applied to text, these manifolds can be described as the semantic space, or the vector space model of the corpus: It makes assumptions about the way in which the data was generated and translate the text into numbers.',
-     'Many such vector space models exist, the most basic being tf-idf. In this presentation I will discuss some vector space models such as LDA (topic models) and word2vec (word embeddings) that can be used to semantically index the corpus. Ultimately, we want to establish how similar a query is to the corpus in question. For this purpose, I will discuss distance metrics and propose a statistical method to summarise the semantic index of a corpus.',
-     'Finally, this talk is scoped within the context of short text which poses special statistical challenges to vector space models. ' ],
-  categoryInfoPath: './assets/speaker_data/dr._alta_de_waal/category.txt',
-  category: 'Natural language processing',
-  affiliationInfoPath: './assets/speaker_data/dr._alta_de_waal/affiliation.txt',
-  affiliation: 'The University of Pretoria' },
+     lectureInfoPath: './assets/speaker_data/dr._alta_de_waal/lecture_info.txt',
+     lectureHeading: 'Establishing semantic similarity between short text',
+     lectureAbstract:
+      [ 'The manifold hypothesis states that high dimensional data lie on low-dimensional manifolds embedded in the high-dimensional space. Applied to text, these manifolds can be described as the semantic space, or the vector space model of the corpus: It makes assumptions about the way in which the data was generated and translate the text into numbers.',
+        'Many such vector space models exist, the most basic being tf-idf. In this presentation I will discuss some vector space models such as LDA (topic models) and word2vec (word embeddings) that can be used to semantically index the corpus. Ultimately, we want to establish how similar a query is to the corpus in question. For this purpose, I will discuss distance metrics and propose a statistical method to summarise the semantic index of a corpus.',
+        'Finally, this talk is scoped within the context of short text which poses special statistical challenges to vector space models. ' ],
+     categoryInfoPath: './assets/speaker_data/dr._alta_de_waal/category.txt',
+     category: 'Natural language processing',
+     affiliationInfoPath: './assets/speaker_data/dr._alta_de_waal/affiliation.txt',
+     affiliation: 'The University of Pretoria' },
   'Dr. Herman Kamper':
    { imagePath: './assets/speaker_data/dr._herman_kamper/image.jpg',
      lectureInfoPath: './assets/speaker_data/dr._herman_kamper/lecture_info.txt',
@@ -97,15 +107,15 @@ INFO = { 'Ntombikayise Banda':
      category: 'Theory',
      affiliationInfoPath: './assets/speaker_data/dr._willie_brink/affiliation.txt',
      affiliation: 'The University of Stellenbosch' },
-  'Pat Govender':
-  { imagePath: './assets/speaker_data/pat_govender/image.jpg',
-    lectureInfoPath: './assets/speaker_data/pat_govender/lecture_info.txt',
-    lectureHeading: 'Deep Learning and Behaviour Change',
-    lectureAbstract: [],
-    categoryInfoPath: './assets/speaker_data/pat_govender/category.txt',
-    category: 'Lightning talk',
-    affiliationInfoPath: './assets/speaker_data/pat_govender/affiliation.txt',
-    affiliation: 'Managing Director, The Behaviour Change Agency' },
+  'Emeritus Prof. Linda Haines':
+   { imagePath: './assets/speaker_data/emeritus_prof._linda_haines/image.jpg',
+     lectureInfoPath: './assets/speaker_data/emeritus_prof._linda_haines/lecture_info.txt',
+     lectureHeading: 'Neural Networks in the Nineties',
+     lectureAbstract: [],
+     categoryInfoPath: './assets/speaker_data/emeritus_prof._linda_haines/category.txt',
+     category: 'Lightning talk',
+     affiliationInfoPath: './assets/speaker_data/emeritus_prof._linda_haines/affiliation.txt',
+     affiliation: 'The University of Cape Town' },
   'Emmanuel Dufourq':
    { imagePath: './assets/speaker_data/emmanuel_dufourq/image.jpg',
      lectureInfoPath: './assets/speaker_data/emmanuel_dufourq/lecture_info.txt',
@@ -120,11 +130,14 @@ INFO = { 'Ntombikayise Banda':
    { imagePath: './assets/speaker_data/ismail_akhalwaya/image.jpg',
      lectureInfoPath: './assets/speaker_data/ismail_akhalwaya/lecture_info.txt',
      lectureHeading: 'Quantum Machine Learning',
-     lectureAbstract: ['Two of the most exciting topics in the current tech-world are Machine Learning and Quantum Computing. In this talk, we combine the two oft-hyped topics and explore how Quantum Computing might be used to speed-up Machine Learning. Besides offering faster training times for certain classical algorithms, we touch on one known example where Quantum Machine Learning may even achieve insights unreachable (complexity-wise) by classical computers. In an attempt to de-hype the topic we mention some of the limitations and practical stumbling blocks of Quantum Computing. On an optimistic note, we introduce the IBM Q Experience which offers free access to a functioning Quantum Computer on the IBM Cloud, complete with graphical interface, an SDK and cloud-API calls.'],
+     lectureAbstract:
+      [ 'Two of the most exciting topics in the current tech-world are Machine Learning and Quantum Computing. In this talk, we combine the two oft-hyped topics and explore how Quantum Computing might be used to speed-up Machine Learning. Besides offering faster training times for certain classical algorithms, we touch on one known example where Quantum Machine Learning may even achieve insights unreachable (complexity-wise) by classical computers. In an attempt to de-hype the topic we mention some of the limitations and practical stumbling blocks of Quantum Computing. On an optimistic note, we introduce the IBM Q Experience which offers free access to a functioning Quantum Computer on the IBM Cloud, complete with graphical interface, an SDK and cloud-API calls.' ],
      categoryInfoPath: './assets/speaker_data/ismail_akhalwaya/category.txt',
      category: 'Application',
      affiliationInfoPath: './assets/speaker_data/ismail_akhalwaya/affiliation.txt',
      affiliation: 'IBM' },
+  'More Speakers TBC':
+   { imagePath: './assets/speaker_data/more_speakers_TBC/image.jpg' },
   'Philip Sterne':
    { imagePath: './assets/speaker_data/philip_sterne/image.jpg',
      lectureInfoPath: './assets/speaker_data/philip_sterne/lecture_info.txt',
@@ -144,6 +157,55 @@ INFO = { 'Ntombikayise Banda':
      category: 'Theory',
      affiliationInfoPath: './assets/speaker_data/prof._amit_mishra/affiliation.txt',
      affiliation: 'The University of Cape Town' },
+  'Prof. Bruce Bassett':
+   { imagePath: './assets/speaker_data/prof._bruce_bassett/image.jpg',
+     lectureInfoPath: './assets/speaker_data/prof._bruce_bassett/lecture_info.txt',
+     lectureHeading: 'AI challenges arising from the SKA',
+     lectureAbstract:
+      [ 'The Square Kilometer Array (SKA) will deliver of order one exabyte of data per day, making it the biggest science experiment in the world in the late 2020\'s. We discuss some of the open challenges and opportunities for AI and the SKA, particularly from an African perspective.' ],
+     categoryInfoPath: './assets/speaker_data/prof._bruce_bassett/category.txt',
+     category: 'Application',
+     affiliationInfoPath: './assets/speaker_data/prof._bruce_bassett/affiliation.txt',
+     affiliation: 'The University of Cape Town' },
+  'Prof. Sugnet Lubbe':
+   { imagePath: './assets/speaker_data/prof._sugnet_lubbe/image.jpg',
+     lectureInfoPath: './assets/speaker_data/prof._sugnet_lubbe/lecture_info.txt',
+     lectureHeading: 'Visualising a Deep Learning black box',
+     lectureAbstract: [],
+     categoryInfoPath: './assets/speaker_data/prof._sugnet_lubbe/category.txt',
+     category: 'Lightning talk',
+     affiliationInfoPath: './assets/speaker_data/prof._sugnet_lubbe/affiliation.txt',
+     affiliation: 'The University of Stellenbosch' },
+  'Prof. Tim Gebbie':
+   { imagePath: './assets/speaker_data/prof._tim_gebbie/image.jpg',
+     lectureInfoPath: './assets/speaker_data/prof._tim_gebbie/lecture_info.txt',
+     lectureHeading: 'Better Explanations or Better Decisions in Financial Markets?',
+     lectureAbstract:
+      [ 'Financial markets seem to be highly adaptive and often change faster than we can store data or learn new models from ever larger data-sets. Financial markets appear increasingly defined by the map created by data-informed but weaponised models and increasingly complex niches that regulations nurture and allow agents to asymmetrically exploit.  Should we care about the difference between better explanations or better decisions?' ],
+     categoryInfoPath: './assets/speaker_data/prof._tim_gebbie/category.txt',
+     category: 'Application',
+     affiliationInfoPath: './assets/speaker_data/prof._tim_gebbie/affiliation.txt',
+     affiliation: 'The University of Cape Town' },
+  'Ritesh Ajoodha':
+   { imagePath: './assets/speaker_data/ritesh_ajoodha/image.jpg',
+     lectureInfoPath: './assets/speaker_data/ritesh_ajoodha/lecture_info.txt',
+     lectureHeading: 'Bayesian Networks',
+     lectureAbstract:
+      [ 'Deep learning methods has enjoyed a tremendous amount of growth over recent years due to architectural and algorithmic innovations; larger datasets; growth in performance of processors; software innovations; and increased investment from industry. Although deep learning systems provide outstanding performance on many benchmark tasks, they are often data hungry; require a significant amount of computer resources; are poor at representing uncertainty; non-trivial to incorporate prior knowledge; easily fooled by adversarial examples; finicky to optimise; and are seen as uninterpretable black-boxes.',
+        'Probabilistic graphical models is the current method-of-choice to address these issues. In this talk we will explore the Bayesian network which is a celebrated model for prediction under uncertainty; incorporates prior knowledge easily; used to express relational decisions (influence diagrams); and can provide powerful performance while being mindful about dataset sizes. The Bayesian network models the Bayesian paradigm which states that anything which we have uncertainty over we must maintain a distribution over.  We will explore the representation, inference, and learning of these networks as well as present some trending software which can be used to execute these powerful graphical models on real datasets. ' ],
+     categoryInfoPath: './assets/speaker_data/ritesh_ajoodha/category.txt',
+     category: 'Theory',
+     affiliationInfoPath: './assets/speaker_data/ritesh_ajoodha/affiliation.txt',
+     affiliation: 'The University of the Witwatersrand' },
+  'Adriaan Rowan':
+   { imagePath: './assets/speaker_data/adriaan_rowan/image.jpg',
+     lectureInfoPath: './assets/speaker_data/adriaan_rowan/lecture_info.txt',
+     lectureHeading: 'The Blessing and Curse of High Dimensionality.',
+     lectureAbstract: [],
+     categoryInfoPath: './assets/speaker_data/adriaan_rowan/category.txt',
+     category: 'Lightning talk',
+     affiliationInfoPath: './assets/speaker_data/adriaan_rowan/affiliation.txt',
+     affiliation: 'NumberBoost' },
   'Alex Conway':
    { imagePath: './assets/speaker_data/alex_conway/image.jpg',
      lectureInfoPath: './assets/speaker_data/alex_conway/lecture_info.txt',
@@ -187,45 +249,15 @@ INFO = { 'Ntombikayise Banda':
      category: 'Natural language processing',
      affiliationInfoPath: './assets/speaker_data/chris_currin/affiliation.txt',
      affiliation: 'The University of Cape Town' },
-  'Prof. Bruce Bassett':
-   { imagePath: './assets/speaker_data/prof._bruce_bassett/image.jpg',
-     lectureInfoPath: './assets/speaker_data/prof._bruce_bassett/lecture_info.txt',
-     lectureHeading: 'AI challenges arising from the SKA',
-     lectureAbstract:
-      [ 'The Square Kilometer Array (SKA) will deliver of order one exabyte of data per day, making it the biggest science experiment in the world in the late 2020\'s. We discuss some of the open challenges and opportunities for AI and the SKA, particularly from an African perspective.' ],
-     categoryInfoPath: './assets/speaker_data/prof._bruce_bassett/category.txt',
-     category: 'Application',
-     affiliationInfoPath: './assets/speaker_data/prof._bruce_bassett/affiliation.txt',
-     affiliation: 'The University of Cape Town' },
-  'Adriaan Rowan':
-   { imagePath: './assets/speaker_data/adriaan_rowan/image.jpg',
-     lectureInfoPath: './assets/speaker_data/adriaan_rowan/lecture_info.txt',
-     lectureHeading: 'The Blessing and Curse of High Dimensionality.',
+  'Robin Davies':
+   { imagePath: './assets/speaker_data/robin_davies/image.jpg',
+     lectureInfoPath: './assets/speaker_data/robin_davies/lecture_info.txt',
+     lectureHeading: 'Mend the Gap Between Your Data and Your People',
      lectureAbstract: [],
-     categoryInfoPath: './assets/speaker_data/adriaan_rowan/category.txt',
+     categoryInfoPath: './assets/speaker_data/robin_davies/category.txt',
      category: 'Lightning talk',
-     affiliationInfoPath: './assets/speaker_data/adriaan_rowan/affiliation.txt',
-     affiliation: 'NumberBoost' },
-  'Prof. Sugnet Lubbe':
-   { imagePath: './assets/speaker_data/prof._sugnet_lubbe/image.jpg',
-     lectureInfoPath: './assets/speaker_data/prof._sugnet_lubbe/lecture_info.txt',
-     lectureHeading: 'Visualising a Deep Learning black box',
-     lectureAbstract: [],
-     categoryInfoPath: './assets/speaker_data/prof._sugnet_lubbe/category.txt',
-     category: 'Lightning talk',
-     affiliationInfoPath: './assets/speaker_data/prof._sugnet_lubbe/affiliation.txt',
-     affiliation: 'The University of Stellenbosch' },
-  'Ritesh Ajoodha':
-   { imagePath: './assets/speaker_data/ritesh_ajoodha/image.jpg',
-     lectureInfoPath: './assets/speaker_data/ritesh_ajoodha/lecture_info.txt',
-     lectureHeading: 'Bayesian Networks',
-     lectureAbstract:
-      [ 'Deep learning methods has enjoyed a tremendous amount of growth over recent years due to architectural and algorithmic innovations; larger datasets; growth in performance of processors; software innovations; and increased investment from industry. Although deep learning systems provide outstanding performance on many benchmark tasks, they are often data hungry; require a significant amount of computer resources; are poor at representing uncertainty; non-trivial to incorporate prior knowledge; easily fooled by adversarial examples; finicky to optimise; and are seen as uninterpretable black-boxes.',
-        'Probabilistic graphical models is the current method-of-choice to address these issues. In this talk we will explore the Bayesian network which is a celebrated model for prediction under uncertainty; incorporates prior knowledge easily; used to express relational decisions (influence diagrams); and can provide powerful performance while being mindful about dataset sizes. The Bayesian network models the Bayesian paradigm which states that anything which we have uncertainty over we must maintain a distribution over.  We will explore the representation, inference, and learning of these networks as well as present some trending software which can be used to execute these powerful graphical models on real datasets. ' ],
-     categoryInfoPath: './assets/speaker_data/ritesh_ajoodha/category.txt',
-     category: 'Theory',
-     affiliationInfoPath: './assets/speaker_data/ritesh_ajoodha/affiliation.txt',
-     affiliation: 'The University of the Witwatersrand' },
+     affiliationInfoPath: './assets/speaker_data/robin_davies/affiliation.txt',
+     affiliation: 'Principa' },
   'Shaun Irwin':
    { imagePath: './assets/speaker_data/shaun_irwin/image.jpg',
      lectureInfoPath: './assets/speaker_data/shaun_irwin/lecture_info.txt',
@@ -245,18 +277,6 @@ INFO = { 'Ntombikayise Banda':
      category: 'Theory',
      affiliationInfoPath: './assets/speaker_data/stuart_reid/affiliation.txt',
      affiliation: 'Chief Engineer & Partner at NMRQL' },
-  'Taliesin Beynon':
-   { imagePath: './assets/speaker_data/taliesin_beynon/image.jpg',
-     lectureInfoPath: './assets/speaker_data/taliesin_beynon/lecture_info.txt',
-     lectureHeading: 'Peering inside the black box',
-     lectureAbstract:
-      [ 'In this presentation I\'ll try to dispel the popular perception that neural nets are black boxes, and show some examples of how we can \'peek under the hood\' of a net during and after training. I’ll briefly cover topics like LIME, anchors, semantic dictionaries, curriculum learning, visualizing loss landscapes, adversarial examples, and the like.',
-        'I hope you\'ll leave with a better intuition of the overall training process and the behavior of specific kinds of nets and how they succeed (or fail) to learn.',
-        'Bio: Taliesin Beynon is the developer of the high-level neural net framework that can be found in recent versions of Mathematica. He studied mathematics at the University of Cape Town.' ],
-     categoryInfoPath: './assets/speaker_data/taliesin_beynon/category.txt',
-     category: 'Theory',
-     affiliationInfoPath: './assets/speaker_data/taliesin_beynon/affiliation.txt',
-     affiliation: 'Lead Developer, Deep Learning at Wolfram' },
   'Tobias Brandt':
    { imagePath: './assets/speaker_data/tobias_brandt/image.jpg',
      lectureInfoPath: './assets/speaker_data/tobias_brandt/lecture_info.txt',
@@ -265,9 +285,7 @@ INFO = { 'Ntombikayise Banda':
      categoryInfoPath: './assets/speaker_data/tobias_brandt/category.txt',
      category: 'Lightning talk',
      affiliationInfoPath: './assets/speaker_data/tobias_brandt/affiliation.txt',
-     affiliation: 'Argon Asset Management' },
-  'More Speakers TBC':
-   { imagePath: './assets/speaker_data/more_speakers_TBC/image.jpg' } }
+     affiliation: 'Argon Asset Management' } }
 ;
 
 // SPONSORS = [ [ './assets/images/sponsors/deeplearningindaba_com.PNG',
