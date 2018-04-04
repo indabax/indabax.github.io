@@ -795,6 +795,11 @@ ul li.UWC:before {
 .sponsors .register-button {
   text-align: center;
 }
+.sponsors .sponsor-logo {
+  width: 80%;
+  top: 50%;
+  transform: translateY(-50%);
+}
 
 /*
  * 6.8 Section: FAQ

@@ -270,33 +270,33 @@ INFO = { 'Ntombikayise Banda':
    { imagePath: './assets/speaker_data/more_speakers_TBC/image.jpg' } }
 ;
 
-SPONSORS = [ [ './assets/images/sponsors/deeplearningindaba_com.PNG',
-    'http://www.deeplearningindaba.com' ],
-  [ './assets/images/sponsors/stonethree_com.png',
-    'http://www.stonethree.com' ],
-  [ './assets/images/sponsors/stonethreemining_com.jpg',
-    'http://www.stonethreemining.com' ],
-  [ './assets/images/sponsors/principa_co_za.png',
-    'http://www.principa.co.za' ],
-  [ './assets/images/sponsors/rezco_co_za.png',
-    'http://www.rezco.co.za' ],
-  [ './assets/images/sponsors/aerobotics_co.png',
-    'http://www.aerobotics.co' ],
-  [ './assets/images/sponsors/cortexlogic_com.png',
-    'http://www.cortexlogic.com' ],
-  [ './assets/images/sponsors/launchlab_co_za.png',
-    'http://www.launchlab.co.za' ],
-  [ './assets/images/sponsors/machineintelligenceafrica_org.png',
-    'http://www.machineintelligenceafrica.org' ],
-  [ './assets/images/sponsors/numberboost_com.png',
-    'http://www.numberboost.com' ],
-  [ './assets/images/sponsors/stochastic-consulting_com.png',
-    'http://www.stochastic-consulting.com' ],
-  [ './assets/images/sponsors/omnisient_com.png',
-  'http://www.omnisient.com' ],
-  [ './assets/images/sponsors/ambrite_ch.png',
-    'http://www.ambrite.ch' ] ]
-;
+// SPONSORS = [ [ './assets/images/sponsors/deeplearningindaba_com.PNG',
+//     'http://www.deeplearningindaba.com' ],
+//   [ './assets/images/sponsors/stonethree_com.png',
+//     'http://www.stonethree.com' ],
+//   [ './assets/images/sponsors/stonethreemining_com.jpg',
+//     'http://www.stonethreemining.com' ],
+//   [ './assets/images/sponsors/principa_co_za.png',
+//     'http://www.principa.co.za' ],
+//   [ './assets/images/sponsors/rezco_co_za.png',
+//     'http://www.rezco.co.za' ],
+//   [ './assets/images/sponsors/aerobotics_co.png',
+//     'http://www.aerobotics.co' ],
+//   [ './assets/images/sponsors/cortexlogic_com.png',
+//     'http://www.cortexlogic.com' ],
+//   [ './assets/images/sponsors/launchlab_co_za.png',
+//     'http://www.launchlab.co.za' ],
+//   [ './assets/images/sponsors/machineintelligenceafrica_org.png',
+//     'http://www.machineintelligenceafrica.org' ],
+//   [ './assets/images/sponsors/numberboost_com.png',
+//     'http://www.numberboost.com' ],
+//   [ './assets/images/sponsors/stochastic-consulting_com.png',
+//     'http://www.stochastic-consulting.com' ],
+//   [ './assets/images/sponsors/omnisient_com.png',
+//   'http://www.omnisient.com' ],
+//   [ './assets/images/sponsors/ambrite_ch.png',
+//     'http://www.ambrite.ch' ] ]
+// ;
 /*
  * Change Navbar color while scrolling
  */
@@ -519,7 +519,7 @@ function populateSpeakerInfo(info) {
             $scheduleSlot = $slot;
         }
 
-        console.log($scheduleSlot);
+        // console.log($scheduleSlot);
         $scheduleSlot.attr({
             "data-target": ("#myModal" + count),
             "data-toggle": "modal"
@@ -565,7 +565,7 @@ function populateSponsors(sponsors) {
             $row_div = $("<div />").addClass("row");
         }
 
-        $logosDiv.append(
+        $row_div.append(
             $("<div />").addClass("col-sm-3")
             .append(
                 $("<a />").attr({
@@ -576,12 +576,7 @@ function populateSponsors(sponsors) {
                     $("<img />").attr({
                         "src": sponsor[0],
                     })
-                    .css({
-                        "width": "80%",
-                        // "position": "absolute",
-                        "top": "50%",
-                        "transform": "translateY(-50%)"
-                    })
+                    .addClass("sponsor-logo")
                 )
             )
         );
@@ -594,6 +589,7 @@ function populateSponsors(sponsors) {
 
     $logosDiv.append($row_div);
 
+    console.log($logosDiv.html().toString());
 }
 
 // add case insensitive contains
@@ -605,5 +601,5 @@ $.extend($.expr[':'], {
   }
 });
 
-populateSponsors(SPONSORS);
+// populateSponsors(SPONSORS);
 populateSpeakerInfo(INFO);
