@@ -459,7 +459,7 @@ function populateSpeakerInfo(info) {
                                         .text(info[speaker].lectureHeading || "")
                                     ) // append to modal body
                                     .append(
-                                        ((info[speaker].lectureAbstract || []).join("<br><br>") || "To Be Announced")
+                                        ((info[speaker].lectureAbstract || []).join("<br><br>") || "Self-explanatory :)")
                                     )
                                 ) // append to modal content
                                 .append(
