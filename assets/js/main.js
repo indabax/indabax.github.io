@@ -200,10 +200,10 @@ INFO = {
   'Adriaan Rowan':
    { imagePath: './assets/speaker_data/adriaan_rowan/image.jpg',
      lectureInfoPath: './assets/speaker_data/adriaan_rowan/lecture_info.txt',
-     lectureHeading: 'The Blessing and Curse of High Dimensionality.',
+     lectureHeading: 'The Blessing and Curse of High Dimensionality',
      lectureAbstract: [],
      categoryInfoPath: './assets/speaker_data/adriaan_rowan/category.txt',
-     category: 'Lightning talk',
+     category: 'Theory',
      affiliationInfoPath: './assets/speaker_data/adriaan_rowan/affiliation.txt',
      affiliation: 'NumberBoost' },
   'Alex Conway':
@@ -287,6 +287,15 @@ INFO = {
      affiliationInfoPath: './assets/speaker_data/tobias_brandt/affiliation.txt',
      affiliation: 'Argon Asset Management' } }
 ;
+
+// PANEL = [
+//   "Ntombikayise Banda",
+//   "Ismail Akhalwaya",
+//   "Dr. Jacques Ludik",
+//   "Dr. Herman Kamper",
+//   "Prof. Amit Mishra",
+//   "Prof. Sugnet Lubbe"
+// ];
 
 // SPONSORS = [ [ './assets/images/sponsors/deeplearningindaba_com.PNG',
 //     'http://www.deeplearningindaba.com' ],
@@ -619,5 +628,78 @@ $.extend($.expr[':'], {
   }
 });
 
+// function populatePanelSpeakers(panel, info) {
+//   $scheduleSection = $(".schedule .tab-content");
+
+//   for(i in panel) {
+//     var speaker = panel[i];
+//     console.log(speaker);
+//     console.log(info[speaker]);
+
+//     $scheduleSlot = $scheduleSection.find("div.row.panel-speakers");
+//     $slot = $("<div />").addClass("col-xs-2").css({
+//       "height": "7.5em"
+//     })
+//     .append(
+//         $("<div />").addClass("text-center")
+//         .append(
+//             $("<img />").addClass("schedule-slot-speakers").attr({
+//                 "src": info[speaker].imagePath
+//             }).css({
+//                 "position": "absolute",
+//                 "right": "50%",
+//                 "transform": "translateX(+50%)"
+//             })
+//         )
+//     )
+//     .append(
+//         $("<div />").addClass("text-center")
+//         .append(
+//             $("<h4 />").addClass("schedule-slot-speaker-name").text(speaker).css({
+//                 "position": "absolute",
+//                 "top": "70%",
+//                 "transform": "translateY(-100%)",
+//                 "right": "50%",
+//                 "transform": "translateX(+50%)",
+//                 "width": "100%"
+//             })
+//         )
+//     );
+
+//     $scheduleSlot.append($slot);
+//     $scheduleSlot = $slot;
+
+//     $scheduleSlot.attr({
+//         "data-target": ("#myModal" + count),
+//         "data-toggle": "modal"
+//     });
+
+//     $scheduleSlot.mouseenter(function() {
+//         $(this).css({
+//             "cursor": "pointer",
+//             "-webkit-transform": "scale(1.2)",
+//                 "-ms-transform": "scale(1.2)",
+//                     "transform": "scale(1.2)",
+//             "-webkit-transition": "all 0.3s",
+//             "-moz-transition": "all 0.3s",
+//             "-o-transition": "all 0.3s",
+//             "transition": "all 0.3s"
+//         })
+//     }).mouseleave(function() {
+//         $(this).css({
+//             "cursor": "default",
+//             "-webkit-transform": "scale(1)",
+//                 "-ms-transform": "scale(1)",
+//                     "transform": "scale(1)",
+//             "-webkit-transition": "all 0.3s",
+//             "-moz-transition": "all 0.3s",
+//             "-o-transition": "all 0.3s",
+//             "transition": "all 0.3s"
+//         })
+//     });
+//   }
+// }
+
 // populateSponsors(SPONSORS);
 populateSpeakerInfo(INFO);
+// populatePanelSpeakers(PANEL, INFO);
