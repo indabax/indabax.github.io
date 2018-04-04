@@ -626,7 +626,7 @@ ul li.UWC:before {
 	 position: absolute;
 	 left: 0;
 	 z-index: 0;
-	 border-left: 20px solid #62d65e;
+	 border-left: 20px solid #56c452;
 	 border-right: 0 solid transparent;
 	 border-bottom: 20px solid transparent;
 	 bottom: -20px;
@@ -660,7 +660,7 @@ ul li.UWC:before {
 	 height: 1em;
 	 top: 5px;
 	 width: 5px;
-	 background: #62d65e;
+	 background: #56c452;
 }
 
 .schedule-date h2 {
@@ -731,7 +731,7 @@ ul li.UWC:before {
 }
 
 .schedule-slot-info:hover .schedule-slot-speakers{
-	 border: 2px solid #62d65e;
+	 border: 2px solid #56c452;
 }
 
 .schedule-slot-info:hover .lightning-speakers .schedule-slot-speakers{
@@ -739,7 +739,7 @@ ul li.UWC:before {
 }
 
 .schedule-slot-info div.lightning-speakers .schedule-slot-speakers:hover {
-   border: 2px solid #62d65e;
+   border: 2px solid #56c452;
 }
 
 .schedule-slot-info div.lightning-speakers {
@@ -756,9 +756,15 @@ ul li.UWC:before {
 }
 
 .schedule-slot-speaker-name{
-	 color: #62d65e;
+	 color: #56c452;
 	 margin-top: 5px;
 	 font-size: 16px;
+}
+span.schedule-slot-speaker-name{
+   color: #56c452;
+   margin-top: 5px;
+   font-size: 1em;
+   font-weight: 2em;
 }
 
 .listing-last{
