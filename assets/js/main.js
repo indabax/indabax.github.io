@@ -276,16 +276,7 @@ INFO = {
      categoryInfoPath: './assets/speaker_data/stuart_reid/category.txt',
      category: 'Theory',
      affiliationInfoPath: './assets/speaker_data/stuart_reid/affiliation.txt',
-     affiliation: 'Chief Engineer & Partner at NMRQL' },
-  'Tobias Brandt':
-   { imagePath: './assets/speaker_data/tobias_brandt/image.jpg',
-     lectureInfoPath: './assets/speaker_data/tobias_brandt/lecture_info.txt',
-     lectureHeading: 'Deep Learning in Finance',
-     lectureAbstract: [],
-     categoryInfoPath: './assets/speaker_data/tobias_brandt/category.txt',
-     category: 'Lightning talk',
-     affiliationInfoPath: './assets/speaker_data/tobias_brandt/affiliation.txt',
-     affiliation: 'Argon Asset Management' } }
+     affiliation: 'Chief Engineer & Partner at NMRQL' } }
 ;
 
 PANEL = [
