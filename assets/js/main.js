@@ -96,7 +96,7 @@ INFO = {
      categoryInfoPath: './assets/speaker_data/dr._thuso_simon/category.txt',
      category: 'Vision',
      affiliationInfoPath: './assets/speaker_data/dr._thuso_simon/affiliation.txt',
-     affiliation: 'The University of Cape Town' },
+     affiliation: 'Zoona' },
   'Dr. Willie Brink':
    { imagePath: './assets/speaker_data/dr._willie_brink/image.jpg',
      lectureInfoPath: './assets/speaker_data/dr._willie_brink/lecture_info.txt',
@@ -280,7 +280,7 @@ INFO = {
 ;
 
 PANEL = [
-  "Emeritus Prof. Linda Haines",
+  "Dr. Alta De Waal",
   "Ismail Akhalwaya",
   "Dr. Jacques Ludik",
   "Dr. Herman Kamper",
