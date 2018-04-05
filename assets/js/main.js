@@ -280,7 +280,7 @@ INFO = {
 ;
 
 PANEL = [
-  "Ntombikayise Banda",
+  "Emeritus Prof. Linda Haines",
   "Ismail Akhalwaya",
   "Dr. Jacques Ludik",
   "Dr. Herman Kamper",
