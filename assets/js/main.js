@@ -59,6 +59,15 @@ INFO = {
      category: 'Theory',
      affiliationInfoPath: './assets/speaker_data/dr._inger_fabris_rotelli/affiliation.txt',
      affiliation: 'The University of Pretoria' },
+  'Saliegh Salaam':
+  { imagePath: './assets/speaker_data/saliegh_salaam/image.jpg',
+    lectureInfoPath: './assets/speaker_data/saliegh_salaam/lecture_info.txt',
+    lectureHeading: 'Adapting to changing markets',
+    lectureAbstract: [],
+    categoryInfoPath: './assets/speaker_data/saliegh_salaam/category.txt',
+    category: 'Lightning talk',
+    affiliationInfoPath: './assets/speaker_data/saliegh_salaam/affiliation.txt',
+    affiliation: 'Old Mutual' },
   'Dr. Jacques Ludik':
    { imagePath: './assets/speaker_data/dr._jacques_ludik/image.jpg',
      lectureInfoPath: './assets/speaker_data/dr._jacques_ludik/lecture_info.txt',
