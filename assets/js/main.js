@@ -17,7 +17,8 @@ INFO = {
      categoryInfoPath: './assets/speaker_data/ntombikayise_banda/category.txt',
      category: 'Vision',
      affiliationInfoPath: './assets/speaker_data/ntombikayise_banda/affiliation.txt',
-     affiliation: 'University of Cambridge' },
+     affiliation: 'University of Cambridge',
+     vidLink: 'https://www.youtube.com/embed/jzCwsq9xDjY' },
   'Obins Choudhary':
    { imagePath: './assets/speaker_data/obins_choudhary/image.jpg',
      lectureInfoPath: './assets/speaker_data/obins_choudhary/lecture_info.txt',
@@ -27,7 +28,8 @@ INFO = {
      categoryInfoPath: './assets/speaker_data/obins_choudhary/category.txt',
      category: 'Theory',
      affiliationInfoPath: './assets/speaker_data/obins_choudhary/affiliation.txt',
-     affiliation: 'Barclays Africa Group Limited' },
+     affiliation: 'Barclays Africa Group Limited',
+     vidLink: 'https://www.youtube.com/embed/CVVdd_cTSz0' },
   'Dr. Alta De Waal':
    { imagePath: './assets/speaker_data/dr._alta_de_waal/image.jpg',
      lectureInfoPath: './assets/speaker_data/dr._alta_de_waal/lecture_info.txt',
@@ -39,7 +41,8 @@ INFO = {
      categoryInfoPath: './assets/speaker_data/dr._alta_de_waal/category.txt',
      category: 'Natural language processing',
      affiliationInfoPath: './assets/speaker_data/dr._alta_de_waal/affiliation.txt',
-     affiliation: 'The University of Pretoria' },
+     affiliation: 'The University of Pretoria',
+     vidLink: 'https://www.youtube.com/embed/QPXD1WpY5qc' },
   'Dr. Herman Kamper':
    { imagePath: './assets/speaker_data/dr._herman_kamper/image.jpg',
      lectureInfoPath: './assets/speaker_data/dr._herman_kamper/lecture_info.txt',
@@ -49,7 +52,8 @@ INFO = {
      categoryInfoPath: './assets/speaker_data/dr._herman_kamper/category.txt',
      category: 'Speech',
      affiliationInfoPath: './assets/speaker_data/dr._herman_kamper/affiliation.txt',
-     affiliation: 'The University of Stellenbosch' },
+     affiliation: 'The University of Stellenbosch',
+     vidLink: 'https://www.youtube.com/embed/lvQipmlgDFY' },
   'Dr. Inger Fabris Rotelli':
    { imagePath: './assets/speaker_data/dr._inger_fabris_rotelli/image.jpg',
      lectureInfoPath: './assets/speaker_data/dr._inger_fabris_rotelli/lecture_info.txt',
@@ -58,7 +62,8 @@ INFO = {
      categoryInfoPath: './assets/speaker_data/dr._inger_fabris_rotelli/category.txt',
      category: 'Theory',
      affiliationInfoPath: './assets/speaker_data/dr._inger_fabris_rotelli/affiliation.txt',
-     affiliation: 'The University of Pretoria' },
+     affiliation: 'The University of Pretoria',
+     vidLink: 'https://www.youtube.com/embed/RV1T5CJLssc' },
   'Saliegh Salaam':
   { imagePath: './assets/speaker_data/saliegh_salaam/image.jpg',
     lectureInfoPath: './assets/speaker_data/saliegh_salaam/lecture_info.txt',
@@ -67,7 +72,8 @@ INFO = {
     categoryInfoPath: './assets/speaker_data/saliegh_salaam/category.txt',
     category: 'Lightning talk',
     affiliationInfoPath: './assets/speaker_data/saliegh_salaam/affiliation.txt',
-    affiliation: 'Old Mutual' },
+    affiliation: 'Old Mutual',
+     vidLink: 'https://www.youtube.com/embed/v1aln2krIHg' },
   'Dr. Jacques Ludik':
    { imagePath: './assets/speaker_data/dr._jacques_ludik/image.jpg',
      lectureInfoPath: './assets/speaker_data/dr._jacques_ludik/lecture_info.txt',
@@ -77,7 +83,8 @@ INFO = {
      categoryInfoPath: './assets/speaker_data/dr._jacques_ludik/category.txt',
      category: 'Theory',
      affiliationInfoPath: './assets/speaker_data/dr._jacques_ludik/affiliation.txt',
-     affiliation: 'Founder of MIIA, CEO of Cortex Logic' },
+     affiliation: 'Founder of MIIA, CEO of Cortex Logic',
+     vidLink: 'https://www.youtube.com/embed/bzZNf76vP3o' },
   'Dr. Janto Dreijer':
    { imagePath: './assets/speaker_data/dr._janto_dreijer/image.jpg',
      lectureInfoPath: './assets/speaker_data/dr._janto_dreijer/lecture_info.txt',
@@ -86,7 +93,8 @@ INFO = {
      categoryInfoPath: './assets/speaker_data/dr._janto_dreijer/category.txt',
      category: 'Theory',
      affiliationInfoPath: './assets/speaker_data/dr._janto_dreijer/affiliation.txt',
-     affiliation: 'Ambrite ZA' },
+     affiliation: 'Ambrite ZA',
+     vidLink: 'https://www.youtube.com/embed/yzHoWEgaXuo' },
   'Dr. Thuso Simon':
    { imagePath: './assets/speaker_data/dr._thuso_simon/image.jpg',
      lectureInfoPath: './assets/speaker_data/dr._thuso_simon/lecture_info.txt',
@@ -96,7 +104,8 @@ INFO = {
      categoryInfoPath: './assets/speaker_data/dr._thuso_simon/category.txt',
      category: 'Vision',
      affiliationInfoPath: './assets/speaker_data/dr._thuso_simon/affiliation.txt',
-     affiliation: 'Zoona' },
+     affiliation: 'Zoona',
+     vidLink: 'https://www.youtube.com/embed/Ro6jWHVPlE4' },
   'Dr. Willie Brink':
    { imagePath: './assets/speaker_data/dr._willie_brink/image.jpg',
      lectureInfoPath: './assets/speaker_data/dr._willie_brink/lecture_info.txt',
@@ -106,7 +115,8 @@ INFO = {
      categoryInfoPath: './assets/speaker_data/dr._willie_brink/category.txt',
      category: 'Theory',
      affiliationInfoPath: './assets/speaker_data/dr._willie_brink/affiliation.txt',
-     affiliation: 'The University of Stellenbosch' },
+     affiliation: 'The University of Stellenbosch',
+     vidLink: 'https://www.youtube.com/embed/r7XB0HuT2Dw' },
   'Emeritus Prof. Linda Haines':
    { imagePath: './assets/speaker_data/emeritus_prof._linda_haines/image.jpg',
      lectureInfoPath: './assets/speaker_data/emeritus_prof._linda_haines/lecture_info.txt',
@@ -115,7 +125,8 @@ INFO = {
      categoryInfoPath: './assets/speaker_data/emeritus_prof._linda_haines/category.txt',
      category: 'Lightning talk',
      affiliationInfoPath: './assets/speaker_data/emeritus_prof._linda_haines/affiliation.txt',
-     affiliation: 'The University of Cape Town' },
+     affiliation: 'The University of Cape Town',
+     vidLink: 'https://www.youtube.com/embed/v1aln2krIHg' },
   'Emmanuel Dufourq':
    { imagePath: './assets/speaker_data/emmanuel_dufourq/image.jpg',
      lectureInfoPath: './assets/speaker_data/emmanuel_dufourq/lecture_info.txt',
@@ -125,7 +136,8 @@ INFO = {
      categoryInfoPath: './assets/speaker_data/emmanuel_dufourq/category.txt',
      category: 'Vision',
      affiliationInfoPath: './assets/speaker_data/emmanuel_dufourq/affiliation.txt',
-     affiliation: 'The University of Cape Town' },
+     affiliation: 'The University of Cape Town',
+     vidLink: 'https://www.youtube.com/embed/si1i4MRV8MI' },
   'Ismail Akhalwaya':
    { imagePath: './assets/speaker_data/ismail_akhalwaya/image.jpg',
      lectureInfoPath: './assets/speaker_data/ismail_akhalwaya/lecture_info.txt',
@@ -146,7 +158,8 @@ INFO = {
      categoryInfoPath: './assets/speaker_data/philip_sterne/category.txt',
      category: 'Lightning talk',
      affiliationInfoPath: './assets/speaker_data/philip_sterne/affiliation.txt',
-     affiliation: 'Data Scientist at Stochastic Consulting' },
+     affiliation: 'Data Scientist at Stochastic Consulting',
+     vidLink: 'https://www.youtube.com/embed/v1aln2krIHg' },
   'Prof. Amit Mishra':
    { imagePath: './assets/speaker_data/prof._amit_mishra/image.jpg',
      lectureInfoPath: './assets/speaker_data/prof._amit_mishra/lecture_info.txt',
@@ -156,7 +169,8 @@ INFO = {
      categoryInfoPath: './assets/speaker_data/prof._amit_mishra/category.txt',
      category: 'Theory',
      affiliationInfoPath: './assets/speaker_data/prof._amit_mishra/affiliation.txt',
-     affiliation: 'The University of Cape Town' },
+     affiliation: 'The University of Cape Town',
+     vidLink: 'https://www.youtube.com/embed/O73SjxD1x3s' },
   'Prof. Bruce Bassett':
    { imagePath: './assets/speaker_data/prof._bruce_bassett/image.jpg',
      lectureInfoPath: './assets/speaker_data/prof._bruce_bassett/lecture_info.txt',
@@ -166,7 +180,8 @@ INFO = {
      categoryInfoPath: './assets/speaker_data/prof._bruce_bassett/category.txt',
      category: 'Application',
      affiliationInfoPath: './assets/speaker_data/prof._bruce_bassett/affiliation.txt',
-     affiliation: 'The University of Cape Town' },
+     affiliation: 'The University of Cape Town',
+     vidLink: 'https://www.youtube.com/embed/s1QL_uTrFM0' },
   'Prof. Sugnet Lubbe':
    { imagePath: './assets/speaker_data/prof._sugnet_lubbe/image.jpg',
      lectureInfoPath: './assets/speaker_data/prof._sugnet_lubbe/lecture_info.txt',
@@ -175,7 +190,8 @@ INFO = {
      categoryInfoPath: './assets/speaker_data/prof._sugnet_lubbe/category.txt',
      category: 'Lightning talk',
      affiliationInfoPath: './assets/speaker_data/prof._sugnet_lubbe/affiliation.txt',
-     affiliation: 'The University of Stellenbosch' },
+     affiliation: 'The University of Stellenbosch',
+     vidLink: 'https://www.youtube.com/embed/v1aln2krIHg' },
   'Prof. Tim Gebbie':
    { imagePath: './assets/speaker_data/prof._tim_gebbie/image.jpg',
      lectureInfoPath: './assets/speaker_data/prof._tim_gebbie/lecture_info.txt',
@@ -185,7 +201,8 @@ INFO = {
      categoryInfoPath: './assets/speaker_data/prof._tim_gebbie/category.txt',
      category: 'Application',
      affiliationInfoPath: './assets/speaker_data/prof._tim_gebbie/affiliation.txt',
-     affiliation: 'The University of Cape Town' },
+     affiliation: 'The University of Cape Town',
+     vidLink: 'https://www.youtube.com/embed/4Wi7xWFjYmM' },
   'Ritesh Ajoodha':
    { imagePath: './assets/speaker_data/ritesh_ajoodha/image.jpg',
      lectureInfoPath: './assets/speaker_data/ritesh_ajoodha/lecture_info.txt',
@@ -196,7 +213,8 @@ INFO = {
      categoryInfoPath: './assets/speaker_data/ritesh_ajoodha/category.txt',
      category: 'Theory',
      affiliationInfoPath: './assets/speaker_data/ritesh_ajoodha/affiliation.txt',
-     affiliation: 'The University of the Witwatersrand' },
+     affiliation: 'The University of the Witwatersrand',
+     vidLink: 'https://www.youtube.com/embed/8keEHarCs9I' },
   'Adriaan Rowan':
    { imagePath: './assets/speaker_data/adriaan_rowan/image.jpg',
      lectureInfoPath: './assets/speaker_data/adriaan_rowan/lecture_info.txt',
@@ -205,7 +223,8 @@ INFO = {
      categoryInfoPath: './assets/speaker_data/adriaan_rowan/category.txt',
      category: 'Theory',
      affiliationInfoPath: './assets/speaker_data/adriaan_rowan/affiliation.txt',
-     affiliation: 'NumberBoost' },
+     affiliation: 'NumberBoost',
+     vidLink: 'https://www.youtube.com/embed/9Bdcl1uq99E' },
   'Alex Conway':
    { imagePath: './assets/speaker_data/alex_conway/image.jpg',
      lectureInfoPath: './assets/speaker_data/alex_conway/lecture_info.txt',
@@ -217,7 +236,8 @@ INFO = {
      categoryInfoPath: './assets/speaker_data/alex_conway/category.txt',
      category: 'Application',
      affiliationInfoPath: './assets/speaker_data/alex_conway/affiliation.txt',
-     affiliation: 'NumberBoost' },
+     affiliation: 'NumberBoost',
+     vidLink: 'https://www.youtube.com/embed/kDDh2EM7lnM' },
   'Benjamin De Charmoy':
    { imagePath: './assets/speaker_data/benjamin_de_charmoy/image.jpg',
      lectureInfoPath: './assets/speaker_data/benjamin_de_charmoy/lecture_info.txt',
@@ -226,7 +246,8 @@ INFO = {
      categoryInfoPath: './assets/speaker_data/benjamin_de_charmoy/category.txt',
      category: 'Lightning talk',
      affiliationInfoPath: './assets/speaker_data/benjamin_de_charmoy/affiliation.txt',
-     affiliation: 'Cortex Logic' },
+     affiliation: 'Cortex Logic',
+     vidLink: 'https://www.youtube.com/embed/v1aln2krIHg' },
   'Benji Meltzer':
    { imagePath: './assets/speaker_data/benji_meltzer/image.jpg',
      lectureInfoPath: './assets/speaker_data/benji_meltzer/lecture_info.txt',
@@ -235,7 +256,8 @@ INFO = {
      categoryInfoPath: './assets/speaker_data/benji_meltzer/category.txt',
      category: 'Lightning talk',
      affiliationInfoPath: './assets/speaker_data/benji_meltzer/affiliation.txt',
-     affiliation: 'CTO at Aerobotics' },
+     affiliation: 'CTO at Aerobotics',
+     vidLink: 'https://www.youtube.com/embed/v1aln2krIHg' },
   'Chris Currin':
    { imagePath: './assets/speaker_data/chris_currin/image.jpg',
      lectureInfoPath: './assets/speaker_data/chris_currin/lecture_info.txt',
@@ -248,7 +270,8 @@ INFO = {
      categoryInfoPath: './assets/speaker_data/chris_currin/category.txt',
      category: 'Natural language processing',
      affiliationInfoPath: './assets/speaker_data/chris_currin/affiliation.txt',
-     affiliation: 'The University of Cape Town' },
+     affiliation: 'The University of Cape Town',
+     vidLink: 'https://www.youtube.com/embed/11MECqQ1bVg' },
   'Robin Davies':
    { imagePath: './assets/speaker_data/robin_davies/image.jpg',
      lectureInfoPath: './assets/speaker_data/robin_davies/lecture_info.txt',
@@ -257,7 +280,8 @@ INFO = {
      categoryInfoPath: './assets/speaker_data/robin_davies/category.txt',
      category: 'Lightning talk',
      affiliationInfoPath: './assets/speaker_data/robin_davies/affiliation.txt',
-     affiliation: 'Principa' },
+     affiliation: 'Principa',
+     vidLink: 'https://www.youtube.com/embed/v1aln2krIHg' },
   'Shaun Irwin':
    { imagePath: './assets/speaker_data/shaun_irwin/image.jpg',
      lectureInfoPath: './assets/speaker_data/shaun_irwin/lecture_info.txt',
@@ -266,7 +290,8 @@ INFO = {
      categoryInfoPath: './assets/speaker_data/shaun_irwin/category.txt',
      category: 'Lightning talk',
      affiliationInfoPath: './assets/speaker_data/shaun_irwin/affiliation.txt',
-     affiliation: 'Stone Three Mining' },
+     affiliation: 'Stone Three Mining',
+     vidLink: 'https://www.youtube.com/embed/v1aln2krIHg' },
   'Stuart Reid':
    { imagePath: './assets/speaker_data/stuart_reid/image.jpg',
      lectureInfoPath: './assets/speaker_data/stuart_reid/lecture_info.txt',
@@ -276,7 +301,8 @@ INFO = {
      categoryInfoPath: './assets/speaker_data/stuart_reid/category.txt',
      category: 'Theory',
      affiliationInfoPath: './assets/speaker_data/stuart_reid/affiliation.txt',
-     affiliation: 'Chief Engineer & Partner at NMRQL' } }
+     affiliation: 'Chief Engineer & Partner at NMRQL',
+     vidLink: 'https://www.youtube.com/embed/hBhn0Afzf48' } }
 ;
 
 PANEL = [
@@ -453,6 +479,21 @@ function populateSpeakerInfo(info) {
                                         $("<h4 />")
                                         .text(info[speaker].lectureHeading || "")
                                     ) // append to modal body
+                                    .append(
+                                      (
+                                        info[speaker].vidLink?
+                                        $("<iframe />").attr({
+                                            "src": info[speaker].vidLink,
+                                            "frameborder": "0",
+                                            "allow": "autoplay;encrypted-media",
+                                            "allowfullscreen": true
+                                        }).css({
+                                            "width": "100%",
+                                            "height": "300"
+                                        })
+                                        :""
+                                      )
+                                    )
                                     .append(
                                         ((info[speaker].lectureAbstract || []).join("<br><br>") || "Self-explanatory :)")
                                     )
